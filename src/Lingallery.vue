@@ -27,7 +27,8 @@ export default {
     return {
       currentImage: null,
       currentIndex: 0,
-      currentCaption: ''
+      currentCaption: '',
+      windowWidth: 0
     }
   },
   props: {
@@ -65,10 +66,10 @@ export default {
   },
   computed: {
     lingalleryStyle () {
-      return window.innerWidth > this.width ? 'width:' + this.width + 'px' : 'width:100%'
+      return this.windowWidth > this.width ? 'width:' + this.width + 'px' : 'width:100%'
     },
     figureStyle () {
-      return window.innerWidth > this.width ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
+      return this.windowWidth > this.width ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
     },
     captionStyle () {
       return 'color:' + this.textColor
@@ -109,6 +110,7 @@ export default {
   mounted () {
     this.currentImage = this.items[this.startImage].src
     this.currentCaption = this.items[this.startImage].caption
+    this.windowWidth = window.innerWidth
   }
 }
 </script>
