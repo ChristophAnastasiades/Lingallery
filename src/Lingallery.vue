@@ -33,8 +33,8 @@ export default {
   props: {
     items: {
       default: [{
-        src: 'http://via.placeholder.com/600x400',
-        thumbnail: 'http://via.placeholder.com/64x64',
+        src: 'https://picsum.photos/600/400/?image=0',
+        thumbnail: 'https://picsum.photos/64/64/?image=0',
         caption: ''
       }]
     },
@@ -60,15 +60,15 @@ export default {
     },
     textColor: {
       type: String,
-      default: '#666'
+      default: '#000'
     }
   },
   computed: {
     lingalleryStyle () {
-      return 'width:' + this.width + 'px'
+      return window.innerWidth > this.width ? 'width:' + this.width + 'px' : 'width:100%'
     },
     figureStyle () {
-      return 'width:' + this.width + 'px;height:' + this.height + 'px'
+      return window.innerWidth > this.width ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
     },
     captionStyle () {
       return 'color:' + this.textColor
