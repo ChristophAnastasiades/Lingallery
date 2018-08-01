@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Lingallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <style>
         /*
          * Just for demo
@@ -29,5 +30,11 @@
         {src: 'https://picsum.photos/600/400/?image=100', thumbnail: 'https://picsum.photos/64/64/?image=100'}
       ]"/>
     </div>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        components: { Lingallery }
+      })
+    </script>
   </body>
 </html>
