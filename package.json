@@ -1,8 +1,9 @@
 {
   "name": "lingallery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
+  "main": "src/main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
