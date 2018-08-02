@@ -62,14 +62,18 @@ export default {
     textColor: {
       type: String,
       default: '#000'
+    },
+    responsive: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
     lingalleryStyle () {
-      return this.windowWidth > this.width ? 'width:' + this.width + 'px' : 'width:100%'
+      return this.windowWidth > this.width && this.responsive ? 'width:' + this.width + 'px' : 'width:100%'
     },
     figureStyle () {
-      return this.windowWidth > this.width ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
+      return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
     },
     captionStyle () {
       return 'color:' + this.textColor
@@ -116,10 +120,14 @@ export default {
 </script>
 
 <style scoped>
+    #lingallery {
+        max-width: 100%;
+    }
     figure {
         position: relative;
         margin: 0;
         padding: 0;
+        max-width: 100%;
         text-align: center;
         cursor: pointer;
     }
