@@ -70,7 +70,7 @@ export default {
   },
   computed: {
     lingalleryStyle () {
-      return this.windowWidth > this.width && this.responsive ? 'width:' + this.width + 'px' : 'width:100%'
+      return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px' : 'width:100%'
     },
     figureStyle () {
       return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
