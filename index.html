@@ -31,9 +31,13 @@
       ]"/>
     </div>
     <script>
+      import Lingallery from './src/lingallery'
+
       var app = new Vue({
         el: '#app',
-        components: { Lingallery }
+        components: {
+          'lingallery': Lingallery
+        }
       })
     </script>
   </body>

@@ -1,26 +1,29 @@
 <template>
-  <div id="lingallery" :style="lingalleryStyle">
-    <figure itemprop="associatedMedia"
-            itemscope
-            itemtype="http://schema.org/ImageObject" :style="figureStyle">
-        <img :src="currentImage" @click="showNextImage">
-        <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
-            {{ currentCaption }}
-        </div>
-        <a class="control left" @click="showPreviousImage">&#9664;</a>
-        <a class="control right" @click="showNextImage">&#9654;</a>
-    </figure>
-    <div class="lingallery_thumbnails">
-        <div class="lingallery_thumbnails_content">
-            <div v-for="(item, index) in items" class="lingallery_thumbnails_content_elem" :key="index">
-                <img :src="item.thumbnail" @click="handleImageClick(index)" height="64" :style="thumbnailStyle(index)">
+    <div id="lingallery" :style="lingalleryStyle">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" :style="figureStyle">
+            <div id="lingallery_spinner">
+                <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
+            </div>
+            <img :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }">
+            <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
+                {{ currentCaption }}
+            </div>
+            <a class="control left" @click="showPreviousImage">&#9664;</a>
+            <a class="control right" @click="showNextImage">&#9654;</a>
+        </figure>
+        <div class="lingallery_thumbnails">
+            <div class="lingallery_thumbnails_content">
+                <div v-for="(item, index) in items" class="lingallery_thumbnails_content_elem" :key="index">
+                    <img :src="item.thumbnail" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}" height="64" :style="thumbnailStyle(index)">
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
+import { HalfCircleSpinner } from 'epic-spinners'
+
 export default {
   name: 'Lingallery',
   data: () => {
@@ -28,7 +31,8 @@ export default {
       currentImage: null,
       currentIndex: 0,
       currentCaption: '',
-      windowWidth: 0
+      windowWidth: 0,
+      isLoading: true
     }
   },
   props: {
@@ -68,15 +72,32 @@ export default {
       default: false
     }
   },
+  components: {
+    HalfCircleSpinner
+  },
   computed: {
     lingalleryStyle () {
       return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px' : 'width:100%'
     },
-    figureStyle () {
-      return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
-    },
     captionStyle () {
       return 'color:' + this.textColor
+    }
+  },
+  asyncComputed: {
+    figureStyle () {
+      if (this.currentImage) {
+        return this.getImageSize(this.currentImage).then(result => {
+          let heightValue = 'height:auto'
+
+          // Hide Loader
+          this.handleLoader(false)
+
+          if (result.widthValue < result.heightValue) {
+            heightValue = 'height:' + this.height + 'px'
+          }
+          return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;' + heightValue
+        }).catch(err => console.log(err))
+      } else return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
     }
   },
   methods: {
@@ -84,7 +105,25 @@ export default {
       this.currentIndex = index
       this.pickImage(index)
     },
+    async getImageSize (src) {
+      let image = await this.getImage(src)
+      return { widthValue: image.naturalWidth, heightValue: image.naturalHeight }
+    },
+    async getImage (src) {
+      return new Promise((resolve, reject) => {
+        let img = new Image()
+        img.onload = () => resolve(img)
+        img.onerror = reject
+        img.src = src
+      }).catch(() => { console.log('error') })
+    },
+    handleLoader (isLoading) {
+      this.isLoading = isLoading
+    },
     pickImage (index) {
+      // Show Loader
+      this.handleLoader(true)
+
       this.currentImage = this.items[index].src
       this.currentCaption = this.items[index].caption
     },
@@ -93,6 +132,9 @@ export default {
       return 'border-color:' + color
     },
     showNextImage () {
+      // Show Loader
+      this.handleLoader(true)
+
       if (this.items.length > (this.currentIndex + 1)) {
         this.currentIndex = this.currentIndex + 1
       } else {
@@ -102,6 +144,9 @@ export default {
       this.pickImage(this.currentIndex)
     },
     showPreviousImage () {
+      // Show Loader
+      this.handleLoader(true)
+
       if (this.currentIndex !== 0) {
         this.currentIndex = this.currentIndex - 1
       } else {
@@ -134,6 +179,11 @@ export default {
     figure img {
         max-width: 100%;
         max-height: 100%;
+        transition: opacity .25s ease;
+    }
+    figure img.loading {
+        opacity: 0.25;
+        transition: opcacity .25s ease;
     }
     figure a.control {
         position: absolute;
@@ -177,6 +227,16 @@ export default {
     .lingallery_thumbnails .lingallery_thumbnails_content_elem img {
         border: 2px solid #fff;
         cursor: pointer;
+    }
+    #lingallery_spinner {
+        position: absolute;
+        left: 50%;
+        top: calc(50% - 32px);
+    }
+    #lingallery_spinner > div {
+        z-index: 9999;
+        position: relative;
+        left: -50%;
     }
 
     /*
