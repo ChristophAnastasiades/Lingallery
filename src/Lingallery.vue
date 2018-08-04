@@ -159,6 +159,7 @@ export default {
   mounted () {
     this.currentImage = this.items[this.startImage].src
     this.currentCaption = this.items[this.startImage].caption
+    this.currentIndex = this.startImage
     this.windowWidth = window.innerWidth
   }
 }
