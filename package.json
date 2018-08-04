@@ -1,6 +1,6 @@
 {
   "name": "lingallery",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "main": "src/main.js",
@@ -9,6 +9,15 @@
     "start": "npm run dev",
     "build": "node build/build.js"
   },
+  "keywords": [
+    "vue",
+    "lingallery",
+    "image",
+    "gallery",
+    "thumbnail",
+    "photo",
+    "vuejs"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChristophAnastasiades/Lingallery.git"

@@ -184,6 +184,7 @@ export default {
     }
     figure img.loading {
         opacity: 0.25;
+        min-height: 200px;
         transition: opcacity .25s ease;
     }
     figure a.control {

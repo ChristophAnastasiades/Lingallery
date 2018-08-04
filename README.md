@@ -100,11 +100,11 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 |-------------|-------------|---------|------|
 | `width` | Specifies the width of the main image area in pixels. | 600 | Number |
 | `height` | Specifies the height of the main image area in pixels. | 400 | Number |
-| `responsive` | Defines whether the image gallery should take up all available width space | false | Boolean |
+| `responsive` | Defines whether the image gallery should take up all available width space. | false | Boolean |
 | `startImage` | Sets the index of the image the gallery should start with. | 0 | Number |
-| `baseColor` | Defines the base color (at the moment only for the thumbnail border color | #fff | String |
+| `baseColor` | Defines the base color (at the moment only for the thumbnail border color) | #fff | String |
 | `accentColor` | Defines the accent color (at the moment only for the spinner and the active thumbnail border) | #3498db | String |
-| `textColor` | Defines the text color of the caption | #000 | String |
+| `textColor` | Defines the text color of the caption. | #000 | String |
 
 ## Why?
 
