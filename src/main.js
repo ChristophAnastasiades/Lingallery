@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import AsyncComputed from 'vue-async-computed'
-import App from './App'
+import Lingallery from './App'
 
 Vue.use(AsyncComputed)
 
