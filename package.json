@@ -3,7 +3,7 @@
   "version": "1.0.9",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
-  "main": "src/main.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -18,10 +18,6 @@
     "photo",
     "vuejs"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ChristophAnastasiades/Lingallery.git"
-  },
   "dependencies": {
     "epic-spinners": "^1.0.3",
     "vue": "^2.5.2",

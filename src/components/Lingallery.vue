@@ -11,7 +11,7 @@
             <a class="control left" @click="showPreviousImage">&#9664;</a>
             <a class="control right" @click="showNextImage">&#9654;</a>
         </figure>
-        <div class="lingallery_thumbnails">
+        <div class="lingallery_thumbnails" v-if="showThumbnails">
             <div class="lingallery_thumbnails_content">
                 <div v-for="(item, index) in items" class="lingallery_thumbnails_content_elem" :key="index">
                     <img :src="item.thumbnail" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}" height="64" :style="thumbnailStyle(index)">
@@ -70,6 +70,10 @@ export default {
     responsive: {
       type: Boolean,
       default: false
+    },
+    showThumbnails: {
+      type: Boolean,
+      default: true
     }
   },
   components: {
