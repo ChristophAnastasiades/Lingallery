@@ -105,6 +105,7 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 | `baseColor` | Defines the base color (at the moment only for the thumbnail border color) | #fff | String |
 | `accentColor` | Defines the accent color (at the moment only for the spinner and the active thumbnail border) | #3498db | String |
 | `textColor` | Defines the text color of the caption. | #000 | String |
+| `showThumbnails` | Defines whether thumbnails should be displayed. | true | Boolean |
 
 ## Why?
 
