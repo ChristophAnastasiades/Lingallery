@@ -1,7 +1,13 @@
 import Vue from 'vue'
+import App from './App.vue'
 import AsyncComputed from 'vue-async-computed'
-import Lingallery from './Lingallery.vue'
+import Vue2TouchEvents from 'vue2-touch-events'
 
 Vue.use(AsyncComputed)
+Vue.use(Vue2TouchEvents)
 
-export default Lingallery
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
