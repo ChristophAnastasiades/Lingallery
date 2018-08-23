@@ -20,7 +20,7 @@
 import Lingallery from './components/Lingallery'
 
 export default {
-  name: 'App',
+  name: 'Lingallery',
   components: {
     Lingallery
   }
