@@ -1,6 +1,6 @@
 {
   "name": "lingallery",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "private": false,
