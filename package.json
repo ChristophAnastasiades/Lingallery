@@ -1,6 +1,6 @@
 {
   "name": "lingallery",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "private": false,
@@ -47,5 +47,8 @@
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
+  },
+  "vue": {
+    "runtimeCompiler": true
   }
 }

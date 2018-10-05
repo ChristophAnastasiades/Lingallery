@@ -1,5 +1,5 @@
-import Vue from "vue";
-import Lingallery from "./Lingallery.vue";
+import Vue from 'vue'
+import Lingallery from './Lingallery.vue'
 import AsyncComputed from 'vue-async-computed'
 import Vue2TouchEvents from 'vue2-touch-events'
 
