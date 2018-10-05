@@ -5,7 +5,7 @@
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "private": false,
   "license": "MIT",
-  "main": "./dist/lingallery.common.js",
+  "main": "src/main.js",
   "keywords": [
     "vue",
     "lingallery",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "epic-spinners": "^1.0.3",
-    "vue": "^2.5.17",
+    "vue": "^2.5.2",
     "vue-async-computed": "^3.4.1",
     "vue2-touch-events": "^1.0.0"
   },
@@ -43,5 +43,9 @@
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "vue-template-compiler": "^2.5.17"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   }
 }

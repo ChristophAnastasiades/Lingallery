@@ -114,7 +114,6 @@
         return { widthValue: image.naturalWidth, heightValue: image.naturalHeight }
       },
       async getImage (src) {
-        console.log(src)
         return new Promise((resolve, reject) => {
           let img = new Image()
           img.onload = () => resolve(img)
