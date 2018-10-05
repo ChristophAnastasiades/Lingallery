@@ -5,7 +5,7 @@
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "private": false,
   "license": "MIT",
-  "main": "./src/main.js",
+  "main": "./dist/lingallery.common.js",
   "keywords": [
     "vue",
     "lingallery",
