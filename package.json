@@ -1,11 +1,11 @@
 {
   "name": "lingallery",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
   "private": false,
   "license": "MIT",
-  "main": "./dist/lingallery.umd.js",
+  "main": "./dist/lingallery.common.js",
   "keywords": [
     "vue",
     "lingallery",
