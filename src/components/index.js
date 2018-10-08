@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue/dist/vue.min.js'
 import Lingallery from './Lingallery.vue'
 import AsyncComputed from 'vue-async-computed'
 import Vue2TouchEvents from 'vue2-touch-events'
