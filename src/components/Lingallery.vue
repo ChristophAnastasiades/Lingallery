@@ -110,6 +110,11 @@
         if (this.mobileHeight !== 0 && this.windowWidth < this.mobileHeightBreakpoint) {
           mainImageStyle += 'width:100%;height:' + this.mobileHeight + 'px;object-fit:cover;'
         }
+        if (this.$refs.mainImage.classList.contains('loading')) {
+          if (this.mobileHeight !== 0) {
+            mainImageStyle += 'min-height:' + this.mobileHeight + 'px;'
+          } else mainImageStyle += 'min-height:200px;'
+        }
 
         return mainImageStyle
       }
