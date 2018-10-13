@@ -4,12 +4,14 @@
             <div class="lingallery_spinner">
                 <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
             </div>
-            <img :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage">
+            <img :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
-            <a class="control left" @click="showPreviousImage">&#9664;</a>
-            <a class="control right" @click="showNextImage">&#9654;</a>
+            <a class="control left" @click="showPreviousImage" v-if="!leftControlClass">&#9664;</a>
+            <a class="control right" @click="showNextImage" v-if="!rightControlClass">&#9654;</a>
+            <a :class="'control left ' + leftControlClass" @click="showPreviousImage" v-if="leftControlClass"></a>
+            <a :class="'control right ' + rightControlClass" @click="showNextImage" v-if="rightControlClass"></a>
         </figure>
         <div class="lingallery_thumbnails" v-if="showThumbnails">
             <div class="lingallery_thumbnails_content">
@@ -74,6 +76,18 @@
       showThumbnails: {
         type: Boolean,
         default: true
+      },
+      mobileHeight: {
+        type: Number,
+        default: 0
+      },
+      leftControlClass: {
+        type: String,
+        default: ''
+      },
+      rightControlClass: {
+        type: String,
+        default: ''
       }
     },
     components: {
@@ -85,6 +99,15 @@
       },
       captionStyle () {
         return 'color:' + this.textColor
+      },
+      mainImageStyle () {
+        let mainImageStyle = ''
+
+        if (this.mobileHeight !== 0 && this.windowWidth < this.width) {
+          mainImageStyle += 'width:100%;height:' + this.mobileHeight + 'px;object-fit:cover;'
+        }
+
+        return mainImageStyle
       }
     },
     asyncComputed: {
@@ -96,7 +119,7 @@
             // Hide Loader
             this.handleLoader(false)
 
-            if (result.widthValue < result.heightValue) {
+            if (result.widthValue < result.heightValue && this.mobileHeight === 0) {
               heightValue = 'height:' + this.height + 'px'
             }
             return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;' + heightValue
