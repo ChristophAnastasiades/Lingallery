@@ -81,6 +81,10 @@
         type: Number,
         default: 0
       },
+      mobileHeightBreakpoint: {
+        type: Number,
+        default: 0
+      },
       leftControlClass: {
         type: String,
         default: ''
@@ -103,7 +107,7 @@
       mainImageStyle () {
         let mainImageStyle = ''
 
-        if (this.mobileHeight !== 0 && this.windowWidth < this.width) {
+        if (this.mobileHeight !== 0 && this.windowWidth < this.mobileHeightBreakpoint) {
           mainImageStyle += 'width:100%;height:' + this.mobileHeight + 'px;object-fit:cover;'
         }
 
