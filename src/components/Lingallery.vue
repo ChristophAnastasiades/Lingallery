@@ -4,7 +4,7 @@
             <div class="lingallery_spinner">
                 <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
             </div>
-            <img :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
+            <img ref="mainImage" :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
@@ -110,7 +110,7 @@
         if (this.mobileHeight !== 0 && this.windowWidth < this.mobileHeightBreakpoint) {
           mainImageStyle += 'width:100%;height:' + this.mobileHeight + 'px;object-fit:cover;'
         }
-        if (this.$refs.mainImage.classList.contains('loading')) {
+        if (this.$refs.mainImage && this.$refs.mainImage.classList.contains('loading')) {
           if (this.mobileHeight !== 0) {
             mainImageStyle += 'min-height:' + this.mobileHeight + 'px;'
           } else mainImageStyle += 'min-height:200px;'
