@@ -4,7 +4,7 @@
             <div class="lingallery_spinner">
                 <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
             </div>
-            <img ref="mainImage" :src="currentImage" @click="showNextImage" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
+            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
@@ -142,9 +142,12 @@
     },
     methods: {
       handleImageClick (index) {
+        this.currentIndex = index
+        this.pickImage(index)
+      },
+      handleLargeImageClick () {
         if (!this.disableImageClick) {
-          this.currentIndex = index
-          this.pickImage(index)
+          this.showNextImage()
         }
       },
       async getImageSize (src) {
