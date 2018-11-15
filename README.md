@@ -110,6 +110,7 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 | `mobileHeightBreakpoint` | If mobileHeight is defined this prop sets the breakpoint below which the image height will not exceed the mobileHeight value | 0 | Number |
 | `leftControlClass` | If defined adds a class to the left control button to enable custom icons | '' | String |
 | `rightControlClass` | If defined adds a class to the right control button to enable custom icons | '' | String |
+| `disableImageClick` | If set to true a click on the large image will not show the next image | false | Boolean |
 
 ## Why?
 

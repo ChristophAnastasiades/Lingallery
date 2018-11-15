@@ -92,6 +92,10 @@
       rightControlClass: {
         type: String,
         default: ''
+      },
+      disableImageClick: {
+        type: Boolean,
+        default: false
       }
     },
     components: {
@@ -138,8 +142,10 @@
     },
     methods: {
       handleImageClick (index) {
-        this.currentIndex = index
-        this.pickImage(index)
+        if (!this.disableImageClick) {
+          this.currentIndex = index
+          this.pickImage(index)
+        }
       },
       async getImageSize (src) {
         let image = await this.getImage(src)
