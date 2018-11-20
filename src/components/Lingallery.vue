@@ -235,14 +235,18 @@
     figure a.control {
         position: absolute;
         top: 0;
-        padding-top: calc(50% - 12px);
         padding-left: 5px;
         padding-right: 15px;
+        height: 100%;
         display: none;
         font-size: 20px;
         color: #fff;
         cursor: pointer;
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    }
+    figure a.control:before {
+        position: relative;
+        top: calc(50% - 12px);
     }
     figure a.control.left {
         left: 0;
