@@ -234,7 +234,10 @@
     }
     figure a.control {
         position: absolute;
-        top: calc(50% - 12px);
+        top: 0;
+        padding-top: calc(50% - 12px);
+        padding-left: 5px;
+        padding-right: 15px;
         display: none;
         font-size: 20px;
         color: #fff;
@@ -242,10 +245,10 @@
         text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
     }
     figure a.control.left {
-        left: 5px;
+        left: 0;
     }
     figure a.control.right {
-        right: 5px;
+        right: 0;
     }
     figure:hover a.control {
         display: block;
