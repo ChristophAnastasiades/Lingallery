@@ -8,8 +8,8 @@
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
-            <a class="control left" @click="showPreviousImage" v-if="!leftControlClass">&#9664;</a>
-            <a class="control right" @click="showNextImage" v-if="!rightControlClass">&#9654;</a>
+            <a class="control left" @click="showPreviousImage" v-if="!leftControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9664;</span></a>
+            <a class="control right" @click="showNextImage" v-if="!rightControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9654;</span></a>
             <a :class="'control left ' + leftControlClass" @click="showPreviousImage" v-if="leftControlClass"></a>
             <a :class="'control right ' + rightControlClass" @click="showNextImage" v-if="rightControlClass"></a>
         </figure>
