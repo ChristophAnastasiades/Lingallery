@@ -136,7 +136,7 @@
               heightValue = 'height:' + this.height + 'px'
             }
             return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;' + heightValue
-          }).catch(err => console.log(err))
+          }).catch()
         } else return this.windowWidth > this.width && !this.responsive ? 'width:' + this.width + 'px;height:' + this.height + 'px' : 'width:100%;height:auto'
       }
     },
@@ -160,7 +160,7 @@
           img.onload = () => resolve(img)
           img.onerror = reject
           img.src = src
-        }).catch(() => { console.log('error') })
+        }).catch()
       },
       handleLoader (isLoading) {
         this.isLoading = isLoading
