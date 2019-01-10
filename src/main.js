@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import AsyncComputed from 'vue-async-computed'
-import App from './App'
+import App from './App.vue'
+import './components'
 
-Vue.use(AsyncComputed)
+Vue.config.productionTip = false
 
-export default Lingallery
+/* eslint-disable no-new */
+new Vue({
+  render: h => h(App)
+}).$mount('#app')

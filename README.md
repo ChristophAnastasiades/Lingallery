@@ -106,6 +106,11 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 | `accentColor` | Defines the accent color (at the moment only for the spinner and the active thumbnail border) | #3498db | String |
 | `textColor` | Defines the text color of the caption. | #000 | String |
 | `showThumbnails` | Defines whether thumbnails should be displayed. | true | Boolean |
+| `mobileHeight` | If set to a number larger than 0 the image height will not exceed that value on mobile devices | 0 | Number |
+| `mobileHeightBreakpoint` | If mobileHeight is defined this prop sets the breakpoint below which the image height will not exceed the mobileHeight value | 0 | Number |
+| `leftControlClass` | If defined adds a class to the left control button to enable custom icons | '' | String |
+| `rightControlClass` | If defined adds a class to the right control button to enable custom icons | '' | String |
+| `disableImageClick` | If set to true a click on the large image will not show the next image | false | Boolean |
 
 ## Why?
 

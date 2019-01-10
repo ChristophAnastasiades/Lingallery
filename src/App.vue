@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Lingallery :showThumbnails="false" :width="600" :height="400" :items="[
-        {src: 'https://picsum.photos/600/400/?image=0', thumbnail: 'https://picsum.photos/64/64/?image=0', caption: 'Some Caption'},
+    <lingallery :mobileHeight="200" :width="600" :height="400" :items="[
+        {src: 'https://picsum.photos/600/600/?image=0', thumbnail: 'https://picsum.photos/64/64/?image=0', caption: 'Some Caption'},
         {src: 'https://picsum.photos/600/400/?image=10', thumbnail: 'https://picsum.photos/64/64/?image=10', caption: 'Another Caption'},
         {src: 'https://picsum.photos/400/600/?image=20', thumbnail: 'https://picsum.photos/64/64/?image=20'},
         {src: 'https://picsum.photos/600/400/?image=30', thumbnail: 'https://picsum.photos/64/64/?image=30'},
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Lingallery from './components/Lingallery'
+import Lingallery from './components/Lingallery.vue'
 
 export default {
   name: 'App',
@@ -28,10 +28,12 @@ export default {
 </script>
 
 <style>
-/*
-* Just for demo
-*/
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
