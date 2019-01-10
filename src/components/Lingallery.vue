@@ -206,6 +206,11 @@
       this.currentCaption = this.items[this.startImage].caption
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
+    },
+    watch: {
+      items () {
+        this.currentImage = this.items[this.startImage].src
+      }
     }
   }
 </script>
