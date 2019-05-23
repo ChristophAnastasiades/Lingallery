@@ -297,6 +297,7 @@
     .lingallery_thumbnails {
         overflow-x: auto;
         width: 100%;
+        scroll-snap-type: x mandatory;
     }
     .lingallery_thumbnails_content {
         margin-top: 2px;
@@ -305,6 +306,7 @@
     }
     .lingallery_thumbnails .lingallery_thumbnails_content_elem {
         display: inline-block;
+        scroll-snap-align: start;
     }
     .lingallery_thumbnails .lingallery_thumbnails_content_elem img {
         border: 2px solid #fff;
