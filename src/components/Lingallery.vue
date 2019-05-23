@@ -4,7 +4,7 @@
             <div class="lingallery_spinner">
                 <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
             </div>
-            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-touch:swipe.left="showPreviousImage" v-touch:swipe.right="showNextImage" :style="mainImageStyle">
+            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-swipe="handleImageSwipe" :style="mainImageStyle">
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
@@ -24,10 +24,26 @@
 </template>
 
 <script>
+  import Vue from 'vue'
   import { HalfCircleSpinner } from 'epic-spinners'
+  import Hammer from 'hammerjs'
+  import AsyncComputed from 'vue-async-computed'
+
+  Vue.use(AsyncComputed)
 
   export default {
     name: 'Lingallery',
+    directives: {
+      swipe: {
+        bind: function(el, binding) {
+          if (typeof binding.value === 'function') {
+            const hammerjs = new Hammer(el)
+            hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL })
+            hammerjs.on("swipe", binding.value)
+          }
+        }
+      }
+    },
     data () {
       return {
         currentImage: null,
@@ -141,6 +157,13 @@
       }
     },
     methods: {
+      handleImageSwipe(event) {
+        if (event.direction === 2) {
+          this.showPreviousImage()
+        } else if (event.direction === 4) {
+          this.showNextImage()
+        }
+      },
       handleImageClick (index) {
         this.currentIndex = index
         this.pickImage(index)
