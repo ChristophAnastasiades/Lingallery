@@ -1,22 +1,25 @@
 <template>
-    <div class="lingallery" :style="lingalleryStyle">
-        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" :style="figureStyle">
+    <div :style="lingalleryStyle" class="lingallery">
+        <figure :style="figureStyle" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <div class="lingallery_spinner">
-                <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
+                <half-circle-spinner :animation-duration="1000" :color="accentColor" :size="60" v-if="isLoading"/>
             </div>
-            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-swipe="handleImageSwipe" :alt="item.alt" :style="mainImageStyle">
-            <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
+            <img :alt="currentAlt" :class="{ loading: isLoading }" :src="currentImage" :style="mainImageStyle"
+                 @click="handleLargeImageClick" ref="mainImage" v-swipe="handleImageSwipe">
+            <div :style="captionStyle" class="lingallery_caption" v-if="currentCaption">
                 {{ currentCaption }}
             </div>
-            <a class="control left" @click="showPreviousImage" v-if="!leftControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9664;</span></a>
-            <a class="control right" @click="showNextImage" v-if="!rightControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9654;</span></a>
+            <a @click="showPreviousImage" class="control left" v-if="!leftControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9664;</span></a>
+            <a @click="showNextImage" class="control right" v-if="!rightControlClass"><span style="position:relative;top:calc(50% - 12px)">&#9654;</span></a>
             <a :class="'control left ' + leftControlClass" @click="showPreviousImage" v-if="leftControlClass"></a>
             <a :class="'control right ' + rightControlClass" @click="showNextImage" v-if="rightControlClass"></a>
         </figure>
         <div class="lingallery_thumbnails" v-if="showThumbnails">
             <div class="lingallery_thumbnails_content">
-                <div v-for="(item, index) in items" class="lingallery_thumbnails_content_elem" :key="index">
-                    <img :src="item.thumbnail" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}" :alt="item.alt" height="64" :style="thumbnailStyle(index)">
+                <div :key="index" class="lingallery_thumbnails_content_elem" v-for="(item, index) in items">
+                    <img :alt="item.hasOwnProperty('alt') ? item.alt : ''"
+                         :src="item.thumbnail"
+                         :style="thumbnailStyle(index)" height="64" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}">
                 </div>
             </div>
         </div>
@@ -50,19 +53,17 @@
         currentIndex: 0,
         currentId: null,
         currentCaption: '',
+        currentAlt: '',
         windowWidth: 0,
         isLoading: true
       }
     },
     props: {
       items: {
-        default: [{
-          src: 'https://picsum.photos/600/400/?image=0',
-          thumbnail: 'https://picsum.photos/64/64/?image=0',
-          caption: '',
-          alt: '',
-          id: null
-        }]
+        type: Array,
+        default() {
+          return []
+        }
       },
       startImage: {
         type: Number,
@@ -196,14 +197,18 @@
         this.handleLoader(true)
 
         this.currentImage = this.items[index].src
-        this.currentCaption = this.items[index].caption
-        this.currentId = this.items[index].id
+        this.currentCaption = this.items[index].hasOwnProperty('caption') ? this.items[index].caption : ''
+		this.currentAlt = this.items[index].hasOwnProperty('alt') ? this.items[index].alt : ''
+        this.currentId = this.items[index].hasOwnProperty('id') ? this.items[index].id : ''
 
-        this.$emit('current-id', this.currentId)
+        this.sendId()
       },
       thumbnailStyle (index) {
         let color = this.currentIndex === index ? this.accentColor : this.baseColor
         return 'border-color:' + color
+      },
+      sendId() {
+        this.$emit('update:iid', this.currentId)
       },
       showNextImage () {
         // Show Loader
@@ -214,9 +219,6 @@
         } else {
           this.currentIndex = 0
         }
-
-		this.currentId = this.items[this.currentIndex].id
-        this.$emit('current-id', this.currentId)
 
         this.pickImage(this.currentIndex)
       },
@@ -230,9 +232,6 @@
           this.currentIndex = this.items.length - 1
         }
 
-		this.currentId = this.items[this.currentIndex].id
-        this.$emit('current-id', this.currentId)
-
         this.pickImage(this.currentIndex)
       }
     },
@@ -242,12 +241,7 @@
       this.currentId = this.items[this.startImage].id
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
-      this.$emit('current-id', this.currentId)
-    },
-    watch: {
-      items () {
-        this.currentImage = this.items[this.startImage].src
-      }
+      this.sendId()
     }
   }
 </script>

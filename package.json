@@ -40,12 +40,12 @@
     "epic-spinners": "^1.1.0",
     "hammerjs": "^2.0.8",
     "vue": "^2.6.10",
-    "vue-async-computed": "^3.6.1"
+    "vue-async-computed": "^3.7.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
+    "@vue/cli-plugin-babel": "^3.9.2",
+    "@vue/cli-plugin-eslint": "^3.9.2",
+    "@vue/cli-service": "^3.9.3",
     "vue-template-compiler": "^2.6.10"
   },
   "engines": {
