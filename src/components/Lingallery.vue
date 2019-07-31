@@ -4,7 +4,7 @@
             <div class="lingallery_spinner">
                 <half-circle-spinner :animation-duration="1000" :size="60" :color="accentColor" v-if="isLoading"/>
             </div>
-            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-swipe="handleImageSwipe" :style="mainImageStyle">
+            <img ref="mainImage" :src="currentImage" @click="handleLargeImageClick" :class="{ loading: isLoading }" v-swipe="handleImageSwipe" :alt="item.alt" :style="mainImageStyle">
             <div class="lingallery_caption" v-if="currentCaption" :style="captionStyle">
                 {{ currentCaption }}
             </div>
@@ -16,7 +16,7 @@
         <div class="lingallery_thumbnails" v-if="showThumbnails">
             <div class="lingallery_thumbnails_content">
                 <div v-for="(item, index) in items" class="lingallery_thumbnails_content_elem" :key="index">
-                    <img :src="item.thumbnail" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}" height="64" :style="thumbnailStyle(index)">
+                    <img :src="item.thumbnail" v-on="currentIndex !== index ? { click: () => handleImageClick(index) } : {}" :alt="item.alt" height="64" :style="thumbnailStyle(index)">
                 </div>
             </div>
         </div>
@@ -48,6 +48,7 @@
       return {
         currentImage: null,
         currentIndex: 0,
+        currentId: null,
         currentCaption: '',
         windowWidth: 0,
         isLoading: true
@@ -58,7 +59,9 @@
         default: [{
           src: 'https://picsum.photos/600/400/?image=0',
           thumbnail: 'https://picsum.photos/64/64/?image=0',
-          caption: ''
+          caption: '',
+          alt: '',
+          id: null
         }]
       },
       startImage: {
@@ -194,6 +197,9 @@
 
         this.currentImage = this.items[index].src
         this.currentCaption = this.items[index].caption
+        this.currentId = this.items[index].id
+
+        this.$emit('current-id', this.currentId)
       },
       thumbnailStyle (index) {
         let color = this.currentIndex === index ? this.accentColor : this.baseColor
@@ -209,6 +215,9 @@
           this.currentIndex = 0
         }
 
+		this.currentId = this.items[this.currentIndex].id
+        this.$emit('current-id', this.currentId)
+
         this.pickImage(this.currentIndex)
       },
       showPreviousImage () {
@@ -221,14 +230,19 @@
           this.currentIndex = this.items.length - 1
         }
 
+		this.currentId = this.items[this.currentIndex].id
+        this.$emit('current-id', this.currentId)
+
         this.pickImage(this.currentIndex)
       }
     },
     mounted () {
       this.currentImage = this.items[this.startImage].src
       this.currentCaption = this.items[this.startImage].caption
+      this.currentId = this.items[this.startImage].id
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
+      this.$emit('current-id', this.currentId)
     },
     watch: {
       items () {
