@@ -65,11 +65,18 @@ Create a component `Example.vue` and add this:
         {
           src: 'https://picsum.photos/600/400/?image=10',
           thumbnail: 'https://picsum.photos/64/64/?image=10'
-        }
+        },
+        currentId: null
       ]};
     },
     components: {
       Lingallery
+    },
+    methods: {
+      handleIdChange(id) {
+      	// This will always be the ID of the currently displayed image
+    	this.currentId = id	
+      }
     }
   }
 </script>
