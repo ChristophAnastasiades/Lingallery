@@ -23,10 +23,10 @@ Here are some examples of how to use Lingallery in a `.vue` file component or in
 You can use it inline:
 
 ```html
-<lingallery :width="600" :height="400" :items="[
-    {src: 'https://picsum.photos/600/400/?image=0', thumbnail: 'https://picsum.photos/64/64/?image=0', caption: 'Some Caption'},
-    {src: 'https://picsum.photos/600/400/?image=10', thumbnail: 'https://picsum.photos/64/64/?image=10', caption: 'Another Caption'},
-    {src: 'https://picsum.photos/400/600/?image=20', thumbnail: 'https://picsum.photos/64/64/?image=20'}
+<lingallery @current-id="handleIdChange" :width="600" :height="400" :items="[
+    {id:'someid1', src: 'https://picsum.photos/600/400/?image=0', thumbnail: 'https://picsum.photos/64/64/?image=0', alt: 'Some alt text', caption: 'Some Caption'},
+    {id:'someid2', src: 'https://picsum.photos/600/400/?image=10', thumbnail: 'https://picsum.photos/64/64/?image=10', alt: 'Another alt text', caption: 'Another Caption'},
+    {id:'someid3', src: 'https://picsum.photos/400/600/?image=20', thumbnail: 'https://picsum.photos/64/64/?image=20'}
 ]"/>
 ```
 
@@ -47,7 +47,7 @@ Create a component `Example.vue` and add this:
 
 ```vue
 <template>
-  <lingallery :width="width" :height="height" :items="items"/>
+  <lingallery @current-id="handleIdChange" :width="width" :height="height" :items="items"/>
 </template>
 <script>
   import Lingallery from 'lingallery';
@@ -59,16 +59,24 @@ Create a component `Example.vue` and add this:
         items: [{
           src: 'https://picsum.photos/600/400/?image=0',
           thumbnail: 'https://picsum.photos/64/64/?image=0',
-          caption: 'Some Caption'
+          caption: 'Some Caption',
+          id: 'someid1'
         },
         {
           src: 'https://picsum.photos/600/400/?image=10',
           thumbnail: 'https://picsum.photos/64/64/?image=10'
-        }
+        },
+        currentId: null
       ]};
     },
     components: {
       Lingallery
+    },
+    methods: {
+      handleIdChange(id) {
+      	// This will always be the ID of the currently displayed image
+    	this.currentId = id	
+      }
     }
   }
 </script>
