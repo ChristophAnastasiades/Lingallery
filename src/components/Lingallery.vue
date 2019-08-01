@@ -242,6 +242,11 @@
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
       this.sendId()
+    },
+    watch: {
+      items () {
+        this.currentImage = this.items[this.startImage].src
+      }
     }
   }
 </script>
