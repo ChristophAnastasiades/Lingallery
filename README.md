@@ -23,7 +23,7 @@ Here are some examples of how to use Lingallery in a `.vue` file component or in
 You can use it inline:
 
 ```html
-<lingallery @current-id="handleIdChange" :width="600" :height="400" :items="[
+<lingallery :iid.sync="currentId" :width="600" :height="400" :items="[
     {id:'someid1', src: 'https://picsum.photos/600/400/?image=0', thumbnail: 'https://picsum.photos/64/64/?image=0', alt: 'Some alt text', caption: 'Some Caption'},
     {id:'someid2', src: 'https://picsum.photos/600/400/?image=10', thumbnail: 'https://picsum.photos/64/64/?image=10', alt: 'Another alt text', caption: 'Another Caption'},
     {id:'someid3', src: 'https://picsum.photos/400/600/?image=20', thumbnail: 'https://picsum.photos/64/64/?image=20'}
@@ -47,7 +47,7 @@ Create a component `Example.vue` and add this:
 
 ```vue
 <template>
-  <lingallery @current-id="handleIdChange" :width="width" :height="height" :items="items"/>
+  <lingallery :iid.sync="currentId" :width="width" :height="height" :items="items"/>
 </template>
 <script>
   import Lingallery from 'lingallery';
@@ -71,12 +71,6 @@ Create a component `Example.vue` and add this:
     },
     components: {
       Lingallery
-    },
-    methods: {
-      handleIdChange(id) {
-      	// This will always be the ID of the currently displayed image
-    	this.currentId = id	
-      }
     }
   }
 </script>
@@ -84,19 +78,11 @@ Create a component `Example.vue` and add this:
 
 ### Usage with Nuxt.js
 
-Since Lingallery uses features that are available only in the browser make sure to start rendering the component in a hook that is not running on the server like `mounted ()` or to use `webpack-node-externals` and whitelist Lingallery like so:
+Since Lingallery uses features that are available only in the browser make sure to start rendering the component in a hook that is not running on the server like `mounted ()` or to add Lingallery as a plugin with disabled SSR:
 
 ```javascript
-build: {
-  extend (config, { isDev, isClient, isServer }) {
-    if (isServer) {
-      config.externals = [
-        nodeExternals({
-          whitelist: [/\.(?!(?:js|json)$).{1,5}$/i, /^lingallery/]
-        })
-      ]
-    }
-  }
+plugins: {
+  { src: '~/plugins/lingallery', ssr: false }
 }
 ```
 
