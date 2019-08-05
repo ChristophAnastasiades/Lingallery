@@ -109,12 +109,51 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 
 I am planning on creating several additional features. Since I try to keep the basic plugin as small as possible those addons will not be part of Lingallery by default. To enable an addon you explicitly have to pass an object prop "addons" to Lingallery containing all the addons you would like to activate as well as their options.
 
-Here is a list of currently existing addons.
+Here is a list of currently existing addons:
 
-| Prop        | Description | Example |
-|-------------|-------------|---------|
-| `enableLargeView` | This addon adds a simple "View image in large" feature when clicking on the large image. | <lingallery :addons="{ enableLargeView: true }" ... /> |
+#### Large View
+By passing the prop `enableLargeView` you can enable the large view feature. When clicking on the large main image a modal will open up with the image displaying in full size.
 
-## Why?
+**Example**
+```
+<lingallery :addons="{ enableLargeView: true }" ... />
+``` 
 
-I needed a gallery that simply has a large image (without fancy lightbox features etc.) and some thumbnails below. Since I didn't find any I decided to build my own.
+If you want to show a different image (maybe a larger version) in the modal you can add the property `largeViewSrc` into the `items` prop.
+
+**Example**
+```
+<lingallery :addons="{ enableLargeView: true }" :items="[{ src: 'image1.jpg', largeViewSrc: 'image1_large.jpg' }]" ... />
+```
+
+### Picture Element
+Sometimes you might want to display different images depending on the user's screen size. Responsive images in Lingallery are possible with this addon. You can specify both a `type` and a `media` attribute.
+
+**Example**
+```
+<lingallery
+  :addons="{ enablePictureElement: true }"
+  :items="[
+    {
+      src: 'image1.jpg',
+      pictureElement: [
+        {
+          srcset: 'image1_large.jpg',
+          media: '(min-width: 600px)',
+          type: 'image/jpg'
+        },
+        {
+          srcset: 'image1_large.webp',
+          media: '(min-width: 600px)',
+          type: 'image/webp'
+        },
+        {
+          srcset: 'image1_huge.jpg',
+          media: '(min-width: 1200px)'
+        }
+      ]
+    }
+  ]"
+  ...
+/>
+```

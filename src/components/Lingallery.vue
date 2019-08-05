@@ -3,9 +3,13 @@
     <div :style="lingalleryStyle" class="lingallery">
       <large-view
         id="largeView"
-        :class="{ show: showLargeView }"
-        :current-image="currentImage"
-        v-if="addons.enableLargeView"
+        :accent-color="accentColor"
+        :current-image="
+          items[currentIndex].hasOwnProperty('largeViewSrc')
+            ? items[currentIndex].largeViewSrc
+            : currentImage
+        "
+        v-if="addons.enableLargeView && showLargeView"
         @close-large-view="showLargeView = false"
       />
       <figure
@@ -479,12 +483,6 @@ export default {
         z-index: 9999;
         position: relative;
         left: -50%;
-      }
-    }
-    #largeView {
-      display: none;
-      &.show {
-        display: block;
       }
     }
   }

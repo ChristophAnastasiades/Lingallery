@@ -1,6 +1,17 @@
 <template>
   <div>
-    <div id="largeViewContainer" :class="{ fadeIn: runAnimation, fadeOut: !runAnimation }">
+    <div class="lingallery_spinner">
+      <half-circle-spinner
+        :animation-duration="1000"
+        :color="accentColor"
+        :size="60"
+        v-if="isLoading"
+      />
+    </div>
+    <div
+      id="largeViewContainer"
+      :class="{ fadeIn: runAnimation, fadeOut: !runAnimation }"
+    >
       <img :src="currentImage" />
       <a @click="handleCloseClick"></a>
     </div>
@@ -8,8 +19,13 @@
 </template>
 
 <script>
+import { HalfCircleSpinner } from 'epic-spinners'
+
 export default {
   name: 'LargeView',
+  components: {
+    HalfCircleSpinner
+  },
   props: {
     currentImage: {
       type: String,
@@ -22,14 +38,27 @@ export default {
           maxWidth: 750
         }
       }
+    },
+    accentColor: {
+      type: String,
+      default: ''
     }
   },
   data() {
     return {
-      runAnimation: true
+      runAnimation: true,
+      isLoading: true
     }
   },
   methods: {
+    async getImage(src) {
+      return new Promise((resolve, reject) => {
+        let img = new Image()
+        img.onload = () => resolve(img)
+        img.onerror = reject
+        img.src = src
+      }).catch()
+    },
     handleCloseClick() {
       this.runAnimation = false
       window.setTimeout(() => {
@@ -37,6 +66,11 @@ export default {
         this.$emit('close-large-view')
       }, 500)
     }
+  },
+  mounted() {
+    this.getImage(this.currentImage).then(() => {
+      this.isLoading = false
+    })
   }
 }
 </script>
@@ -64,8 +98,8 @@ export default {
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 90vw;
+    max-height: 90vh;
     transform: translate(-50%, -50%);
     box-shadow: rgba(0, 0, 0, 0.2) 0 1px 8px 0, rgba(0, 0, 0, 0.14) 0 3px 4px 0,
       rgba(0, 0, 0, 0.12) 0 3px 3px -2px;

@@ -11,10 +11,17 @@
           alt: 'Some alt text',
           thumbnail: 'https://picsum.photos/64/64/?image=0',
           caption: 'Some Caption',
+          largeViewSrc: 'https://picsum.photos/2000/2000/?image=0',
           pictureElement: [
             {
               srcset: 'https://picsum.photos/1200/1200/?image=0',
-              media: '(min-width: 600px)'
+              media: '(min-width: 600px)',
+              type: 'image/jpg'
+            },
+            {
+              srcset: 'https://picsum.photos/1200/1201/?image=0',
+              media: '(min-width: 600px)',
+              type: 'image/webp'
             },
             {
               srcset: 'https://picsum.photos/2000/2000/?image=0',
@@ -23,13 +30,14 @@
           ]
         },
         {
-          src: 'https://picsum.photos/600/400/?image=10',
+          src: 'https://picsum.photos/2000/1200/?image=10',
           alt: 'Another alt text',
           thumbnail: 'https://picsum.photos/64/64/?image=10',
           caption: 'Another Caption'
         },
         {
           src: 'https://picsum.photos/400/600/?image=20',
+          largeViewSrc: 'https://picsum.photos/2000/2000/?image=20',
           thumbnail: 'https://picsum.photos/64/64/?image=20'
         },
         {
