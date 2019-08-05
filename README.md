@@ -107,14 +107,14 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 
 ## Lingallery addons
 
-I am planning on creating several additional features. Since I try to keep the plugin as small as possible those addons will not be part of Lingallery by default. To enable an addon you explicitly have to pass a prop to Lingallery.
+I am planning on creating several additional features. Since I try to keep the basic plugin as small as possible those addons will not be part of Lingallery by default. To enable an addon you explicitly have to pass an object prop "addons" to Lingallery containing all the addons you would like to activate as well as their options.
 
 Here is a list of currently existing addons.
 
 | Prop        | Description | Example |
 |-------------|-------------|---------|
-| `enableLargeView` | This addon adds a simple "View image in large" feature when clicking on the large image. | <lingallery :enable-large-view="true" ... /> |
+| `enableLargeView` | This addon adds a simple "View image in large" feature when clicking on the large image. | <lingallery :addons="{ enableLargeView: true }" ... /> |
 
 ## Why?
 
-I needed a gallery that simply has a large image (without fancy lightbox features etc.) and some thumbnails below. Since I didn't find any I decided to build my own. I am pretty new to Vue.js so please be gentle if you find any errors.
+I needed a gallery that simply has a large image (without fancy lightbox features etc.) and some thumbnails below. Since I didn't find any I decided to build my own.

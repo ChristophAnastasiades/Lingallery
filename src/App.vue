@@ -2,7 +2,7 @@
   <div id="app">
     <lingallery
       :mobileHeight="200"
-      :enable-large-view="true"
+      :addons="{ enableLargeView: true, enablePictureElement: true }"
       :width="600"
       :height="400"
       :items="[
@@ -10,7 +10,17 @@
           src: 'https://picsum.photos/600/600/?image=0',
           alt: 'Some alt text',
           thumbnail: 'https://picsum.photos/64/64/?image=0',
-          caption: 'Some Caption'
+          caption: 'Some Caption',
+          pictureElement: [
+            {
+              srcset: 'https://picsum.photos/1200/1200/?image=0',
+              media: '(min-width: 600px)'
+            },
+            {
+              srcset: 'https://picsum.photos/2000/2000/?image=0',
+              media: '(min-width: 1200px)'
+            }
+          ]
         },
         {
           src: 'https://picsum.photos/600/400/?image=10',

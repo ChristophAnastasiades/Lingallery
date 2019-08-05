@@ -1,80 +1,101 @@
 <template>
-  <div :style="lingalleryStyle" class="lingallery">
-    <large-view
-      id="largeView"
-      :class="{ show: showLargeView }"
-      :current-image="currentImage"
-      v-if="enableLargeView"
-      @close-large-view="showLargeView = false"
-    />
-    <figure
-      :style="figureStyle"
-      itemprop="associatedMedia"
-      itemscope
-      itemtype="http://schema.org/ImageObject"
-    >
-      <div class="lingallery_spinner">
-        <half-circle-spinner
-          :animation-duration="1000"
-          :color="accentColor"
-          :size="60"
-          v-if="isLoading"
-        />
-      </div>
-      <img
-        :alt="currentAlt"
-        :class="{ loading: isLoading }"
-        :src="currentImage"
-        :style="mainImageStyle"
-        @click="handleLargeImageClick"
-        ref="mainImage"
-        v-swipe="handleImageSwipe"
+  <div class="lingalleryContainer">
+    <div :style="lingalleryStyle" class="lingallery">
+      <large-view
+        id="largeView"
+        :class="{ show: showLargeView }"
+        :current-image="currentImage"
+        v-if="addons.enableLargeView"
+        @close-large-view="showLargeView = false"
       />
-      <div
-        :style="captionStyle"
-        class="lingallery_caption"
-        v-if="currentCaption"
+      <figure
+        :style="figureStyle"
+        itemprop="associatedMedia"
+        itemscope
+        itemtype="http://schema.org/ImageObject"
       >
-        {{ currentCaption }}
-      </div>
-      <a
-        @click="showPreviousImage"
-        class="control left"
-        v-if="!leftControlClass"
-        ><span style="position:relative;top:calc(50% - 12px)">&#9664;</span></a
-      >
-      <a @click="showNextImage" class="control right" v-if="!rightControlClass"
-        ><span style="position:relative;top:calc(50% - 12px)">&#9654;</span></a
-      >
-      <a
-        :class="'control left ' + leftControlClass"
-        @click="showPreviousImage"
-        v-if="leftControlClass"
-      ></a>
-      <a
-        :class="'control right ' + rightControlClass"
-        @click="showNextImage"
-        v-if="rightControlClass"
-      ></a>
-    </figure>
-    <div class="lingallery_thumbnails" v-if="showThumbnails">
-      <div class="lingallery_thumbnails_content">
-        <div
-          :key="index"
-          class="lingallery_thumbnails_content_elem"
-          v-for="(item, index) in items"
-        >
-          <img
-            :alt="item.hasOwnProperty('alt') ? item.alt : ''"
-            :src="item.thumbnail"
-            :style="thumbnailStyle(index)"
-            height="64"
-            v-on="
-              currentIndex !== index
-                ? { click: () => handleImageClick(index) }
-                : {}
-            "
+        <div class="lingallery_spinner">
+          <half-circle-spinner
+            :animation-duration="1000"
+            :color="accentColor"
+            :size="60"
+            v-if="isLoading"
           />
+        </div>
+        <picture-element
+          v-if="addons.enablePictureElement"
+          :alt="currentAlt"
+          :is-loading="isLoading"
+          :style="mainImageStyle"
+          :items="items"
+          :current-index="currentIndex"
+          ref="mainImage"
+          @handle-large-image-click="handleLargeImageClick"
+          @handle-image-swipe="handleImageSwipe"
+        />
+        <img
+          v-else
+          :alt="currentAlt"
+          :class="{ loading: isLoading }"
+          :src="currentImage"
+          :style="mainImageStyle"
+          @click="handleLargeImageClick"
+          ref="mainImage"
+          v-swipe="handleImageSwipe"
+        />
+        <div
+          :style="captionStyle"
+          class="lingallery_caption"
+          v-if="currentCaption"
+        >
+          {{ currentCaption }}
+        </div>
+        <a
+          @click="showPreviousImage"
+          class="control left"
+          v-if="!leftControlClass"
+          ><span style="position:relative;top:calc(50% - 12px)"
+            >&#9664;</span
+          ></a
+        >
+        <a
+          @click="showNextImage"
+          class="control right"
+          v-if="!rightControlClass"
+          ><span style="position:relative;top:calc(50% - 12px)"
+            >&#9654;</span
+          ></a
+        >
+        <a
+          :class="'control left ' + leftControlClass"
+          @click="showPreviousImage"
+          v-if="leftControlClass"
+        ></a>
+        <a
+          :class="'control right ' + rightControlClass"
+          @click="showNextImage"
+          v-if="rightControlClass"
+        ></a>
+      </figure>
+      <div class="lingallery_thumbnails" v-if="showThumbnails">
+        <div class="lingallery_thumbnails_content">
+          <div
+            :key="index"
+            class="lingallery_thumbnails_content_elem"
+            v-for="(item, index) in items"
+          >
+            <img
+              :alt="item.hasOwnProperty('alt') ? item.alt : ''"
+              :src="item.thumbnail"
+              :style="thumbnailStyle(index)"
+              height="64"
+              v-on="
+                currentIndex !== index
+                  ? { click: () => handleImageClick(index) }
+                  : {}
+              "
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -175,9 +196,11 @@ export default {
       type: Boolean,
       default: false
     },
-    enableLargeView: {
-      type: Boolean,
-      default: false
+    addons: {
+      type: Object,
+      default() {
+        return {}
+      }
     }
   },
   components: {
@@ -193,6 +216,17 @@ export default {
       return 'color:' + this.textColor
     },
     mainImageStyle() {
+      let isLoading =
+        this.$refs.mainImage &&
+        !this.enablePictureElement &&
+        this.$refs.mainImage.hasOwnProperty('classList') &&
+        this.$refs.mainImage.classList.contains('loading')
+          ? true
+          : this.$refs.mainImage && this.enablePictureElement
+          ? this.$refs.mainImage.$el.children[
+              this.$refs.mainImage.$el.children.length - 1
+            ].classList.contains('loading')
+          : false
       let mainImageStyle = ''
 
       if (
@@ -202,10 +236,7 @@ export default {
         mainImageStyle +=
           'width:100%;height:' + this.mobileHeight + 'px;object-fit:cover;'
       }
-      if (
-        this.$refs.mainImage &&
-        this.$refs.mainImage.classList.contains('loading')
-      ) {
+      if (isLoading) {
         if (this.mobileHeight !== 0) {
           mainImageStyle += 'min-height:' + this.mobileHeight + 'px;'
         } else mainImageStyle += 'min-height:200px;'
@@ -251,9 +282,9 @@ export default {
       this.sendId()
     },
     handleImageSwipe(event) {
-      if (event.direction === 2) {
+      if (event.direction === 4) {
         this.showPreviousImage()
-      } else if (event.direction === 4) {
+      } else if (event.direction === 2) {
         this.showNextImage()
       }
     },
@@ -262,7 +293,7 @@ export default {
       this.pickImage(index)
     },
     handleLargeImageClick() {
-      if (this.enableLargeView) {
+      if (this.addons.enableLargeView) {
         this.showLargeView = true
       } else if (!this.disableImageClick) {
         this.showNextImage()
@@ -351,108 +382,110 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lingallery {
-  max-width: 100%;
-  figure {
-    position: relative;
-    margin: 0;
-    padding: 0;
+.lingalleryContainer {
+  /deep/ .lingallery {
     max-width: 100%;
-    text-align: center;
-    cursor: pointer;
-    img {
+    figure {
+      position: relative;
+      margin: 0;
+      padding: 0;
       max-width: 100%;
-      max-height: 100%;
-      transition: opacity 0.25s ease;
-      &.loading {
-        opacity: 0.25;
-        min-height: 200px;
-        transition: opcacity 0.25s ease;
-      }
-    }
-    a.control {
-      position: absolute;
-      top: 0;
-      padding-left: 5px;
-      padding-right: 15px;
-      height: 100%;
-      display: none;
-      font-size: 20px;
-      color: #fff;
+      text-align: center;
       cursor: pointer;
-      text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-      &:before {
-        position: relative;
-        top: calc(50% - 12px);
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        transition: opacity 0.25s ease;
+        &.loading {
+          opacity: 0.25;
+          min-height: 200px;
+          transition: opcacity 0.25s ease;
+        }
       }
-      &.left {
-        left: 0;
-      }
-      &.right {
-        right: 0;
-      }
-    }
-    &:hover {
       a.control {
-        display: block;
+        position: absolute;
+        top: 0;
+        padding-left: 5px;
+        padding-right: 15px;
+        height: 100%;
+        display: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+        &:before {
+          position: relative;
+          top: calc(50% - 12px);
+        }
+        &.left {
+          left: 0;
+        }
+        &.right {
+          right: 0;
+        }
       }
-    }
-  }
-  .lingallery_caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 4px 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
-    font-size: 1em;
-  }
-  .lingallery_thumbnails {
-    overflow-x: auto;
-    width: 100%;
-    scroll-snap-type: x mandatory;
-    &::-webkit-scrollbar {
-      height: 6px;
-    }
-    &::-webkit-scrollbar-track {
-      border-radius: 10px;
-      background: #eaeaea;
-    }
-    &::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      background: #b4b4b4;
-    }
-    &::-webkit-scrollbar-thumb:window-inactive {
-      background: rgba(100, 100, 100, 0.4);
-    }
-    .lingallery_thumbnails_content {
-      margin-top: 2px;
-      width: auto;
-      white-space: nowrap;
-      .lingallery_thumbnails_content_elem {
-        display: inline-block;
-        scroll-snap-align: start;
-        img {
-          border: 2px solid #fff;
-          cursor: pointer;
+      &:hover {
+        a.control {
+          display: block;
         }
       }
     }
-  }
-  .lingallery_spinner {
-    position: absolute;
-    left: 50%;
-    top: calc(50% - 32px);
-    > div {
-      z-index: 9999;
-      position: relative;
-      left: -50%;
+    .lingallery_caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 4px 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.75);
+      font-size: 1em;
     }
-  }
-  #largeView {
-    display: none;
-    &.show {
-      display: block;
+    .lingallery_thumbnails {
+      overflow-x: auto;
+      width: 100%;
+      scroll-snap-type: x mandatory;
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #eaeaea;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #b4b4b4;
+      }
+      &::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(100, 100, 100, 0.4);
+      }
+      .lingallery_thumbnails_content {
+        margin-top: 2px;
+        width: auto;
+        white-space: nowrap;
+        .lingallery_thumbnails_content_elem {
+          display: inline-block;
+          scroll-snap-align: start;
+          img {
+            border: 2px solid #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .lingallery_spinner {
+      position: absolute;
+      left: 50%;
+      top: calc(50% - 32px);
+      > div {
+        z-index: 9999;
+        position: relative;
+        left: -50%;
+      }
+    }
+    #largeView {
+      display: none;
+      &.show {
+        display: block;
+      }
     }
   }
 }
