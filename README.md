@@ -1,8 +1,7 @@
 # Lingallery
-Lingallery is a simple image gallery component for Vue.js. It displays a large image with thumbnails below as you can see in the demo. More features are coming soon.
+Lingallery is a simple image gallery component for Vue.js. It displays a large image with thumbnails below as you can see in the demo. You can define several settings to adapt the gallery to your needs.
 
-Please note: Since Lingallery is at a very early development state you should probably not yet use it in a production project.
-
+Since Lingallery is at an **early development state** be carefull when using it in a production project.
 ## Demo
 <img src="https://lingulo.com/snippet-content/lingallery/lingallery_screenshot.png">
 <br><br>
@@ -105,6 +104,16 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 | `leftControlClass` | If defined adds a class to the left control button to enable custom icons | '' | String |
 | `rightControlClass` | If defined adds a class to the right control button to enable custom icons | '' | String |
 | `disableImageClick` | If set to true a click on the large image will not show the next image | false | Boolean |
+
+## Lingallery addons
+
+I am planning on creating several additional features. Since I try to keep the plugin as small as possible those addons will not be part of Lingallery by default. To enable an addon you explicitly have to pass a prop to Lingallery.
+
+Here is a list of currently existing addons.
+
+| Prop        | Description | Example |
+|-------------|-------------|---------|
+| `enableLargeView` | This addon adds a simple "View image in large" feature when clicking on the large image. | <lingallery :enable-large-view="true" ... /> |
 
 ## Why?
 
