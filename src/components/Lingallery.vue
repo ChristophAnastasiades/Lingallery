@@ -284,9 +284,11 @@ export default {
     updateCurrentImageSizes() {
       let img = this.$refs.mainImage.hasOwnProperty('src')
         ? this.$refs.mainImage
-        : this.$refs.mainImage.$el.getElementsByTagName('img')[0]
-      this.currentImageWidth = img.naturalWidth
-      this.currentImageHeight = img.naturalHeight
+        : this.$refs.mainImage.$el ? this.$refs.mainImage.$el.getElementsByTagName('img')[0] : null
+      if (img) {
+        this.currentImageWidth = img.naturalWidth
+        this.currentImageHeight = img.naturalHeight
+      }
     },
     handleImageSwipe(event) {
       if (event.direction === 4) {
