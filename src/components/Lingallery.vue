@@ -108,10 +108,7 @@
 import Vue from 'vue'
 import { HalfCircleSpinner } from 'epic-spinners'
 import Hammer from 'hammerjs'
-import AsyncComputed from 'vue-async-computed'
 import Addons from './addons/index.js'
-
-Vue.use(AsyncComputed)
 
 export default {
   name: 'Lingallery',

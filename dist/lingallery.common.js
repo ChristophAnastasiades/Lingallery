@@ -428,6 +428,21 @@ var update = add("026f192b", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
+/***/ "2939":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("6f31");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("7334fd31", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ "29aa":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -469,17 +484,6 @@ exports.push([module.i, ".atom-spinner[data-v-fb9a33c4],.atom-spinner *[data-v-f
 
 /***/ }),
 
-/***/ "3408":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_4c4e2ff0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("66e6");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_4c4e2ff0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_4c4e2ff0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_4c4e2ff0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "34c9":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -517,6 +521,21 @@ var update = add("061f0fe4", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
+/***/ "3b3a":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("2350")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".lingalleryContainer[data-v-7b46a908] .lingallery{max-width:100%}.lingalleryContainer[data-v-7b46a908] .lingallery figure{position:relative;margin:0;padding:0;max-width:100%;text-align:center;cursor:pointer}.lingalleryContainer[data-v-7b46a908] .lingallery figure img{max-width:100%;max-height:100%;-webkit-transition:opacity .25s ease;transition:opacity .25s ease}.lingalleryContainer[data-v-7b46a908] .lingallery figure img.loading{opacity:.25;min-height:200px;-webkit-transition:opcacity .25s ease;transition:opcacity .25s ease}.lingalleryContainer[data-v-7b46a908] .lingallery figure a.control{position:absolute;top:0;padding-left:5px;padding-right:15px;height:100%;display:none;font-size:20px;color:#fff;cursor:pointer;text-shadow:0 0 20px rgba(0,0,0,.75)}.lingalleryContainer[data-v-7b46a908] .lingallery figure a.control:before{position:relative;top:calc(50% - 12px)}.lingalleryContainer[data-v-7b46a908] .lingallery figure a.control.left{left:0}.lingalleryContainer[data-v-7b46a908] .lingallery figure a.control.right{right:0}.lingalleryContainer[data-v-7b46a908] .lingallery figure:hover a.control{display:block}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_caption{position:absolute;bottom:0;left:0;padding:4px 0;width:100%;background-color:hsla(0,0%,100%,.75);font-size:1em}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails{overflow-x:auto;width:100%;-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails::-webkit-scrollbar{height:6px}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails::-webkit-scrollbar-track{border-radius:10px;background:#eaeaea}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails::-webkit-scrollbar-thumb{border-radius:10px;background:#b4b4b4}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails::-webkit-scrollbar-thumb:window-inactive{background:hsla(0,0%,39.2%,.4)}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content{margin-top:2px;width:auto;white-space:nowrap}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content .lingallery_thumbnails_content_elem{display:inline-block;scroll-snap-align:start}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content .lingallery_thumbnails_content_elem img{border:2px solid #fff;cursor:pointer}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_spinner{position:absolute;left:50%;top:calc(50% - 32px)}.lingalleryContainer[data-v-7b46a908] .lingallery .lingallery_spinner>div{z-index:9999;position:relative;left:-50%}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "3d8a":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -525,6 +544,17 @@ var update = add("061f0fe4", content, true, {"sourceMap":false,"shadowMode":fals
 /* harmony import */ var _vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_RadarSpinner_vue_vue_type_style_index_0_id_5710a196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_RadarSpinner_vue_vue_type_style_index_0_id_5710a196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
  /* unused harmony default export */ var _unused_webpack_default_export = (_vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_RadarSpinner_vue_vue_type_style_index_0_id_5710a196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "3e2c":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_2b6cd24c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("2939");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_2b6cd24c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_2b6cd24c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_2b6cd24c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -539,2315 +569,6 @@ exports = module.exports = __webpack_require__("2350")(false);
 exports.push([module.i, ".semipolar-spinner[data-v-9544fc1a],.semipolar-spinner *[data-v-9544fc1a]{-webkit-box-sizing:border-box;box-sizing:border-box}.semipolar-spinner[data-v-9544fc1a]{height:65px;width:65px;position:relative}.semipolar-spinner .ring[data-v-9544fc1a]{border-radius:50%;position:absolute;border:3.25px solid transparent;border-top-color:#ff1d5e;border-left-color:#ff1d5e;-webkit-animation:semipolar-spinner-animation-data-v-9544fc1a 2s infinite;animation:semipolar-spinner-animation-data-v-9544fc1a 2s infinite}.semipolar-spinner .ring[data-v-9544fc1a]:first-child{height:65px;width:65px;top:0;left:0;-webkit-animation-delay:.8s;animation-delay:.8s;z-index:5}.semipolar-spinner .ring[data-v-9544fc1a]:nth-child(2){height:52px;width:52px;top:6.5px;left:6.5px;-webkit-animation-delay:.6s;animation-delay:.6s;z-index:4}.semipolar-spinner .ring[data-v-9544fc1a]:nth-child(3){height:39px;width:39px;top:13px;left:13px;-webkit-animation-delay:.4s;animation-delay:.4s;z-index:3}.semipolar-spinner .ring[data-v-9544fc1a]:nth-child(4){height:26px;width:26px;top:19.5px;left:19.5px;-webkit-animation-delay:.2s;animation-delay:.2s;z-index:2}.semipolar-spinner .ring[data-v-9544fc1a]:nth-child(5){height:13px;width:13px;top:26px;left:26px;-webkit-animation-delay:0ms;animation-delay:0ms;z-index:1}@-webkit-keyframes semipolar-spinner-animation-data-v-9544fc1a{50%{-webkit-transform:rotate(1turn) scale(.7);transform:rotate(1turn) scale(.7)}}@keyframes semipolar-spinner-animation-data-v-9544fc1a{50%{-webkit-transform:rotate(1turn) scale(.7);transform:rotate(1turn) scale(.7)}}", ""]);
 
 // exports
-
-
-/***/ }),
-
-/***/ "4583":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=template&id=5a033c16&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hollow-dots-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.dotsStyles),function(ds,index){return _c('div',{key:index,staticClass:"dot",style:(ds)})}),0)}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=template&id=5a033c16&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var HollowDotsSpinnervue_type_script_lang_js_ = ({
-  name: 'HollowDotsSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1000
-    },
-    dotSize: {
-      type: Number,
-      default: 15
-    },
-    dotsNum: {
-      type: Number,
-      default: 3
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    horizontalMargin () {
-      return this.dotSize / 2
-    },
-
-    spinnerStyle () {
-      return {
-        height: `${this.dotSize}px`,
-        width: `${(this.dotSize + this.horizontalMargin * 2) * this.dotsNum}px`
-      }
-    },
-
-    dotStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`,
-        width: `${this.dotSize}px`,
-        height: `${this.dotSize}px`,
-        margin: `0 ${this.horizontalMargin}px`,
-        borderWidth: `${this.dotSize / 5}px`,
-        borderColor: this.color
-      }
-    },
-
-    dotsStyles () {
-      const dotsStyles = []
-      const delayModifier = 0.3
-      const basicDelay = 1000
-
-      for (let i = 1; i <= this.dotsNum; i++) {
-        const style = Object.assign({
-          animationDelay: `${basicDelay * i * delayModifier}ms`
-        }, this.dotStyle)
-
-        dotsStyles.push(style)
-      }
-
-      return dotsStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_HollowDotsSpinnervue_type_script_lang_js_ = (HollowDotsSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=style&index=0&id=5a033c16&scoped=true&lang=css&
-var HollowDotsSpinnervue_type_style_index_0_id_5a033c16_scoped_true_lang_css_ = __webpack_require__("16b3");
-
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__("2877");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  lib_HollowDotsSpinnervue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  "5a033c16",
-  null
-  
-)
-
-/* harmony default export */ var HollowDotsSpinner = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=template&id=c76fc818&scoped=true&
-var PixelSpinnervue_type_template_id_c76fc818_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pixel-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"pixel-spinner-inner",style:(_vm.spinnerInnerStyle)})])}
-var PixelSpinnervue_type_template_id_c76fc818_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=template&id=c76fc818&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/services/utils.js
-/* harmony default export */ var utils = ({
-  /**
-   * Add reyframes to body as style block
-   * @param name string
-   * @param frames string
-   */
-  appendKeyframes: function (name, frames) {
-    const sheet = document.createElement('style')
-    if (!sheet) {
-      return
-    }
-    sheet.setAttribute('id', name)
-    sheet.innerHTML = `@keyframes ${name} {${frames}}`
-    document.body.appendChild(sheet)
-  },
-  /**
-   * Remove reyframes from body
-   * @param name string
-   */
-  removeKeyframes: function (name) {
-    const sheet = document.getElementById(name)
-    if (!sheet) {
-      return
-    }
-    const sheetParent = sheet.parentNode
-    sheetParent.removeChild(sheet)
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var PixelSpinnervue_type_script_lang_js_ = ({
-  name: 'PixelSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1500
-    },
-    size: {
-      type: Number,
-      default: 70
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      animationName: `pixel-spinner-animation-${Date.now()}`
-    }
-  },
-
-  computed: {
-    pixelSize () {
-      return this.size / 7
-    },
-
-    spinnerStyle () {
-      return {
-        width: `${this.size}px`,
-        height: `${this.size}px`
-      }
-    },
-
-    spinnerInnerStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`,
-        animationName: this.animationName,
-        width: `${this.pixelSize}px`,
-        height: `${this.pixelSize}px`,
-        backgroundColor: this.color,
-        color: this.color,
-        boxShadow: `
-                      ${this.pixelSize * 1.5}px ${this.pixelSize * 1.5}px 0 0,
-                      ${this.pixelSize * -1.5}px ${this.pixelSize * -1.5}px 0 0,
-                      ${this.pixelSize * 1.5}px ${this.pixelSize * -1.5}px 0 0,
-                      ${this.pixelSize * -1.5}px ${this.pixelSize * 1.5}px 0 0,
-                      0 ${this.pixelSize * 1.5}px 0 0,
-                      ${this.pixelSize * 1.5}px 0 0 0,
-                      ${this.pixelSize * -1.5}px 0 0 0,
-                      0 ${this.pixelSize * -1.5}px 0 0
-                    `
-      }
-    }
-  },
-
-  watch: {
-    size: {
-      handler: 'updateAnimation',
-      immediate: true
-    }
-  },
-
-  mounted () {
-    this.updateAnimation()
-  },
-
-  beforeDestroy () {
-    utils.removeKeyframes(this.animationName)
-  },
-
-  methods: {
-    updateAnimation () {
-      utils.removeKeyframes(this.animationName)
-      utils.appendKeyframes(this.animationName, this.generateKeyframes())
-    },
-
-    generateKeyframes () {
-      return `
-      50% {
-        box-shadow:  ${this.pixelSize * 2}px ${this.pixelSize * 2}px 0 0,
-                     ${this.pixelSize * -2}px ${this.pixelSize * -2}px 0 0,
-                     ${this.pixelSize * 2}px ${this.pixelSize * -2}px 0 0,
-                     ${this.pixelSize * -2}px ${this.pixelSize * 2}px 0 0,
-                     0 ${this.pixelSize}px 0 0,
-                     ${this.pixelSize}px 0 0 0,
-                     ${this.pixelSize * -1}px 0 0 0,
-                     0 ${this.pixelSize * -1}px 0 0;
-      }
-
-
-      75% {
-        box-shadow:  ${this.pixelSize * 2}px ${this.pixelSize * 2}px 0 0,
-                     ${this.pixelSize * -2}px ${this.pixelSize * -2}px 0 0,
-                     ${this.pixelSize * 2}px ${this.pixelSize * -2}px 0 0,
-                     ${this.pixelSize * -2}px ${this.pixelSize * 2}px 0 0,
-                     0 ${this.pixelSize}px 0 0,
-                     ${this.pixelSize}px 0 0 0,
-                     ${this.pixelSize * -1}px 0 0 0,
-                     0 ${this.pixelSize * -1}px 0 0;
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }`
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_PixelSpinnervue_type_script_lang_js_ = (PixelSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=style&index=0&id=c76fc818&scoped=true&lang=css&
-var PixelSpinnervue_type_style_index_0_id_c76fc818_scoped_true_lang_css_ = __webpack_require__("6bc6");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var PixelSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_PixelSpinnervue_type_script_lang_js_,
-  PixelSpinnervue_type_template_id_c76fc818_scoped_true_render,
-  PixelSpinnervue_type_template_id_c76fc818_scoped_true_staticRenderFns,
-  false,
-  null,
-  "c76fc818",
-  null
-  
-)
-
-/* harmony default export */ var PixelSpinner = (PixelSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=template&id=f15101b8&scoped=true&
-var FlowerSpinnervue_type_template_id_f15101b8_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flower-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"dots-container",style:(_vm.dotsContainerStyle)},[_c('div',{staticClass:"big-dot",style:(_vm.biggerDotStyle)},[_c('div',{staticClass:"small-dot",style:(_vm.smallerDotStyle)})])])])}
-var FlowerSpinnervue_type_template_id_f15101b8_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=template&id=f15101b8&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var FlowerSpinnervue_type_script_lang_js_ = ({
-  name: 'FlowerSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 2500
-    },
-    size: {
-      type: Number,
-      default: 70
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      smallDotName: `flower-spinner-small-dot-${Date.now()}`,
-      bigDotName: `flower-spinner-big-dot-${Date.now()}`
-    }
-  },
-
-  computed: {
-    dotSize () {
-      return this.size / 7
-    },
-
-    spinnerStyle () {
-      return {
-        width: `${this.size}px`,
-        height: `${this.size}px`
-      }
-    },
-
-    dotsContainerStyle () {
-      return {
-        width: `${this.dotSize}px`,
-        height: `${this.dotSize}px`
-      }
-    },
-
-    smallerDotStyle () {
-      return {
-        background: this.color,
-        animationDuration: `${this.animationDuration}ms`,
-        animationName: this.smallDotName
-      }
-    },
-
-    biggerDotStyle () {
-      return {
-        background: this.color,
-        animationDuration: `${this.animationDuration}ms`,
-        animationName: this.bigDotName
-      }
-    }
-  },
-
-  watch: {
-    size: {
-      handler: 'updateAnimation',
-      immediate: true
-    },
-    color: {
-      handler: 'updateAnimation',
-      immediate: true
-    }
-  },
-
-  beforeDestroy () {
-    utils.removeKeyframes(this.smallDotName)
-    utils.removeKeyframes(this.bigDotName)
-  },
-
-  methods: {
-    updateAnimation () {
-      utils.removeKeyframes(this.smallDotName)
-      utils.appendKeyframes(this.smallDotName, this.generateSmallDotKeyframes())
-      utils.removeKeyframes(this.bigDotName)
-      utils.appendKeyframes(this.bigDotName, this.generateBigDotKeyframes())
-    },
-
-    generateSmallDotKeyframes () {
-      return `0%, 100% {
-                  box-shadow: 0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color};
-                }
-                25%, 75% {
-                  box-shadow: ${this.dotSize * 1.4}px 0 0 ${this.color},
-                              -${this.dotSize * 1.4}px 0 0 ${this.color},
-                              0 ${this.dotSize * 1.4}px 0 ${this.color},
-                              0 -${this.dotSize * 1.4}px 0 ${this.color},
-                              ${this.dotSize}px -${this.dotSize}px 0 ${this.color},
-                              ${this.dotSize}px ${this.dotSize}px 0 ${this.color},
-                              -${this.dotSize}px -${this.dotSize}px 0 ${this.color},
-                              -${this.dotSize}px ${this.dotSize}px 0 ${this.color};
-
-                }
-                100% {
-                  box-shadow: 0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color};
-                }`
-    },
-
-    generateBigDotKeyframes () {
-      return `0%, 100% {
-                  box-shadow: 0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color};
-                }
-                50% {
-                  transform: rotate(180deg);
-                }
-                25%, 75% {
-                  box-shadow: ${this.dotSize * 2.6}px 0 0 ${this.color},
-                              -${this.dotSize * 2.6}px 0 0 ${this.color},
-                              0 ${this.dotSize * 2.6}px 0 ${this.color},
-                              0 -${this.dotSize * 2.6}px 0 ${this.color},
-                              ${this.dotSize * 1.9}px -${this.dotSize * 1.9}px 0 ${this.color},
-                              ${this.dotSize * 1.9}px ${this.dotSize * 1.9}px 0 ${this.color},
-                              -${this.dotSize * 1.9}px -${this.dotSize * 1.9}px 0 ${this.color},
-                              -${this.dotSize * 1.9}px ${this.dotSize * 1.9}px 0 ${this.color};
-
-                }
-                100% {
-                  transform: rotate(360deg);
-                  box-shadow: 0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color},
-                              0 0 0 ${this.color};
-                }`
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_FlowerSpinnervue_type_script_lang_js_ = (FlowerSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=style&index=0&id=f15101b8&scoped=true&lang=css&
-var FlowerSpinnervue_type_style_index_0_id_f15101b8_scoped_true_lang_css_ = __webpack_require__("389c");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var FlowerSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_FlowerSpinnervue_type_script_lang_js_,
-  FlowerSpinnervue_type_template_id_f15101b8_scoped_true_render,
-  FlowerSpinnervue_type_template_id_f15101b8_scoped_true_staticRenderFns,
-  false,
-  null,
-  "f15101b8",
-  null
-  
-)
-
-/* harmony default export */ var FlowerSpinner = (FlowerSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=template&id=91c71956&scoped=true&
-var IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"intersecting-circles-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinnerBlock",style:(_vm.spinnerBlockStyle)},_vm._l((_vm.circleStyles),function(cs,index){return _c('span',{key:index,staticClass:"circle",style:(cs)})}),0)])}
-var IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=template&id=91c71956&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var IntersectingCirclesSpinnervue_type_script_lang_js_ = ({
-  name: 'IntersectingCirclesSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1200
-    },
-    size: {
-      type: Number,
-      default: 70
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    circleSize () {
-      return this.size / 2
-    },
-
-    spinnerStyle () {
-      return {
-        width: `${this.size}px`,
-        height: `${this.size}px`
-      }
-    },
-
-    spinnerBlockStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`,
-        width: `${this.circleSize}px`,
-        height: `${this.circleSize}px`
-      }
-    },
-
-    circleStyle () {
-      return {
-        borderColor: this.color
-      }
-    },
-
-    circleStyles () {
-      const circlesPositions = [
-        {top: 0, left: 0},
-        {left: `${this.circleSize * -0.36}px`, top: `${this.circleSize * 0.2}px`},
-        {left: `${this.circleSize * -0.36}px`, top: `${this.circleSize * -0.2}px`},
-        {left: 0, top: `${this.circleSize * -0.36}px`},
-        {left: `${this.circleSize * 0.36}px`, top: `${this.circleSize * -0.2}px`},
-        {left: `${this.circleSize * 0.36}px`, top: `${this.circleSize * 0.2}px`},
-        {left: 0, top: `${this.circleSize * 0.36}px`}
-      ]
-
-      return circlesPositions.map((cp) => Object.assign(cp, this.circleStyle))
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_IntersectingCirclesSpinnervue_type_script_lang_js_ = (IntersectingCirclesSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=style&index=0&id=91c71956&scoped=true&lang=css&
-var IntersectingCirclesSpinnervue_type_style_index_0_id_91c71956_scoped_true_lang_css_ = __webpack_require__("4e68");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var IntersectingCirclesSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_IntersectingCirclesSpinnervue_type_script_lang_js_,
-  IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_render,
-  IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_staticRenderFns,
-  false,
-  null,
-  "91c71956",
-  null
-  
-)
-
-/* harmony default export */ var IntersectingCirclesSpinner = (IntersectingCirclesSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=template&id=34a3fdef&scoped=true&
-var OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"orbit-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"orbit one",style:(_vm.orbitStyle)}),_c('div',{staticClass:"orbit two",style:(_vm.orbitStyle)}),_c('div',{staticClass:"orbit three",style:(_vm.orbitStyle)})])}
-var OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=template&id=34a3fdef&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var OrbitSpinnervue_type_script_lang_js_ = ({
-  name: 'OrbitSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1000
-    },
-    size: {
-      type: Number,
-      default: 50
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    orbitStyle () {
-      return {
-        borderColor: this.color,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_OrbitSpinnervue_type_script_lang_js_ = (OrbitSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=style&index=0&id=34a3fdef&scoped=true&lang=css&
-var OrbitSpinnervue_type_style_index_0_id_34a3fdef_scoped_true_lang_css_ = __webpack_require__("1c92");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var OrbitSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_OrbitSpinnervue_type_script_lang_js_,
-  OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_render,
-  OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_staticRenderFns,
-  false,
-  null,
-  "34a3fdef",
-  null
-  
-)
-
-/* harmony default export */ var OrbitSpinner = (OrbitSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=template&id=077ae5a6&scoped=true&
-var FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fingerprint-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"spinner-ring",style:(rs)})}),0)}
-var FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=template&id=077ae5a6&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var FingerprintSpinnervue_type_script_lang_js_ = ({
-  name: 'FingerprintSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1500
-    },
-    size: {
-      type: Number,
-      default: 60
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      ringsNum: 9,
-      containerPadding: 2
-    }
-  },
-
-  computed: {
-    outerRingSize () {
-      return this.size - this.containerPadding * 2
-    },
-
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        padding: `${this.containerPadding}px`
-      }
-    },
-
-    ringStyle () {
-      return {
-        borderTopColor: this.color,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    ringsStyles () {
-      const ringsStyles = []
-      const ringBase = this.outerRingSize / (this.ringsNum)
-      const ringInc = ringBase
-
-      for (let i = 1; i <= this.ringsNum; i++) {
-        let style = Object.assign({
-          animationDelay: `${i * 50}ms`,
-          height: `${ringBase + (i - 1) * ringInc}px`,
-          width: `${ringBase + (i - 1) * ringInc}px`
-        }, this.ringStyle)
-        ringsStyles.push(style)
-      }
-
-      return ringsStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_FingerprintSpinnervue_type_script_lang_js_ = (FingerprintSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=style&index=0&id=077ae5a6&scoped=true&lang=css&
-var FingerprintSpinnervue_type_style_index_0_id_077ae5a6_scoped_true_lang_css_ = __webpack_require__("10e6");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var FingerprintSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_FingerprintSpinnervue_type_script_lang_js_,
-  FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_render,
-  FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_staticRenderFns,
-  false,
-  null,
-  "077ae5a6",
-  null
-  
-)
-
-/* harmony default export */ var FingerprintSpinner = (FingerprintSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=template&id=19bbdf0e&scoped=true&
-var TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"trinity-rings-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle1",style:(_vm.ring1Style)}),_c('div',{staticClass:"circle circle2",style:(_vm.ring2Style)}),_c('div',{staticClass:"circle circle3",style:(_vm.ring3Style)})])}
-var TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=template&id=19bbdf0e&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var TrinityRingsSpinnervue_type_script_lang_js_ = ({
-  name: 'TrinityRingsSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1500
-    },
-    size: {
-      type: Number,
-      default: 60
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      containerPadding: 3
-    }
-  },
-
-  computed: {
-    outerRingSize () {
-      return this.size - this.containerPadding * 2
-    },
-
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        padding: `${this.containerPadding}px`
-      }
-    },
-
-    ring1Style () {
-      return {
-        height: `${this.outerRingSize}px`,
-        width: `${this.outerRingSize}px`,
-        borderColor: this.color,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    ring2Style () {
-      return {
-        height: `${this.outerRingSize * 0.65}px`,
-        width: `${this.outerRingSize * 0.65}px`,
-        borderColor: this.color,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    ring3Style () {
-      return {
-        height: `${this.outerRingSize * 0.1}px`,
-        width: `${this.outerRingSize * 0.1}px`,
-        borderColor: this.color,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_TrinityRingsSpinnervue_type_script_lang_js_ = (TrinityRingsSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=style&index=0&id=19bbdf0e&scoped=true&lang=css&
-var TrinityRingsSpinnervue_type_style_index_0_id_19bbdf0e_scoped_true_lang_css_ = __webpack_require__("fed0");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var TrinityRingsSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_TrinityRingsSpinnervue_type_script_lang_js_,
-  TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_render,
-  TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_staticRenderFns,
-  false,
-  null,
-  "19bbdf0e",
-  null
-  
-)
-
-/* harmony default export */ var TrinityRingsSpinner = (TrinityRingsSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=template&id=3f451d6f&scoped=true&
-var FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fulfilling-square-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner",style:(_vm.spinnerInnerStyle)})])}
-var FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=template&id=3f451d6f&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var FulfillingSquareSpinnervue_type_script_lang_js_ = ({
-  name: 'FulfillingSquareSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 4000
-    },
-    size: {
-      type: Number,
-      default: 50
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        borderColor: this.color
-      }
-    },
-
-    spinnerInnerStyle () {
-      return {
-        backgroundColor: this.color
-      }
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_FulfillingSquareSpinnervue_type_script_lang_js_ = (FulfillingSquareSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=style&index=0&id=3f451d6f&scoped=true&lang=css&
-var FulfillingSquareSpinnervue_type_style_index_0_id_3f451d6f_scoped_true_lang_css_ = __webpack_require__("89df");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var FulfillingSquareSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_FulfillingSquareSpinnervue_type_script_lang_js_,
-  FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_render,
-  FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_staticRenderFns,
-  false,
-  null,
-  "3f451d6f",
-  null
-  
-)
-
-/* harmony default export */ var FulfillingSquareSpinner = (FulfillingSquareSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=template&id=7a6e17e5&scoped=true&
-var CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"circles-to-rhombuses-spinner",style:(_vm.spinnertStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)})}),0)}
-var CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=template&id=7a6e17e5&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var CirclesToRhombusesSpinnervue_type_script_lang_js_ = ({
-  name: 'CirclesToRhombusesSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1200
-    },
-    circleSize: {
-      type: Number,
-      default: 15
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    },
-    circlesNum: {
-      type: Number,
-      default: 3
-    }
-  },
-
-  computed: {
-    circleMarginLeft () {
-      return this.circleSize * 1.125
-    },
-
-    spinnertStyle () {
-      return {
-        height: `${this.circleSize}px`,
-        width: `${(this.circleSize + this.circleMarginLeft) * this.circlesNum}px`
-      }
-    },
-
-    circleStyle () {
-      return {
-        borderColor: this.color,
-        animationDuration: `${this.animationDuration}ms`,
-        height: `${this.circleSize}px`,
-        width: `${this.circleSize}px`,
-        marginLeft: `${this.circleMarginLeft}px`
-      }
-    },
-
-    circlesStyles () {
-      const circlesStyles = []
-      const delay = 150
-
-      for (let i = 1; i <= this.circlesNum; i++) {
-        const style = Object.assign({
-          animationDelay: `${i * delay}ms`
-        }, this.circleStyle)
-
-        if (i === 1) {
-          style.marginLeft = 0
-        }
-
-        circlesStyles.push(style)
-      }
-
-      return circlesStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_CirclesToRhombusesSpinnervue_type_script_lang_js_ = (CirclesToRhombusesSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=style&index=0&id=7a6e17e5&scoped=true&lang=css&
-var CirclesToRhombusesSpinnervue_type_style_index_0_id_7a6e17e5_scoped_true_lang_css_ = __webpack_require__("0fa6");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var CirclesToRhombusesSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_CirclesToRhombusesSpinnervue_type_script_lang_js_,
-  CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_render,
-  CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_staticRenderFns,
-  false,
-  null,
-  "7a6e17e5",
-  null
-  
-)
-
-/* harmony default export */ var CirclesToRhombusesSpinner = (CirclesToRhombusesSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=template&id=9544fc1a&scoped=true&
-var SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"semipolar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"ring",style:(rs)})}),0)}
-var SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=template&id=9544fc1a&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var SemipolarSpinnervue_type_script_lang_js_ = ({
-  name: 'SemipolarSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 2000
-    },
-    size: {
-      type: Number,
-      default: 65
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      ringsNum: 5
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-    ringStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`,
-        borderTopColor: this.color,
-        borderLeftColor: this.color
-      }
-    },
-    ringsStyles () {
-      const ringsStyles = []
-      const delayModifier = 0.1
-      const ringWidth = this.size * 0.05
-      const positionIncrement = ringWidth * 2
-      const sizeDecrement = this.size * 0.2
-
-      for (let i = 0; i < this.ringsNum; i++) {
-        const computedSize = `${this.size - sizeDecrement * i}px`
-        const computedPosition = `${positionIncrement * i}px`
-        const style = Object.assign({
-          animationDelay: `${this.animationDuration * delayModifier * (this.ringsNum - i - 1)}ms`,
-          height: computedSize,
-          width: computedSize,
-          left: computedPosition,
-          top: computedPosition,
-          borderWidth: `${ringWidth}px`
-        }, this.ringStyle)
-        ringsStyles.push(style)
-      }
-
-      return ringsStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_SemipolarSpinnervue_type_script_lang_js_ = (SemipolarSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=style&index=0&id=9544fc1a&scoped=true&lang=css&
-var SemipolarSpinnervue_type_style_index_0_id_9544fc1a_scoped_true_lang_css_ = __webpack_require__("30df");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var SemipolarSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_SemipolarSpinnervue_type_script_lang_js_,
-  SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_render,
-  SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_staticRenderFns,
-  false,
-  null,
-  "9544fc1a",
-  null
-  
-)
-
-/* harmony default export */ var SemipolarSpinner = (SemipolarSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=template&id=8fa7a3fc&scoped=true&
-var BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"breeding-rhombus-spinner",style:(_vm.spinnerStyle)},[_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{key:index,staticClass:"rhombus",class:("child-" + (index + 1)),style:(rs)})}),_c('div',{staticClass:"rhombus big",style:(_vm.bigRhombusStyle)})],2)}
-var BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=template&id=8fa7a3fc&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var BreedingRhombusSpinnervue_type_script_lang_js_ = ({
-  name: 'BreedingRhombusSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 2000
-    },
-    size: {
-      type: Number,
-      default: 150
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      animationBaseName: 'breeding-rhombus-spinner-animation-child',
-      rhombusesNum: 8
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    rhombusStyle () {
-      return {
-        height: `${this.size / 7.5}px`,
-        width: `${this.size / 7.5}px`,
-        animationDuration: `${this.animationDuration}ms`,
-        top: `${this.size / 2.3077}px`,
-        left: `${this.size / 2.3077}px`,
-        backgroundColor: this.color
-      }
-    },
-
-    rhombusesStyles () {
-      const rhombusesStyles = []
-      const delayModifier = this.animationDuration * 0.05
-
-      for (let i = 1; i <= this.rhombusesNum; i++) {
-        rhombusesStyles.push(Object.assign({
-          animationDelay: `${delayModifier * (i + 1)}ms`
-        }, this.rhombusStyle))
-      }
-
-      return rhombusesStyles
-    },
-
-    bigRhombusStyle () {
-      return {
-        height: `${this.size / 3}px`,
-        width: `${this.size / 3}px`,
-        animationDuration: `${this.animationDuration}`,
-        top: `${this.size / 3}px`,
-        left: `${this.size / 3}px`,
-        backgroundColor: this.color
-      }
-    }
-  }
-
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_BreedingRhombusSpinnervue_type_script_lang_js_ = (BreedingRhombusSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=style&index=0&id=8fa7a3fc&scoped=true&lang=css&
-var BreedingRhombusSpinnervue_type_style_index_0_id_8fa7a3fc_scoped_true_lang_css_ = __webpack_require__("e2f6");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var BreedingRhombusSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_BreedingRhombusSpinnervue_type_script_lang_js_,
-  BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_render,
-  BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_staticRenderFns,
-  false,
-  null,
-  "8fa7a3fc",
-  null
-  
-)
-
-/* harmony default export */ var BreedingRhombusSpinner = (BreedingRhombusSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=template&id=8265a670&scoped=true&
-var SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"swapping-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:("square-" + (index + 1)),style:(ss)})}),0)}
-var SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=template&id=8265a670&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var SwappingSquaresSpinnervue_type_script_lang_js_ = ({
-  name: 'SwappingSquaresSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1000
-    },
-    size: {
-      type: Number,
-      default: 65
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      animationBaseName: 'swapping-squares-animation-child',
-      squaresNum: 4
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    squareStyle () {
-      return {
-        height: `${this.size * 0.25 / 1.3}px`,
-        width: `${this.size * 0.25 / 1.3}px`,
-        animationDuration: `${this.animationDuration}ms`,
-        borderWidth: `${this.size * 0.04 / 1.3}px`,
-        borderColor: this.color
-      }
-    },
-
-    squaresStyles () {
-      const squaresStyles = []
-      const delay = this.animationDuration * 0.5
-
-      for (let i = 1; i <= this.squaresNum; i++) {
-        squaresStyles.push(Object.assign({
-          animationDelay: `${i % 2 === 0 ? delay : 0}ms`
-        }, this.squareStyle))
-      }
-
-      return squaresStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_SwappingSquaresSpinnervue_type_script_lang_js_ = (SwappingSquaresSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=style&index=0&id=8265a670&scoped=true&lang=css&
-var SwappingSquaresSpinnervue_type_style_index_0_id_8265a670_scoped_true_lang_css_ = __webpack_require__("ca9a");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var SwappingSquaresSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_SwappingSquaresSpinnervue_type_script_lang_js_,
-  SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_render,
-  SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_staticRenderFns,
-  false,
-  null,
-  "8265a670",
-  null
-  
-)
-
-/* harmony default export */ var SwappingSquaresSpinner = (SwappingSquaresSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=template&id=dbacb9de&scoped=true&
-var ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"scaling-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:("square-" + (index + 1)),style:(ss)})}),0)}
-var ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=template&id=dbacb9de&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var ScalingSquaresSpinnervue_type_script_lang_js_ = ({
-  name: 'ScalingSquaresSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1250
-    },
-    size: {
-      type: Number,
-      default: 65
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      squaresNum: 4
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    squareStyle () {
-      return {
-        height: `${this.size * 0.25 / 1.3}px`,
-        width: `${this.size * 0.25 / 1.3}px`,
-        animationDuration: `${this.animationDuration}ms`,
-        borderWidth: `${this.size * 0.04 / 1.3}px`,
-        borderColor: this.color
-      }
-    },
-
-    squaresStyles () {
-      const squaresStyles = []
-
-      for (let i = 1; i <= this.squaresNum; i++) {
-        squaresStyles.push(Object.assign({
-        }, this.squareStyle))
-      }
-
-      return squaresStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_ScalingSquaresSpinnervue_type_script_lang_js_ = (ScalingSquaresSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=style&index=0&id=dbacb9de&scoped=true&lang=css&
-var ScalingSquaresSpinnervue_type_style_index_0_id_dbacb9de_scoped_true_lang_css_ = __webpack_require__("09fe");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var ScalingSquaresSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_ScalingSquaresSpinnervue_type_script_lang_js_,
-  ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_render,
-  ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_staticRenderFns,
-  false,
-  null,
-  "dbacb9de",
-  null
-  
-)
-
-/* harmony default export */ var ScalingSquaresSpinner = (ScalingSquaresSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=template&id=e5e606d8&scoped=true&
-var FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fulfilling-bouncing-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle",style:(_vm.circleStyle)}),_c('div',{staticClass:"orbit",style:(_vm.orbitStyle)})])}
-var FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=template&id=e5e606d8&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var FulfillingBouncingCircleSpinnervue_type_script_lang_js_ = ({
-  name: 'FulfillingBouncingCircleSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 4000
-    },
-    size: {
-      type: Number,
-      default: 60
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    orbitStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        borderColor: this.color,
-        borderWidth: `${this.size * 0.03}px`,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    circleStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        borderColor: this.color,
-        color: this.color,
-        borderWidth: `${this.size * 0.1}px`,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_FulfillingBouncingCircleSpinnervue_type_script_lang_js_ = (FulfillingBouncingCircleSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=style&index=0&id=e5e606d8&scoped=true&lang=css&
-var FulfillingBouncingCircleSpinnervue_type_style_index_0_id_e5e606d8_scoped_true_lang_css_ = __webpack_require__("5d60");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var FulfillingBouncingCircleSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_FulfillingBouncingCircleSpinnervue_type_script_lang_js_,
-  FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_render,
-  FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_staticRenderFns,
-  false,
-  null,
-  "e5e606d8",
-  null
-  
-)
-
-/* harmony default export */ var FulfillingBouncingCircleSpinner = (FulfillingBouncingCircleSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=template&id=5710a196&scoped=true&
-var RadarSpinnervue_type_template_id_5710a196_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"radar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)},[_c('div',{staticClass:"circle-inner-container",style:(_vm.circleInnerContainerStyle)},[_c('div',{staticClass:"circle-inner",style:(_vm.circleInnerStyle)})])])}),0)}
-var RadarSpinnervue_type_template_id_5710a196_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=template&id=5710a196&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var RadarSpinnervue_type_script_lang_js_ = ({
-  name: 'RadarSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 2000
-    },
-    size: {
-      type: Number,
-      default: 110
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      circlesNum: 4
-    }
-  },
-
-  computed: {
-    borderWidth () {
-      return this.size * 5 / 110
-    },
-
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    circleStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    circleInnerContainerStyle () {
-      return {
-        borderWidth: `${this.borderWidth}px`
-      }
-    },
-
-    circleInnerStyle () {
-      return {
-        borderLeftColor: this.color,
-        borderRightColor: this.color,
-        borderWidth: `${this.borderWidth}px`
-      }
-    },
-
-    circlesStyles () {
-      const circlesStyles = []
-      const delay = this.animationDuration * 0.15
-
-      for (let i = 0; i < this.circlesNum; i++) {
-        circlesStyles.push(Object.assign({
-          padding: `${this.borderWidth * 2 * i}px`,
-          animationDelay: `${i === this.circlesNum - 1 ? 0 : delay}ms`
-        }, this.circleStyle))
-      }
-
-      return circlesStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_RadarSpinnervue_type_script_lang_js_ = (RadarSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=style&index=0&id=5710a196&scoped=true&lang=css&
-var RadarSpinnervue_type_style_index_0_id_5710a196_scoped_true_lang_css_ = __webpack_require__("3d8a");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var RadarSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_RadarSpinnervue_type_script_lang_js_,
-  RadarSpinnervue_type_template_id_5710a196_scoped_true_render,
-  RadarSpinnervue_type_template_id_5710a196_scoped_true_staticRenderFns,
-  false,
-  null,
-  "5710a196",
-  null
-  
-)
-
-/* harmony default export */ var RadarSpinner = (RadarSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=template&id=eb840b8e&scoped=true&
-var SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"self-building-square-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:{'clear': index && index % 3 === 0},style:(ss)})}),0)}
-var SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=template&id=eb840b8e&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var SelfBuildingSquareSpinnervue_type_script_lang_js_ = ({
-  name: 'SelfBuildingSquareSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 6000
-    },
-    size: {
-      type: Number,
-      default: 40
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      squaresNum: 9
-    }
-  },
-
-  computed: {
-    squareSize () {
-      return this.size / 4
-    },
-
-    initialTopPosition () {
-      return -this.squareSize * 2 / 3
-    },
-
-    spinnerStyle () {
-      return {
-        top: `${-this.initialTopPosition}px`,
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    squareStyle () {
-      return {
-        height: `${this.squareSize}px`,
-        width: `${this.squareSize}px`,
-        top: `${this.initialTopPosition}px`,
-        marginRight: `${this.squareSize / 3}px`,
-        marginTop: `${this.squareSize / 3}px`,
-        animationDuration: `${this.animationDuration}ms`,
-        background: this.color
-      }
-    },
-
-    squaresStyles () {
-      const squaresStyles = []
-      const delaysMultipliers = [6, 7, 8, 3, 4, 5, 0, 1, 2]
-      const delayModifier = this.animationDuration * 0.05
-
-      for (let i = 0; i < this.squaresNum; i++) {
-        squaresStyles.push(Object.assign({
-          animationDelay: `${delayModifier * delaysMultipliers[i]}ms`
-        }, this.squareStyle))
-      }
-
-      return squaresStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_SelfBuildingSquareSpinnervue_type_script_lang_js_ = (SelfBuildingSquareSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=style&index=0&id=eb840b8e&scoped=true&lang=css&
-var SelfBuildingSquareSpinnervue_type_style_index_0_id_eb840b8e_scoped_true_lang_css_ = __webpack_require__("e2ed");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var SelfBuildingSquareSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_SelfBuildingSquareSpinnervue_type_script_lang_js_,
-  SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_render,
-  SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_staticRenderFns,
-  false,
-  null,
-  "eb840b8e",
-  null
-  
-)
-
-/* harmony default export */ var SelfBuildingSquareSpinner = (SelfBuildingSquareSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=template&id=1ae1dc20&scoped=true&
-var SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"spring-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spring-spinner-part top",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})]),_c('div',{staticClass:"spring-spinner-part bottom",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})])])}
-var SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=template&id=1ae1dc20&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var SpringSpinnervue_type_script_lang_js_ = ({
-  name: 'SpringSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 3000
-    },
-    size: {
-      type: Number,
-      default: 70
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      animationName: `spring-spinner-animation-${Date.now()}`
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    spinnerPartStyle () {
-      return {
-        height: `${this.size / 2}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    rotatorStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`,
-        borderRightColor: this.color,
-        borderTopColor: this.color,
-        borderWidth: `${this.size / 7}px`,
-        animationDuration: `${this.animationDuration}ms`,
-        animationName: this.animationName
-      }
-    }
-  },
-
-  watch: {
-    size: {
-      handler: 'updateAnimation',
-      immediate: true
-    },
-    color: {
-      handler: 'updateAnimation',
-      immediate: true
-    }
-  },
-
-  mounted () {
-    this.updateAnimation()
-  },
-
-  beforeDestroy () {
-    utils.removeKeyframes(this.animationName)
-  },
-
-  methods: {
-    updateAnimation () {
-      utils.removeKeyframes(this.animationName)
-      utils.appendKeyframes(this.animationName, this.generateKeyframes())
-    },
-
-    generateKeyframes () {
-      return `
-        0% {
-          border-width: ${this.size / 7}px;
-        }
-        25% {
-          border-width: ${this.size / 23.33}px;
-        }
-        50% {
-          transform: rotate(115deg);
-          border-width: ${this.size / 7}px;
-        }
-        75% {
-          border-width: ${this.size / 23.33}px;
-         }
-        100% {
-         border-width: ${this.size / 7}px;
-        }`
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_SpringSpinnervue_type_script_lang_js_ = (SpringSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=style&index=0&id=1ae1dc20&scoped=true&lang=css&
-var SpringSpinnervue_type_style_index_0_id_1ae1dc20_scoped_true_lang_css_ = __webpack_require__("34c9");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var SpringSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_SpringSpinnervue_type_script_lang_js_,
-  SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_render,
-  SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_staticRenderFns,
-  false,
-  null,
-  "1ae1dc20",
-  null
-  
-)
-
-/* harmony default export */ var SpringSpinner = (SpringSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=template&id=49d9ad28&scoped=true&
-var LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"looping-rhombuses-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{staticClass:"rhombus",style:(rs),attrs:{"ikey":index}})}),0)}
-var LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=template&id=49d9ad28&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var LoopingRhombusesSpinnervue_type_script_lang_js_ = ({
-  name: 'LoopingRhombusesSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 2500
-    },
-    rhombusSize: {
-      type: Number,
-      default: 15
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  data () {
-    return {
-      rhombusesNum: 3
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.rhombusSize}px`,
-        width: `${this.rhombusSize * 4}px`
-      }
-    },
-
-    rhombusStyle () {
-      return {
-        height: `${this.rhombusSize}px`,
-        width: `${this.rhombusSize}px`,
-        backgroundColor: this.color,
-        animationDuration: `${this.animationDuration}ms`,
-        left: `${this.rhombusSize * 4}px`
-      }
-    },
-
-    rhombusesStyles () {
-      const rhombusesStyles = []
-      const delay = -this.animationDuration / 1.5
-
-      for (let i = 1; i <= this.rhombusesNum; i++) {
-        const style = Object.assign({
-          animationDelay: `${i * delay}ms`
-        }, this.rhombusStyle)
-
-        rhombusesStyles.push(style)
-      }
-
-      return rhombusesStyles
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_LoopingRhombusesSpinnervue_type_script_lang_js_ = (LoopingRhombusesSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=style&index=0&id=49d9ad28&scoped=true&lang=css&
-var LoopingRhombusesSpinnervue_type_style_index_0_id_49d9ad28_scoped_true_lang_css_ = __webpack_require__("1016");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var LoopingRhombusesSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_LoopingRhombusesSpinnervue_type_script_lang_js_,
-  LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_render,
-  LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_staticRenderFns,
-  false,
-  null,
-  "49d9ad28",
-  null
-  
-)
-
-/* harmony default export */ var LoopingRhombusesSpinner = (LoopingRhombusesSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=template&id=669f3b60&scoped=true&
-var HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"half-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle-1",style:(_vm.circle1Style)}),_c('div',{staticClass:"circle circle-2",style:(_vm.circle2Style)})])}
-var HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=template&id=669f3b60&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var HalfCircleSpinnervue_type_script_lang_js_ = ({
-  name: 'HalfCircleSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1000
-    },
-    size: {
-      type: Number,
-      default: 60
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    circleStyle () {
-      return {
-        borderWidth: `${this.size / 10}px`,
-        animationDuration: `${this.animationDuration}ms`
-      }
-    },
-
-    circle1Style () {
-      return Object.assign({
-        borderTopColor: this.color
-      }, this.circleStyle)
-    },
-
-    circle2Style () {
-      return Object.assign({
-        borderBottomColor: this.color
-      }, this.circleStyle)
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_HalfCircleSpinnervue_type_script_lang_js_ = (HalfCircleSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=style&index=0&id=669f3b60&scoped=true&lang=css&
-var HalfCircleSpinnervue_type_style_index_0_id_669f3b60_scoped_true_lang_css_ = __webpack_require__("66d3");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var HalfCircleSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_HalfCircleSpinnervue_type_script_lang_js_,
-  HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_render,
-  HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_staticRenderFns,
-  false,
-  null,
-  "669f3b60",
-  null
-  
-)
-
-/* harmony default export */ var HalfCircleSpinner = (HalfCircleSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=template&id=fb9a33c4&scoped=true&
-var AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"atom-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner"},[_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-circle",style:(_vm.circleStyle)},[_vm._v("\n      ●\n    ")])])])}
-var AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=template&id=fb9a33c4&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ var AtomSpinnervue_type_script_lang_js_ = ({
-  name: 'AtomSpinner',
-
-  props: {
-    animationDuration: {
-      type: Number,
-      default: 1000
-    },
-    size: {
-      type: Number,
-      default: 60
-    },
-    color: {
-      type: String,
-      default: '#fff'
-    }
-  },
-
-  computed: {
-    spinnerStyle () {
-      return {
-        height: `${this.size}px`,
-        width: `${this.size}px`
-      }
-    },
-
-    circleStyle () {
-      return {
-        color: this.color,
-        fontSize: `${this.size * 0.24}px`
-      }
-    },
-
-    lineStyle () {
-      return {
-        animationDuration: `${this.animationDuration}ms`,
-        borderLeftWidth: `${this.size / 25}px`,
-        borderTopWidth: `${this.size / 25}px`,
-        borderLeftColor: this.color
-      }
-    }
-  }
-});
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=script&lang=js&
- /* harmony default export */ var lib_AtomSpinnervue_type_script_lang_js_ = (AtomSpinnervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=style&index=0&id=fb9a33c4&scoped=true&lang=css&
-var AtomSpinnervue_type_style_index_0_id_fb9a33c4_scoped_true_lang_css_ = __webpack_require__("741b");
-
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue
-
-
-
-
-
-
-/* normalize component */
-
-var AtomSpinner_component = Object(componentNormalizer["a" /* default */])(
-  lib_AtomSpinnervue_type_script_lang_js_,
-  AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_render,
-  AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_staticRenderFns,
-  false,
-  null,
-  "fb9a33c4",
-  null
-  
-)
-
-/* harmony default export */ var AtomSpinner = (AtomSpinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/epic-spinners/src/lib.js
-/* unused concated harmony import HollowDotsSpinner */
-/* unused concated harmony import PixelSpinner */
-/* unused concated harmony import FlowerSpinner */
-/* unused concated harmony import IntersectingCirclesSpinner */
-/* unused concated harmony import OrbitSpinner */
-/* unused concated harmony import FingerprintSpinner */
-/* unused concated harmony import TrinityRingsSpinner */
-/* unused concated harmony import FulfillingSquareSpinner */
-/* unused concated harmony import CirclesToRhombusesSpinner */
-/* unused concated harmony import SemipolarSpinner */
-/* unused concated harmony import BreedingRhombusSpinner */
-/* unused concated harmony import SwappingSquaresSpinner */
-/* unused concated harmony import ScalingSquaresSpinner */
-/* unused concated harmony import FulfillingBouncingCircleSpinner */
-/* unused concated harmony import RadarSpinner */
-/* unused concated harmony import SelfBuildingSquareSpinner */
-/* unused concated harmony import SpringSpinner */
-/* unused concated harmony import LoopingRhombusesSpinner */
-/* concated harmony reexport HalfCircleSpinner */__webpack_require__.d(__webpack_exports__, "a", function() { return HalfCircleSpinner; });
-/* unused concated harmony import AtomSpinner */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /***/ }),
@@ -3147,15 +868,12 @@ exports.push([module.i, ".flower-spinner[data-v-f15101b8],.flower-spinner *[data
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/LargeView.vue?vue&type=template&id=181b6f8c&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"lingallery_spinner"},[(_vm.isLoading)?_c('half-circle-spinner',{attrs:{"animation-duration":1000,"color":_vm.accentColor,"size":60}}):_vm._e()],1),_c('div',{class:{ fadeIn: _vm.runAnimation, fadeOut: !_vm.runAnimation },attrs:{"id":"largeViewContainer"}},[_c('img',{attrs:{"src":_vm.currentImage}}),_c('a',{on:{"click":_vm.handleCloseClick}})])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/LargeView.vue?vue&type=template&id=2b6cd24c&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{class:{ fadeIn: _vm.runAnimation, fadeOut: !_vm.runAnimation },attrs:{"id":"largeViewContainer"}},[(_vm.item.hasOwnProperty('pictureElement'))?_c('picture',[_vm._l((_vm.item.pictureElement),function(source,index){return _c('source',{key:index,attrs:{"srcset":source.srcset,"media":source.media ? source.media : false,"type":source.type ? source.type : false}})}),_c('img',{attrs:{"src":_vm.item.src,"alt":_vm.item.alt}})],2):_c('img',{attrs:{"src":_vm.currentImage}}),_c('a',{on:{"click":_vm.handleCloseClick}})])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/addons/LargeView.vue?vue&type=template&id=181b6f8c&scoped=true&
-
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/lib.js + 101 modules
-var lib = __webpack_require__("4583");
+// CONCATENATED MODULE: ./src/components/addons/LargeView.vue?vue&type=template&id=2b6cd24c&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/LargeView.vue?vue&type=script&lang=js&
 //
@@ -3178,18 +896,17 @@ var lib = __webpack_require__("4583");
 //
 //
 //
-
-
+//
+//
 
 /* harmony default export */ var LargeViewvue_type_script_lang_js_ = ({
   name: 'LargeView',
-  components: {
-    HalfCircleSpinner: lib["a" /* HalfCircleSpinner */]
-  },
   props: {
-    currentImage: {
-      type: String,
-      default: ''
+    item: {
+      type: Object,
+      default() {
+        return {}
+      }
     },
     settings: {
       type: Object,
@@ -3210,15 +927,14 @@ var lib = __webpack_require__("4583");
       isLoading: true
     }
   },
+  computed: {
+    currentImage() {
+      return this.item.hasOwnProperty('largeViewSrc')
+        ? this.item.largeViewSrc
+        : this.item.src
+    }
+  },
   methods: {
-    async getImage(src) {
-      return new Promise((resolve, reject) => {
-        let img = new Image()
-        img.onload = () => resolve(img)
-        img.onerror = reject
-        img.src = src
-      }).catch()
-    },
     handleCloseClick() {
       this.runAnimation = false
       window.setTimeout(() => {
@@ -3226,18 +942,13 @@ var lib = __webpack_require__("4583");
         this.$emit('close-large-view')
       }, 500)
     }
-  },
-  mounted() {
-    this.getImage(this.currentImage).then(() => {
-      this.isLoading = false
-    })
   }
 });
 
 // CONCATENATED MODULE: ./src/components/addons/LargeView.vue?vue&type=script&lang=js&
  /* harmony default export */ var addons_LargeViewvue_type_script_lang_js_ = (LargeViewvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/addons/LargeView.vue?vue&type=style&index=0&id=181b6f8c&lang=scss&scoped=true&
-var LargeViewvue_type_style_index_0_id_181b6f8c_lang_scss_scoped_true_ = __webpack_require__("9c6e");
+// EXTERNAL MODULE: ./src/components/addons/LargeView.vue?vue&type=style&index=0&id=2b6cd24c&lang=scss&scoped=true&
+var LargeViewvue_type_style_index_0_id_2b6cd24c_lang_scss_scoped_true_ = __webpack_require__("3e2c");
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__("2877");
@@ -3257,7 +968,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   null,
-  "181b6f8c",
+  "2b6cd24c",
   null
   
 )
@@ -3333,21 +1044,6 @@ exports.push([module.i, ".fingerprint-spinner[data-v-077ae5a6],.fingerprint-spin
 
 /***/ }),
 
-/***/ "66e6":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("ed06");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("e05c2278", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ "6bc6":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3374,18 +1070,18 @@ exports.push([module.i, ".scaling-squares-spinner[data-v-dbacb9de],.scaling-squa
 
 /***/ }),
 
-/***/ "7139":
+/***/ "6f31":
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+exports = module.exports = __webpack_require__("2350")(false);
+// imports
 
-// load the styles
-var content = __webpack_require__("c42e");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("7be1f1d8", content, true, {"sourceMap":false,"shadowMode":false});
+
+// module
+exports.push([module.i, "#largeViewContainer[data-v-2b6cd24c]{z-index:999;position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:rgba(0,0,0,.75)}#largeViewContainer.fadeIn[data-v-2b6cd24c],#largeViewContainer.fadeOut[data-v-2b6cd24c]{-webkit-animation-name:fadeIn-data-v-2b6cd24c;animation-name:fadeIn-data-v-2b6cd24c;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:.5s;animation-duration:.5s}#largeViewContainer.fadeOut[data-v-2b6cd24c]{-webkit-animation-name:fadeOut-data-v-2b6cd24c;animation-name:fadeOut-data-v-2b6cd24c}#largeViewContainer img[data-v-2b6cd24c]{z-index:1000;position:fixed;top:50%;left:50%;max-width:90vw;max-height:90vh;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-box-shadow:rgba(0,0,0,.2) 0 1px 8px 0,rgba(0,0,0,.14) 0 3px 4px 0,rgba(0,0,0,.12) 0 3px 3px -2px;box-shadow:0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12)}#largeViewContainer img.fadeIn[data-v-2b6cd24c],#largeViewContainer img.fadeOut[data-v-2b6cd24c]{-webkit-animation-name:fadeIn-data-v-2b6cd24c;animation-name:fadeIn-data-v-2b6cd24c;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}#largeViewContainer img.fadeOut[data-v-2b6cd24c]{-webkit-animation-name:fadeOut-data-v-2b6cd24c;animation-name:fadeOut-data-v-2b6cd24c}#largeViewContainer a[data-v-2b6cd24c]{position:fixed;top:10px;right:10px;display:block;width:32px;height:32px;opacity:.5;cursor:pointer}#largeViewContainer a[data-v-2b6cd24c]:focus,#largeViewContainer a[data-v-2b6cd24c]:hover{opacity:1}#largeViewContainer a[data-v-2b6cd24c]:after,#largeViewContainer a[data-v-2b6cd24c]:before{position:absolute;left:15px;content:\" \";height:33px;width:2px;background-color:#fff}#largeViewContainer a[data-v-2b6cd24c]:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}#largeViewContainer a[data-v-2b6cd24c]:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}@-webkit-keyframes fadeIn-data-v-2b6cd24c{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-2b6cd24c{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadeOut-data-v-2b6cd24c{0%{opacity:1}to{opacity:0}}@keyframes fadeOut-data-v-2b6cd24c{0%{opacity:1}to{opacity:0}}", ""]);
+
+// exports
+
 
 /***/ }),
 
@@ -3397,6 +1093,17 @@ var update = add("7be1f1d8", content, true, {"sourceMap":false,"shadowMode":fals
 /* harmony import */ var _vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AtomSpinner_vue_vue_type_style_index_0_id_fb9a33c4_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AtomSpinner_vue_vue_type_style_index_0_id_fb9a33c4_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
  /* unused harmony default export */ var _unused_webpack_default_export = (_vue_style_loader_index_js_ref_6_oneOf_1_0_css_loader_index_js_ref_6_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_oneOf_1_2_postcss_loader_src_index_js_ref_6_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AtomSpinner_vue_vue_type_style_index_0_id_fb9a33c4_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "7691":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_7b46a908_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ada7");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_7b46a908_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_7b46a908_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lingallery_vue_vue_type_style_index_0_id_7b46a908_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -3529,18 +1236,19 @@ exports.push([module.i, ".hollow-dots-spinner[data-v-5a033c16],.hollow-dots-spin
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/PictureElement.vue?vue&type=template&id=06e9fcfe&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('picture',[_vm._l((_vm.items[_vm.currentIndex].pictureElement),function(item,index){return _c('source',{key:index,attrs:{"srcset":item.srcset,"media":item.media ? item.media : false,"type":item.type ? item.type : false}})}),_c('img',{directives:[{name:"swipe",rawName:"v-swipe",value:(_vm.handleImageSwipe),expression:"handleImageSwipe"}],class:{ loading: _vm.isLoading },style:(_vm.mainImageStyle),attrs:{"src":_vm.items[_vm.currentIndex].src,"alt":_vm.items[_vm.currentIndex].alt},on:{"click":_vm.handleLargeImageClick}})],2)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/PictureElement.vue?vue&type=template&id=7c8d33b8&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('picture',[_vm._l((_vm.items[_vm.currentIndex].pictureElement),function(item,index){return _c('source',{key:index,attrs:{"srcset":item.srcset,"media":item.media ? item.media : false,"type":item.type ? item.type : false}})}),_c('img',{directives:[{name:"swipe",rawName:"v-swipe",value:(_vm.handleImageSwipe),expression:"handleImageSwipe"}],class:{ loading: _vm.isLoading },style:(_vm.mainImageStyle),attrs:{"src":_vm.items[_vm.currentIndex].src,"alt":_vm.items[_vm.currentIndex].alt},on:{"click":_vm.handleLargeImageClick,"load":_vm.handleImageLoaded}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/addons/PictureElement.vue?vue&type=template&id=06e9fcfe&scoped=true&
+// CONCATENATED MODULE: ./src/components/addons/PictureElement.vue?vue&type=template&id=7c8d33b8&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/hammerjs/hammer.js
 var hammer = __webpack_require__("c8b5");
 var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/addons/PictureElement.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -3607,6 +1315,9 @@ var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
     },
     handleImageSwipe(event) {
       this.$emit('handle-image-swipe', event)
+    },
+    handleImageLoaded() {
+      this.$emit('handle-image-loaded')
     }
   }
 });
@@ -3630,7 +1341,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   null,
-  "06e9fcfe",
+  "7c8d33b8",
   null
   
 )
@@ -3651,17 +1362,6 @@ exports.push([module.i, ".fulfilling-bouncing-circle-spinner[data-v-e5e606d8],.f
 
 // exports
 
-
-/***/ }),
-
-/***/ "9c6e":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_181b6f8c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("7139");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_181b6f8c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_181b6f8c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LargeView_vue_vue_type_style_index_0_id_181b6f8c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -3692,6 +1392,21 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__("499e").default
 var update = add("614bbf80", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ "ada7":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("3b3a");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("08c54cb5", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -3749,21 +1464,6 @@ exports = module.exports = __webpack_require__("2350")(false);
 
 // module
 exports.push([module.i, ".radar-spinner[data-v-5710a196],.radar-spinner *[data-v-5710a196]{-webkit-box-sizing:border-box;box-sizing:border-box}.radar-spinner[data-v-5710a196]{height:60px;width:60px;position:relative}.radar-spinner .circle[data-v-5710a196]{position:absolute;height:100%;width:100%;top:0;left:0;-webkit-animation:radar-spinner-animation-data-v-5710a196 2s infinite;animation:radar-spinner-animation-data-v-5710a196 2s infinite}.radar-spinner .circle[data-v-5710a196]:first-child{padding:0;-webkit-animation-delay:.3s;animation-delay:.3s}.radar-spinner .circle[data-v-5710a196]:nth-child(2){padding:5.45455px;-webkit-animation-delay:.3s;animation-delay:.3s}.radar-spinner .circle[data-v-5710a196]:nth-child(3){padding:10.90909px;-webkit-animation-delay:.3s;animation-delay:.3s}.radar-spinner .circle[data-v-5710a196]:nth-child(4){padding:16.36364px;-webkit-animation-delay:0ms;animation-delay:0ms}.radar-spinner .circle-inner[data-v-5710a196],.radar-spinner .circle-inner-container[data-v-5710a196]{height:100%;width:100%;border-radius:50%;border:2.72727px solid transparent}.radar-spinner .circle-inner[data-v-5710a196]{border-left-color:#ff1d5e;border-right-color:#ff1d5e}@-webkit-keyframes radar-spinner-animation-data-v-5710a196{50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes radar-spinner-animation-data-v-5710a196{50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "c42e":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("2350")(false);
-// imports
-
-
-// module
-exports.push([module.i, "#largeViewContainer[data-v-181b6f8c]{z-index:999;position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:rgba(0,0,0,.75)}#largeViewContainer.fadeIn[data-v-181b6f8c],#largeViewContainer.fadeOut[data-v-181b6f8c]{-webkit-animation-name:fadeIn-data-v-181b6f8c;animation-name:fadeIn-data-v-181b6f8c;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:.5s;animation-duration:.5s}#largeViewContainer.fadeOut[data-v-181b6f8c]{-webkit-animation-name:fadeOut-data-v-181b6f8c;animation-name:fadeOut-data-v-181b6f8c}#largeViewContainer img[data-v-181b6f8c]{z-index:1000;position:fixed;top:50%;left:50%;max-width:90vw;max-height:90vh;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-box-shadow:rgba(0,0,0,.2) 0 1px 8px 0,rgba(0,0,0,.14) 0 3px 4px 0,rgba(0,0,0,.12) 0 3px 3px -2px;box-shadow:0 1px 8px 0 rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.12)}#largeViewContainer img.fadeIn[data-v-181b6f8c],#largeViewContainer img.fadeOut[data-v-181b6f8c]{-webkit-animation-name:fadeIn-data-v-181b6f8c;animation-name:fadeIn-data-v-181b6f8c;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}#largeViewContainer img.fadeOut[data-v-181b6f8c]{-webkit-animation-name:fadeOut-data-v-181b6f8c;animation-name:fadeOut-data-v-181b6f8c}#largeViewContainer a[data-v-181b6f8c]{position:fixed;top:10px;right:10px;display:block;width:32px;height:32px;opacity:.5;cursor:pointer}#largeViewContainer a[data-v-181b6f8c]:focus,#largeViewContainer a[data-v-181b6f8c]:hover{opacity:1}#largeViewContainer a[data-v-181b6f8c]:after,#largeViewContainer a[data-v-181b6f8c]:before{position:absolute;left:15px;content:\" \";height:33px;width:2px;background-color:#fff}#largeViewContainer a[data-v-181b6f8c]:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}#largeViewContainer a[data-v-181b6f8c]:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}@-webkit-keyframes fadeIn-data-v-181b6f8c{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-181b6f8c{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadeOut-data-v-181b6f8c{0%{opacity:1}to{opacity:0}}@keyframes fadeOut-data-v-181b6f8c{0%{opacity:1}to{opacity:0}}", ""]);
 
 // exports
 
@@ -6525,21 +4225,6 @@ var update = add("79cc411f", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ "ed06":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("2350")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".lingalleryContainer[data-v-4c4e2ff0] .lingallery{max-width:100%}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure{position:relative;margin:0;padding:0;max-width:100%;text-align:center;cursor:pointer}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure img{max-width:100%;max-height:100%;-webkit-transition:opacity .25s ease;transition:opacity .25s ease}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure img.loading{opacity:.25;min-height:200px;-webkit-transition:opcacity .25s ease;transition:opcacity .25s ease}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure a.control{position:absolute;top:0;padding-left:5px;padding-right:15px;height:100%;display:none;font-size:20px;color:#fff;cursor:pointer;text-shadow:0 0 20px rgba(0,0,0,.75)}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure a.control:before{position:relative;top:calc(50% - 12px)}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure a.control.left{left:0}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure a.control.right{right:0}.lingalleryContainer[data-v-4c4e2ff0] .lingallery figure:hover a.control{display:block}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_caption{position:absolute;bottom:0;left:0;padding:4px 0;width:100%;background-color:hsla(0,0%,100%,.75);font-size:1em}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails{overflow-x:auto;width:100%;-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails::-webkit-scrollbar{height:6px}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails::-webkit-scrollbar-track{border-radius:10px;background:#eaeaea}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails::-webkit-scrollbar-thumb{border-radius:10px;background:#b4b4b4}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails::-webkit-scrollbar-thumb:window-inactive{background:hsla(0,0%,39.2%,.4)}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content{margin-top:2px;width:auto;white-space:nowrap}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content .lingallery_thumbnails_content_elem{display:inline-block;scroll-snap-align:start}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_thumbnails .lingallery_thumbnails_content .lingallery_thumbnails_content_elem img{border:2px solid #fff;cursor:pointer}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_spinner{position:absolute;left:50%;top:calc(50% - 32px)}.lingalleryContainer[data-v-4c4e2ff0] .lingallery .lingallery_spinner>div{z-index:9999;position:relative;left:-50%}", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "ed97":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6655,10 +4340,8 @@ if (typeof window !== 'undefined') {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Lingallery.vue?vue&type=template&id=4c4e2ff0&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"lingalleryContainer"},[_c('div',{staticClass:"lingallery",style:(_vm.lingalleryStyle)},[(_vm.addons.enableLargeView && _vm.showLargeView)?_c('large-view',{attrs:{"id":"largeView","accent-color":_vm.accentColor,"current-image":_vm.items[_vm.currentIndex].hasOwnProperty('largeViewSrc')
-          ? _vm.items[_vm.currentIndex].largeViewSrc
-          : _vm.currentImage},on:{"close-large-view":function($event){_vm.showLargeView = false}}}):_vm._e(),_c('figure',{style:(_vm.figureStyle),attrs:{"itemprop":"associatedMedia","itemscope":"","itemtype":"http://schema.org/ImageObject"}},[_c('div',{staticClass:"lingallery_spinner"},[(_vm.isLoading)?_c('half-circle-spinner',{attrs:{"animation-duration":1000,"color":_vm.accentColor,"size":60}}):_vm._e()],1),(_vm.addons.enablePictureElement)?_c('picture-element',{ref:"mainImage",style:(_vm.mainImageStyle),attrs:{"alt":_vm.currentAlt,"is-loading":_vm.isLoading,"items":_vm.items,"current-index":_vm.currentIndex},on:{"handle-large-image-click":_vm.handleLargeImageClick,"handle-image-swipe":_vm.handleImageSwipe}}):_c('img',{directives:[{name:"swipe",rawName:"v-swipe",value:(_vm.handleImageSwipe),expression:"handleImageSwipe"}],ref:"mainImage",class:{ loading: _vm.isLoading },style:(_vm.mainImageStyle),attrs:{"alt":_vm.currentAlt,"src":_vm.currentImage},on:{"click":_vm.handleLargeImageClick}}),(_vm.currentCaption)?_c('div',{staticClass:"lingallery_caption",style:(_vm.captionStyle)},[_vm._v("\n        "+_vm._s(_vm.currentCaption)+"\n      ")]):_vm._e(),(!_vm.leftControlClass)?_c('a',{staticClass:"control left",on:{"click":_vm.showPreviousImage}},[_c('span',{staticStyle:{"position":"relative","top":"calc(50% - 12px)"}},[_vm._v("◀")])]):_vm._e(),(!_vm.rightControlClass)?_c('a',{staticClass:"control right",on:{"click":_vm.showNextImage}},[_c('span',{staticStyle:{"position":"relative","top":"calc(50% - 12px)"}},[_vm._v("▶")])]):_vm._e(),(_vm.leftControlClass)?_c('a',{class:'control left ' + _vm.leftControlClass,on:{"click":_vm.showPreviousImage}}):_vm._e(),(_vm.rightControlClass)?_c('a',{class:'control right ' + _vm.rightControlClass,on:{"click":_vm.showNextImage}}):_vm._e()],1),(_vm.showThumbnails)?_c('div',{staticClass:"lingallery_thumbnails"},[_c('div',{staticClass:"lingallery_thumbnails_content"},_vm._l((_vm.items),function(item,index){return _c('div',{key:index,staticClass:"lingallery_thumbnails_content_elem"},[_c('img',_vm._g({style:(_vm.thumbnailStyle(index)),attrs:{"alt":item.hasOwnProperty('alt') ? item.alt : '',"src":item.thumbnail,"height":"64"}},
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Lingallery.vue?vue&type=template&id=7b46a908&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"lingalleryContainer"},[_c('div',{staticClass:"lingallery",style:(_vm.lingalleryStyle)},[(_vm.addons.enableLargeView && _vm.showLargeView)?_c('large-view',{attrs:{"id":"largeView","accent-color":_vm.accentColor,"item":_vm.items[_vm.currentIndex]},on:{"close-large-view":function($event){_vm.showLargeView = false}}}):_vm._e(),_c('figure',{style:(_vm.figureStyle),attrs:{"itemprop":"associatedMedia","itemscope":"","itemtype":"http://schema.org/ImageObject"}},[_c('div',{staticClass:"lingallery_spinner"},[(_vm.isLoading)?_c('half-circle-spinner',{attrs:{"animation-duration":1000,"color":_vm.accentColor,"size":60}}):_vm._e()],1),(_vm.addons.enablePictureElement)?_c('picture-element',{ref:"mainImage",attrs:{"alt":_vm.currentAlt,"is-loading":_vm.isLoading,"main-image-style":_vm.mainImageStyle,"items":_vm.items,"current-index":_vm.currentIndex},on:{"handle-large-image-click":_vm.handleLargeImageClick,"handle-image-swipe":_vm.handleImageSwipe,"handle-image-loaded":_vm.handleImageLoaded}}):_c('img',{directives:[{name:"swipe",rawName:"v-swipe",value:(_vm.handleImageSwipe),expression:"handleImageSwipe"}],ref:"mainImage",class:{ loading: _vm.isLoading },style:(_vm.mainImageStyle),attrs:{"alt":_vm.currentAlt,"src":_vm.currentImage},on:{"click":_vm.handleLargeImageClick,"load":_vm.handleImageLoaded}}),(_vm.currentCaption)?_c('div',{staticClass:"lingallery_caption",style:(_vm.captionStyle)},[_vm._v("\n        "+_vm._s(_vm.currentCaption)+"\n      ")]):_vm._e(),(!_vm.leftControlClass)?_c('a',{staticClass:"control left",on:{"click":_vm.showPreviousImage}},[_c('span',{staticStyle:{"position":"relative","top":"calc(50% - 12px)"}},[_vm._v("◀")])]):_vm._e(),(!_vm.rightControlClass)?_c('a',{staticClass:"control right",on:{"click":_vm.showNextImage}},[_c('span',{staticStyle:{"position":"relative","top":"calc(50% - 12px)"}},[_vm._v("▶")])]):_vm._e(),(_vm.leftControlClass)?_c('a',{class:'control left ' + _vm.leftControlClass,on:{"click":_vm.showPreviousImage}}):_vm._e(),(_vm.rightControlClass)?_c('a',{class:'control right ' + _vm.rightControlClass,on:{"click":_vm.showNextImage}}):_vm._e()],1),(_vm.showThumbnails)?_c('div',{staticClass:"lingallery_thumbnails"},[_c('div',{staticClass:"lingallery_thumbnails_content"},_vm._l((_vm.items),function(item,index){return _c('div',{key:index,staticClass:"lingallery_thumbnails_content_elem"},[_c('img',_vm._g({style:(_vm.thumbnailStyle(index)),attrs:{"alt":item.hasOwnProperty('alt') ? item.alt : '',"src":item.thumbnail,"height":"64"}},
               _vm.currentIndex !== index
                 ? { click: function () { return _vm.handleImageClick(index); } }
                 : {}
@@ -6666,286 +4349,2292 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Lingallery.vue?vue&type=template&id=4c4e2ff0&scoped=true&
+// CONCATENATED MODULE: ./src/components/Lingallery.vue?vue&type=template&id=7b46a908&scoped=true&
 
-// EXTERNAL MODULE: ./node_modules/epic-spinners/src/lib.js + 101 modules
-var lib = __webpack_require__("4583");
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=template&id=5a033c16&scoped=true&
+var HollowDotsSpinnervue_type_template_id_5a033c16_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hollow-dots-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.dotsStyles),function(ds,index){return _c('div',{key:index,staticClass:"dot",style:(ds)})}),0)}
+var HollowDotsSpinnervue_type_template_id_5a033c16_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=template&id=5a033c16&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var HollowDotsSpinnervue_type_script_lang_js_ = ({
+  name: 'HollowDotsSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1000
+    },
+    dotSize: {
+      type: Number,
+      default: 15
+    },
+    dotsNum: {
+      type: Number,
+      default: 3
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    horizontalMargin () {
+      return this.dotSize / 2
+    },
+
+    spinnerStyle () {
+      return {
+        height: `${this.dotSize}px`,
+        width: `${(this.dotSize + this.horizontalMargin * 2) * this.dotsNum}px`
+      }
+    },
+
+    dotStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`,
+        width: `${this.dotSize}px`,
+        height: `${this.dotSize}px`,
+        margin: `0 ${this.horizontalMargin}px`,
+        borderWidth: `${this.dotSize / 5}px`,
+        borderColor: this.color
+      }
+    },
+
+    dotsStyles () {
+      const dotsStyles = []
+      const delayModifier = 0.3
+      const basicDelay = 1000
+
+      for (let i = 1; i <= this.dotsNum; i++) {
+        const style = Object.assign({
+          animationDelay: `${basicDelay * i * delayModifier}ms`
+        }, this.dotStyle)
+
+        dotsStyles.push(style)
+      }
+
+      return dotsStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_HollowDotsSpinnervue_type_script_lang_js_ = (HollowDotsSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue?vue&type=style&index=0&id=5a033c16&scoped=true&lang=css&
+var HollowDotsSpinnervue_type_style_index_0_id_5a033c16_scoped_true_lang_css_ = __webpack_require__("16b3");
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HollowDotsSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  lib_HollowDotsSpinnervue_type_script_lang_js_,
+  HollowDotsSpinnervue_type_template_id_5a033c16_scoped_true_render,
+  HollowDotsSpinnervue_type_template_id_5a033c16_scoped_true_staticRenderFns,
+  false,
+  null,
+  "5a033c16",
+  null
+  
+)
+
+/* harmony default export */ var HollowDotsSpinner = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=template&id=c76fc818&scoped=true&
+var PixelSpinnervue_type_template_id_c76fc818_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pixel-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"pixel-spinner-inner",style:(_vm.spinnerInnerStyle)})])}
+var PixelSpinnervue_type_template_id_c76fc818_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=template&id=c76fc818&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/services/utils.js
+/* harmony default export */ var utils = ({
+  /**
+   * Add reyframes to body as style block
+   * @param name string
+   * @param frames string
+   */
+  appendKeyframes: function (name, frames) {
+    const sheet = document.createElement('style')
+    if (!sheet) {
+      return
+    }
+    sheet.setAttribute('id', name)
+    sheet.innerHTML = `@keyframes ${name} {${frames}}`
+    document.body.appendChild(sheet)
+  },
+  /**
+   * Remove reyframes from body
+   * @param name string
+   */
+  removeKeyframes: function (name) {
+    const sheet = document.getElementById(name)
+    if (!sheet) {
+      return
+    }
+    const sheetParent = sheet.parentNode
+    sheetParent.removeChild(sheet)
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var PixelSpinnervue_type_script_lang_js_ = ({
+  name: 'PixelSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1500
+    },
+    size: {
+      type: Number,
+      default: 70
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      animationName: `pixel-spinner-animation-${Date.now()}`
+    }
+  },
+
+  computed: {
+    pixelSize () {
+      return this.size / 7
+    },
+
+    spinnerStyle () {
+      return {
+        width: `${this.size}px`,
+        height: `${this.size}px`
+      }
+    },
+
+    spinnerInnerStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`,
+        animationName: this.animationName,
+        width: `${this.pixelSize}px`,
+        height: `${this.pixelSize}px`,
+        backgroundColor: this.color,
+        color: this.color,
+        boxShadow: `
+                      ${this.pixelSize * 1.5}px ${this.pixelSize * 1.5}px 0 0,
+                      ${this.pixelSize * -1.5}px ${this.pixelSize * -1.5}px 0 0,
+                      ${this.pixelSize * 1.5}px ${this.pixelSize * -1.5}px 0 0,
+                      ${this.pixelSize * -1.5}px ${this.pixelSize * 1.5}px 0 0,
+                      0 ${this.pixelSize * 1.5}px 0 0,
+                      ${this.pixelSize * 1.5}px 0 0 0,
+                      ${this.pixelSize * -1.5}px 0 0 0,
+                      0 ${this.pixelSize * -1.5}px 0 0
+                    `
+      }
+    }
+  },
+
+  watch: {
+    size: {
+      handler: 'updateAnimation',
+      immediate: true
+    }
+  },
+
+  mounted () {
+    this.updateAnimation()
+  },
+
+  beforeDestroy () {
+    utils.removeKeyframes(this.animationName)
+  },
+
+  methods: {
+    updateAnimation () {
+      utils.removeKeyframes(this.animationName)
+      utils.appendKeyframes(this.animationName, this.generateKeyframes())
+    },
+
+    generateKeyframes () {
+      return `
+      50% {
+        box-shadow:  ${this.pixelSize * 2}px ${this.pixelSize * 2}px 0 0,
+                     ${this.pixelSize * -2}px ${this.pixelSize * -2}px 0 0,
+                     ${this.pixelSize * 2}px ${this.pixelSize * -2}px 0 0,
+                     ${this.pixelSize * -2}px ${this.pixelSize * 2}px 0 0,
+                     0 ${this.pixelSize}px 0 0,
+                     ${this.pixelSize}px 0 0 0,
+                     ${this.pixelSize * -1}px 0 0 0,
+                     0 ${this.pixelSize * -1}px 0 0;
+      }
+
+
+      75% {
+        box-shadow:  ${this.pixelSize * 2}px ${this.pixelSize * 2}px 0 0,
+                     ${this.pixelSize * -2}px ${this.pixelSize * -2}px 0 0,
+                     ${this.pixelSize * 2}px ${this.pixelSize * -2}px 0 0,
+                     ${this.pixelSize * -2}px ${this.pixelSize * 2}px 0 0,
+                     0 ${this.pixelSize}px 0 0,
+                     ${this.pixelSize}px 0 0 0,
+                     ${this.pixelSize * -1}px 0 0 0,
+                     0 ${this.pixelSize * -1}px 0 0;
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }`
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_PixelSpinnervue_type_script_lang_js_ = (PixelSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=style&index=0&id=c76fc818&scoped=true&lang=css&
+var PixelSpinnervue_type_style_index_0_id_c76fc818_scoped_true_lang_css_ = __webpack_require__("6bc6");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var PixelSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_PixelSpinnervue_type_script_lang_js_,
+  PixelSpinnervue_type_template_id_c76fc818_scoped_true_render,
+  PixelSpinnervue_type_template_id_c76fc818_scoped_true_staticRenderFns,
+  false,
+  null,
+  "c76fc818",
+  null
+  
+)
+
+/* harmony default export */ var PixelSpinner = (PixelSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=template&id=f15101b8&scoped=true&
+var FlowerSpinnervue_type_template_id_f15101b8_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flower-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"dots-container",style:(_vm.dotsContainerStyle)},[_c('div',{staticClass:"big-dot",style:(_vm.biggerDotStyle)},[_c('div',{staticClass:"small-dot",style:(_vm.smallerDotStyle)})])])])}
+var FlowerSpinnervue_type_template_id_f15101b8_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=template&id=f15101b8&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var FlowerSpinnervue_type_script_lang_js_ = ({
+  name: 'FlowerSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 2500
+    },
+    size: {
+      type: Number,
+      default: 70
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      smallDotName: `flower-spinner-small-dot-${Date.now()}`,
+      bigDotName: `flower-spinner-big-dot-${Date.now()}`
+    }
+  },
+
+  computed: {
+    dotSize () {
+      return this.size / 7
+    },
+
+    spinnerStyle () {
+      return {
+        width: `${this.size}px`,
+        height: `${this.size}px`
+      }
+    },
+
+    dotsContainerStyle () {
+      return {
+        width: `${this.dotSize}px`,
+        height: `${this.dotSize}px`
+      }
+    },
+
+    smallerDotStyle () {
+      return {
+        background: this.color,
+        animationDuration: `${this.animationDuration}ms`,
+        animationName: this.smallDotName
+      }
+    },
+
+    biggerDotStyle () {
+      return {
+        background: this.color,
+        animationDuration: `${this.animationDuration}ms`,
+        animationName: this.bigDotName
+      }
+    }
+  },
+
+  watch: {
+    size: {
+      handler: 'updateAnimation',
+      immediate: true
+    },
+    color: {
+      handler: 'updateAnimation',
+      immediate: true
+    }
+  },
+
+  beforeDestroy () {
+    utils.removeKeyframes(this.smallDotName)
+    utils.removeKeyframes(this.bigDotName)
+  },
+
+  methods: {
+    updateAnimation () {
+      utils.removeKeyframes(this.smallDotName)
+      utils.appendKeyframes(this.smallDotName, this.generateSmallDotKeyframes())
+      utils.removeKeyframes(this.bigDotName)
+      utils.appendKeyframes(this.bigDotName, this.generateBigDotKeyframes())
+    },
+
+    generateSmallDotKeyframes () {
+      return `0%, 100% {
+                  box-shadow: 0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color};
+                }
+                25%, 75% {
+                  box-shadow: ${this.dotSize * 1.4}px 0 0 ${this.color},
+                              -${this.dotSize * 1.4}px 0 0 ${this.color},
+                              0 ${this.dotSize * 1.4}px 0 ${this.color},
+                              0 -${this.dotSize * 1.4}px 0 ${this.color},
+                              ${this.dotSize}px -${this.dotSize}px 0 ${this.color},
+                              ${this.dotSize}px ${this.dotSize}px 0 ${this.color},
+                              -${this.dotSize}px -${this.dotSize}px 0 ${this.color},
+                              -${this.dotSize}px ${this.dotSize}px 0 ${this.color};
+
+                }
+                100% {
+                  box-shadow: 0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color};
+                }`
+    },
+
+    generateBigDotKeyframes () {
+      return `0%, 100% {
+                  box-shadow: 0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color};
+                }
+                50% {
+                  transform: rotate(180deg);
+                }
+                25%, 75% {
+                  box-shadow: ${this.dotSize * 2.6}px 0 0 ${this.color},
+                              -${this.dotSize * 2.6}px 0 0 ${this.color},
+                              0 ${this.dotSize * 2.6}px 0 ${this.color},
+                              0 -${this.dotSize * 2.6}px 0 ${this.color},
+                              ${this.dotSize * 1.9}px -${this.dotSize * 1.9}px 0 ${this.color},
+                              ${this.dotSize * 1.9}px ${this.dotSize * 1.9}px 0 ${this.color},
+                              -${this.dotSize * 1.9}px -${this.dotSize * 1.9}px 0 ${this.color},
+                              -${this.dotSize * 1.9}px ${this.dotSize * 1.9}px 0 ${this.color};
+
+                }
+                100% {
+                  transform: rotate(360deg);
+                  box-shadow: 0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color},
+                              0 0 0 ${this.color};
+                }`
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_FlowerSpinnervue_type_script_lang_js_ = (FlowerSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue?vue&type=style&index=0&id=f15101b8&scoped=true&lang=css&
+var FlowerSpinnervue_type_style_index_0_id_f15101b8_scoped_true_lang_css_ = __webpack_require__("389c");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FlowerSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var FlowerSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_FlowerSpinnervue_type_script_lang_js_,
+  FlowerSpinnervue_type_template_id_f15101b8_scoped_true_render,
+  FlowerSpinnervue_type_template_id_f15101b8_scoped_true_staticRenderFns,
+  false,
+  null,
+  "f15101b8",
+  null
+  
+)
+
+/* harmony default export */ var FlowerSpinner = (FlowerSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=template&id=91c71956&scoped=true&
+var IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"intersecting-circles-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinnerBlock",style:(_vm.spinnerBlockStyle)},_vm._l((_vm.circleStyles),function(cs,index){return _c('span',{key:index,staticClass:"circle",style:(cs)})}),0)])}
+var IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=template&id=91c71956&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var IntersectingCirclesSpinnervue_type_script_lang_js_ = ({
+  name: 'IntersectingCirclesSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1200
+    },
+    size: {
+      type: Number,
+      default: 70
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    circleSize () {
+      return this.size / 2
+    },
+
+    spinnerStyle () {
+      return {
+        width: `${this.size}px`,
+        height: `${this.size}px`
+      }
+    },
+
+    spinnerBlockStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`,
+        width: `${this.circleSize}px`,
+        height: `${this.circleSize}px`
+      }
+    },
+
+    circleStyle () {
+      return {
+        borderColor: this.color
+      }
+    },
+
+    circleStyles () {
+      const circlesPositions = [
+        {top: 0, left: 0},
+        {left: `${this.circleSize * -0.36}px`, top: `${this.circleSize * 0.2}px`},
+        {left: `${this.circleSize * -0.36}px`, top: `${this.circleSize * -0.2}px`},
+        {left: 0, top: `${this.circleSize * -0.36}px`},
+        {left: `${this.circleSize * 0.36}px`, top: `${this.circleSize * -0.2}px`},
+        {left: `${this.circleSize * 0.36}px`, top: `${this.circleSize * 0.2}px`},
+        {left: 0, top: `${this.circleSize * 0.36}px`}
+      ]
+
+      return circlesPositions.map((cp) => Object.assign(cp, this.circleStyle))
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_IntersectingCirclesSpinnervue_type_script_lang_js_ = (IntersectingCirclesSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue?vue&type=style&index=0&id=91c71956&scoped=true&lang=css&
+var IntersectingCirclesSpinnervue_type_style_index_0_id_91c71956_scoped_true_lang_css_ = __webpack_require__("4e68");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/IntersectingCirclesSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var IntersectingCirclesSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_IntersectingCirclesSpinnervue_type_script_lang_js_,
+  IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_render,
+  IntersectingCirclesSpinnervue_type_template_id_91c71956_scoped_true_staticRenderFns,
+  false,
+  null,
+  "91c71956",
+  null
+  
+)
+
+/* harmony default export */ var IntersectingCirclesSpinner = (IntersectingCirclesSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=template&id=34a3fdef&scoped=true&
+var OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"orbit-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"orbit one",style:(_vm.orbitStyle)}),_c('div',{staticClass:"orbit two",style:(_vm.orbitStyle)}),_c('div',{staticClass:"orbit three",style:(_vm.orbitStyle)})])}
+var OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=template&id=34a3fdef&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var OrbitSpinnervue_type_script_lang_js_ = ({
+  name: 'OrbitSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1000
+    },
+    size: {
+      type: Number,
+      default: 50
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    orbitStyle () {
+      return {
+        borderColor: this.color,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_OrbitSpinnervue_type_script_lang_js_ = (OrbitSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue?vue&type=style&index=0&id=34a3fdef&scoped=true&lang=css&
+var OrbitSpinnervue_type_style_index_0_id_34a3fdef_scoped_true_lang_css_ = __webpack_require__("1c92");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/OrbitSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var OrbitSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_OrbitSpinnervue_type_script_lang_js_,
+  OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_render,
+  OrbitSpinnervue_type_template_id_34a3fdef_scoped_true_staticRenderFns,
+  false,
+  null,
+  "34a3fdef",
+  null
+  
+)
+
+/* harmony default export */ var OrbitSpinner = (OrbitSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=template&id=077ae5a6&scoped=true&
+var FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fingerprint-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"spinner-ring",style:(rs)})}),0)}
+var FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=template&id=077ae5a6&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var FingerprintSpinnervue_type_script_lang_js_ = ({
+  name: 'FingerprintSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1500
+    },
+    size: {
+      type: Number,
+      default: 60
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      ringsNum: 9,
+      containerPadding: 2
+    }
+  },
+
+  computed: {
+    outerRingSize () {
+      return this.size - this.containerPadding * 2
+    },
+
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        padding: `${this.containerPadding}px`
+      }
+    },
+
+    ringStyle () {
+      return {
+        borderTopColor: this.color,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    ringsStyles () {
+      const ringsStyles = []
+      const ringBase = this.outerRingSize / (this.ringsNum)
+      const ringInc = ringBase
+
+      for (let i = 1; i <= this.ringsNum; i++) {
+        let style = Object.assign({
+          animationDelay: `${i * 50}ms`,
+          height: `${ringBase + (i - 1) * ringInc}px`,
+          width: `${ringBase + (i - 1) * ringInc}px`
+        }, this.ringStyle)
+        ringsStyles.push(style)
+      }
+
+      return ringsStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_FingerprintSpinnervue_type_script_lang_js_ = (FingerprintSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue?vue&type=style&index=0&id=077ae5a6&scoped=true&lang=css&
+var FingerprintSpinnervue_type_style_index_0_id_077ae5a6_scoped_true_lang_css_ = __webpack_require__("10e6");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FingerprintSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var FingerprintSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_FingerprintSpinnervue_type_script_lang_js_,
+  FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_render,
+  FingerprintSpinnervue_type_template_id_077ae5a6_scoped_true_staticRenderFns,
+  false,
+  null,
+  "077ae5a6",
+  null
+  
+)
+
+/* harmony default export */ var FingerprintSpinner = (FingerprintSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=template&id=19bbdf0e&scoped=true&
+var TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"trinity-rings-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle1",style:(_vm.ring1Style)}),_c('div',{staticClass:"circle circle2",style:(_vm.ring2Style)}),_c('div',{staticClass:"circle circle3",style:(_vm.ring3Style)})])}
+var TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=template&id=19bbdf0e&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var TrinityRingsSpinnervue_type_script_lang_js_ = ({
+  name: 'TrinityRingsSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1500
+    },
+    size: {
+      type: Number,
+      default: 60
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      containerPadding: 3
+    }
+  },
+
+  computed: {
+    outerRingSize () {
+      return this.size - this.containerPadding * 2
+    },
+
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        padding: `${this.containerPadding}px`
+      }
+    },
+
+    ring1Style () {
+      return {
+        height: `${this.outerRingSize}px`,
+        width: `${this.outerRingSize}px`,
+        borderColor: this.color,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    ring2Style () {
+      return {
+        height: `${this.outerRingSize * 0.65}px`,
+        width: `${this.outerRingSize * 0.65}px`,
+        borderColor: this.color,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    ring3Style () {
+      return {
+        height: `${this.outerRingSize * 0.1}px`,
+        width: `${this.outerRingSize * 0.1}px`,
+        borderColor: this.color,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_TrinityRingsSpinnervue_type_script_lang_js_ = (TrinityRingsSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue?vue&type=style&index=0&id=19bbdf0e&scoped=true&lang=css&
+var TrinityRingsSpinnervue_type_style_index_0_id_19bbdf0e_scoped_true_lang_css_ = __webpack_require__("fed0");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/TrinityRingsSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var TrinityRingsSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_TrinityRingsSpinnervue_type_script_lang_js_,
+  TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_render,
+  TrinityRingsSpinnervue_type_template_id_19bbdf0e_scoped_true_staticRenderFns,
+  false,
+  null,
+  "19bbdf0e",
+  null
+  
+)
+
+/* harmony default export */ var TrinityRingsSpinner = (TrinityRingsSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=template&id=3f451d6f&scoped=true&
+var FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fulfilling-square-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner",style:(_vm.spinnerInnerStyle)})])}
+var FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=template&id=3f451d6f&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var FulfillingSquareSpinnervue_type_script_lang_js_ = ({
+  name: 'FulfillingSquareSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 4000
+    },
+    size: {
+      type: Number,
+      default: 50
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        borderColor: this.color
+      }
+    },
+
+    spinnerInnerStyle () {
+      return {
+        backgroundColor: this.color
+      }
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_FulfillingSquareSpinnervue_type_script_lang_js_ = (FulfillingSquareSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue?vue&type=style&index=0&id=3f451d6f&scoped=true&lang=css&
+var FulfillingSquareSpinnervue_type_style_index_0_id_3f451d6f_scoped_true_lang_css_ = __webpack_require__("89df");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingSquareSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var FulfillingSquareSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_FulfillingSquareSpinnervue_type_script_lang_js_,
+  FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_render,
+  FulfillingSquareSpinnervue_type_template_id_3f451d6f_scoped_true_staticRenderFns,
+  false,
+  null,
+  "3f451d6f",
+  null
+  
+)
+
+/* harmony default export */ var FulfillingSquareSpinner = (FulfillingSquareSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=template&id=7a6e17e5&scoped=true&
+var CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"circles-to-rhombuses-spinner",style:(_vm.spinnertStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)})}),0)}
+var CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=template&id=7a6e17e5&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var CirclesToRhombusesSpinnervue_type_script_lang_js_ = ({
+  name: 'CirclesToRhombusesSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1200
+    },
+    circleSize: {
+      type: Number,
+      default: 15
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    },
+    circlesNum: {
+      type: Number,
+      default: 3
+    }
+  },
+
+  computed: {
+    circleMarginLeft () {
+      return this.circleSize * 1.125
+    },
+
+    spinnertStyle () {
+      return {
+        height: `${this.circleSize}px`,
+        width: `${(this.circleSize + this.circleMarginLeft) * this.circlesNum}px`
+      }
+    },
+
+    circleStyle () {
+      return {
+        borderColor: this.color,
+        animationDuration: `${this.animationDuration}ms`,
+        height: `${this.circleSize}px`,
+        width: `${this.circleSize}px`,
+        marginLeft: `${this.circleMarginLeft}px`
+      }
+    },
+
+    circlesStyles () {
+      const circlesStyles = []
+      const delay = 150
+
+      for (let i = 1; i <= this.circlesNum; i++) {
+        const style = Object.assign({
+          animationDelay: `${i * delay}ms`
+        }, this.circleStyle)
+
+        if (i === 1) {
+          style.marginLeft = 0
+        }
+
+        circlesStyles.push(style)
+      }
+
+      return circlesStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_CirclesToRhombusesSpinnervue_type_script_lang_js_ = (CirclesToRhombusesSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue?vue&type=style&index=0&id=7a6e17e5&scoped=true&lang=css&
+var CirclesToRhombusesSpinnervue_type_style_index_0_id_7a6e17e5_scoped_true_lang_css_ = __webpack_require__("0fa6");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/CirclesToRhombusesSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var CirclesToRhombusesSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_CirclesToRhombusesSpinnervue_type_script_lang_js_,
+  CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_render,
+  CirclesToRhombusesSpinnervue_type_template_id_7a6e17e5_scoped_true_staticRenderFns,
+  false,
+  null,
+  "7a6e17e5",
+  null
+  
+)
+
+/* harmony default export */ var CirclesToRhombusesSpinner = (CirclesToRhombusesSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=template&id=9544fc1a&scoped=true&
+var SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"semipolar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"ring",style:(rs)})}),0)}
+var SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=template&id=9544fc1a&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var SemipolarSpinnervue_type_script_lang_js_ = ({
+  name: 'SemipolarSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 2000
+    },
+    size: {
+      type: Number,
+      default: 65
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      ringsNum: 5
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+    ringStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`,
+        borderTopColor: this.color,
+        borderLeftColor: this.color
+      }
+    },
+    ringsStyles () {
+      const ringsStyles = []
+      const delayModifier = 0.1
+      const ringWidth = this.size * 0.05
+      const positionIncrement = ringWidth * 2
+      const sizeDecrement = this.size * 0.2
+
+      for (let i = 0; i < this.ringsNum; i++) {
+        const computedSize = `${this.size - sizeDecrement * i}px`
+        const computedPosition = `${positionIncrement * i}px`
+        const style = Object.assign({
+          animationDelay: `${this.animationDuration * delayModifier * (this.ringsNum - i - 1)}ms`,
+          height: computedSize,
+          width: computedSize,
+          left: computedPosition,
+          top: computedPosition,
+          borderWidth: `${ringWidth}px`
+        }, this.ringStyle)
+        ringsStyles.push(style)
+      }
+
+      return ringsStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_SemipolarSpinnervue_type_script_lang_js_ = (SemipolarSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue?vue&type=style&index=0&id=9544fc1a&scoped=true&lang=css&
+var SemipolarSpinnervue_type_style_index_0_id_9544fc1a_scoped_true_lang_css_ = __webpack_require__("30df");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var SemipolarSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_SemipolarSpinnervue_type_script_lang_js_,
+  SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_render,
+  SemipolarSpinnervue_type_template_id_9544fc1a_scoped_true_staticRenderFns,
+  false,
+  null,
+  "9544fc1a",
+  null
+  
+)
+
+/* harmony default export */ var SemipolarSpinner = (SemipolarSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=template&id=8fa7a3fc&scoped=true&
+var BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"breeding-rhombus-spinner",style:(_vm.spinnerStyle)},[_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{key:index,staticClass:"rhombus",class:("child-" + (index + 1)),style:(rs)})}),_c('div',{staticClass:"rhombus big",style:(_vm.bigRhombusStyle)})],2)}
+var BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=template&id=8fa7a3fc&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var BreedingRhombusSpinnervue_type_script_lang_js_ = ({
+  name: 'BreedingRhombusSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 2000
+    },
+    size: {
+      type: Number,
+      default: 150
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      animationBaseName: 'breeding-rhombus-spinner-animation-child',
+      rhombusesNum: 8
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    rhombusStyle () {
+      return {
+        height: `${this.size / 7.5}px`,
+        width: `${this.size / 7.5}px`,
+        animationDuration: `${this.animationDuration}ms`,
+        top: `${this.size / 2.3077}px`,
+        left: `${this.size / 2.3077}px`,
+        backgroundColor: this.color
+      }
+    },
+
+    rhombusesStyles () {
+      const rhombusesStyles = []
+      const delayModifier = this.animationDuration * 0.05
+
+      for (let i = 1; i <= this.rhombusesNum; i++) {
+        rhombusesStyles.push(Object.assign({
+          animationDelay: `${delayModifier * (i + 1)}ms`
+        }, this.rhombusStyle))
+      }
+
+      return rhombusesStyles
+    },
+
+    bigRhombusStyle () {
+      return {
+        height: `${this.size / 3}px`,
+        width: `${this.size / 3}px`,
+        animationDuration: `${this.animationDuration}`,
+        top: `${this.size / 3}px`,
+        left: `${this.size / 3}px`,
+        backgroundColor: this.color
+      }
+    }
+  }
+
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_BreedingRhombusSpinnervue_type_script_lang_js_ = (BreedingRhombusSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue?vue&type=style&index=0&id=8fa7a3fc&scoped=true&lang=css&
+var BreedingRhombusSpinnervue_type_style_index_0_id_8fa7a3fc_scoped_true_lang_css_ = __webpack_require__("e2f6");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/BreedingRhombusSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var BreedingRhombusSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_BreedingRhombusSpinnervue_type_script_lang_js_,
+  BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_render,
+  BreedingRhombusSpinnervue_type_template_id_8fa7a3fc_scoped_true_staticRenderFns,
+  false,
+  null,
+  "8fa7a3fc",
+  null
+  
+)
+
+/* harmony default export */ var BreedingRhombusSpinner = (BreedingRhombusSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=template&id=8265a670&scoped=true&
+var SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"swapping-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:("square-" + (index + 1)),style:(ss)})}),0)}
+var SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=template&id=8265a670&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var SwappingSquaresSpinnervue_type_script_lang_js_ = ({
+  name: 'SwappingSquaresSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1000
+    },
+    size: {
+      type: Number,
+      default: 65
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      animationBaseName: 'swapping-squares-animation-child',
+      squaresNum: 4
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    squareStyle () {
+      return {
+        height: `${this.size * 0.25 / 1.3}px`,
+        width: `${this.size * 0.25 / 1.3}px`,
+        animationDuration: `${this.animationDuration}ms`,
+        borderWidth: `${this.size * 0.04 / 1.3}px`,
+        borderColor: this.color
+      }
+    },
+
+    squaresStyles () {
+      const squaresStyles = []
+      const delay = this.animationDuration * 0.5
+
+      for (let i = 1; i <= this.squaresNum; i++) {
+        squaresStyles.push(Object.assign({
+          animationDelay: `${i % 2 === 0 ? delay : 0}ms`
+        }, this.squareStyle))
+      }
+
+      return squaresStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_SwappingSquaresSpinnervue_type_script_lang_js_ = (SwappingSquaresSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue?vue&type=style&index=0&id=8265a670&scoped=true&lang=css&
+var SwappingSquaresSpinnervue_type_style_index_0_id_8265a670_scoped_true_lang_css_ = __webpack_require__("ca9a");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SwappingSquaresSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var SwappingSquaresSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_SwappingSquaresSpinnervue_type_script_lang_js_,
+  SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_render,
+  SwappingSquaresSpinnervue_type_template_id_8265a670_scoped_true_staticRenderFns,
+  false,
+  null,
+  "8265a670",
+  null
+  
+)
+
+/* harmony default export */ var SwappingSquaresSpinner = (SwappingSquaresSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=template&id=dbacb9de&scoped=true&
+var ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"scaling-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:("square-" + (index + 1)),style:(ss)})}),0)}
+var ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=template&id=dbacb9de&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var ScalingSquaresSpinnervue_type_script_lang_js_ = ({
+  name: 'ScalingSquaresSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1250
+    },
+    size: {
+      type: Number,
+      default: 65
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      squaresNum: 4
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    squareStyle () {
+      return {
+        height: `${this.size * 0.25 / 1.3}px`,
+        width: `${this.size * 0.25 / 1.3}px`,
+        animationDuration: `${this.animationDuration}ms`,
+        borderWidth: `${this.size * 0.04 / 1.3}px`,
+        borderColor: this.color
+      }
+    },
+
+    squaresStyles () {
+      const squaresStyles = []
+
+      for (let i = 1; i <= this.squaresNum; i++) {
+        squaresStyles.push(Object.assign({
+        }, this.squareStyle))
+      }
+
+      return squaresStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_ScalingSquaresSpinnervue_type_script_lang_js_ = (ScalingSquaresSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue?vue&type=style&index=0&id=dbacb9de&scoped=true&lang=css&
+var ScalingSquaresSpinnervue_type_style_index_0_id_dbacb9de_scoped_true_lang_css_ = __webpack_require__("09fe");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/ScalingSquaresSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var ScalingSquaresSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_ScalingSquaresSpinnervue_type_script_lang_js_,
+  ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_render,
+  ScalingSquaresSpinnervue_type_template_id_dbacb9de_scoped_true_staticRenderFns,
+  false,
+  null,
+  "dbacb9de",
+  null
+  
+)
+
+/* harmony default export */ var ScalingSquaresSpinner = (ScalingSquaresSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=template&id=e5e606d8&scoped=true&
+var FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fulfilling-bouncing-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle",style:(_vm.circleStyle)}),_c('div',{staticClass:"orbit",style:(_vm.orbitStyle)})])}
+var FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=template&id=e5e606d8&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var FulfillingBouncingCircleSpinnervue_type_script_lang_js_ = ({
+  name: 'FulfillingBouncingCircleSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 4000
+    },
+    size: {
+      type: Number,
+      default: 60
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    orbitStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        borderColor: this.color,
+        borderWidth: `${this.size * 0.03}px`,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    circleStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        borderColor: this.color,
+        color: this.color,
+        borderWidth: `${this.size * 0.1}px`,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_FulfillingBouncingCircleSpinnervue_type_script_lang_js_ = (FulfillingBouncingCircleSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue?vue&type=style&index=0&id=e5e606d8&scoped=true&lang=css&
+var FulfillingBouncingCircleSpinnervue_type_style_index_0_id_e5e606d8_scoped_true_lang_css_ = __webpack_require__("5d60");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/FulfillingBouncingCircleSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var FulfillingBouncingCircleSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_FulfillingBouncingCircleSpinnervue_type_script_lang_js_,
+  FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_render,
+  FulfillingBouncingCircleSpinnervue_type_template_id_e5e606d8_scoped_true_staticRenderFns,
+  false,
+  null,
+  "e5e606d8",
+  null
+  
+)
+
+/* harmony default export */ var FulfillingBouncingCircleSpinner = (FulfillingBouncingCircleSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=template&id=5710a196&scoped=true&
+var RadarSpinnervue_type_template_id_5710a196_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"radar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)},[_c('div',{staticClass:"circle-inner-container",style:(_vm.circleInnerContainerStyle)},[_c('div',{staticClass:"circle-inner",style:(_vm.circleInnerStyle)})])])}),0)}
+var RadarSpinnervue_type_template_id_5710a196_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=template&id=5710a196&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var RadarSpinnervue_type_script_lang_js_ = ({
+  name: 'RadarSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 2000
+    },
+    size: {
+      type: Number,
+      default: 110
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      circlesNum: 4
+    }
+  },
+
+  computed: {
+    borderWidth () {
+      return this.size * 5 / 110
+    },
+
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    circleStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    circleInnerContainerStyle () {
+      return {
+        borderWidth: `${this.borderWidth}px`
+      }
+    },
+
+    circleInnerStyle () {
+      return {
+        borderLeftColor: this.color,
+        borderRightColor: this.color,
+        borderWidth: `${this.borderWidth}px`
+      }
+    },
+
+    circlesStyles () {
+      const circlesStyles = []
+      const delay = this.animationDuration * 0.15
+
+      for (let i = 0; i < this.circlesNum; i++) {
+        circlesStyles.push(Object.assign({
+          padding: `${this.borderWidth * 2 * i}px`,
+          animationDelay: `${i === this.circlesNum - 1 ? 0 : delay}ms`
+        }, this.circleStyle))
+      }
+
+      return circlesStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_RadarSpinnervue_type_script_lang_js_ = (RadarSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue?vue&type=style&index=0&id=5710a196&scoped=true&lang=css&
+var RadarSpinnervue_type_style_index_0_id_5710a196_scoped_true_lang_css_ = __webpack_require__("3d8a");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/RadarSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var RadarSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_RadarSpinnervue_type_script_lang_js_,
+  RadarSpinnervue_type_template_id_5710a196_scoped_true_render,
+  RadarSpinnervue_type_template_id_5710a196_scoped_true_staticRenderFns,
+  false,
+  null,
+  "5710a196",
+  null
+  
+)
+
+/* harmony default export */ var RadarSpinner = (RadarSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=template&id=eb840b8e&scoped=true&
+var SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"self-building-square-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:{'clear': index && index % 3 === 0},style:(ss)})}),0)}
+var SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=template&id=eb840b8e&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var SelfBuildingSquareSpinnervue_type_script_lang_js_ = ({
+  name: 'SelfBuildingSquareSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 6000
+    },
+    size: {
+      type: Number,
+      default: 40
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      squaresNum: 9
+    }
+  },
+
+  computed: {
+    squareSize () {
+      return this.size / 4
+    },
+
+    initialTopPosition () {
+      return -this.squareSize * 2 / 3
+    },
+
+    spinnerStyle () {
+      return {
+        top: `${-this.initialTopPosition}px`,
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    squareStyle () {
+      return {
+        height: `${this.squareSize}px`,
+        width: `${this.squareSize}px`,
+        top: `${this.initialTopPosition}px`,
+        marginRight: `${this.squareSize / 3}px`,
+        marginTop: `${this.squareSize / 3}px`,
+        animationDuration: `${this.animationDuration}ms`,
+        background: this.color
+      }
+    },
+
+    squaresStyles () {
+      const squaresStyles = []
+      const delaysMultipliers = [6, 7, 8, 3, 4, 5, 0, 1, 2]
+      const delayModifier = this.animationDuration * 0.05
+
+      for (let i = 0; i < this.squaresNum; i++) {
+        squaresStyles.push(Object.assign({
+          animationDelay: `${delayModifier * delaysMultipliers[i]}ms`
+        }, this.squareStyle))
+      }
+
+      return squaresStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_SelfBuildingSquareSpinnervue_type_script_lang_js_ = (SelfBuildingSquareSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue?vue&type=style&index=0&id=eb840b8e&scoped=true&lang=css&
+var SelfBuildingSquareSpinnervue_type_style_index_0_id_eb840b8e_scoped_true_lang_css_ = __webpack_require__("e2ed");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SelfBuildingSquareSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var SelfBuildingSquareSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_SelfBuildingSquareSpinnervue_type_script_lang_js_,
+  SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_render,
+  SelfBuildingSquareSpinnervue_type_template_id_eb840b8e_scoped_true_staticRenderFns,
+  false,
+  null,
+  "eb840b8e",
+  null
+  
+)
+
+/* harmony default export */ var SelfBuildingSquareSpinner = (SelfBuildingSquareSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=template&id=1ae1dc20&scoped=true&
+var SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"spring-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spring-spinner-part top",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})]),_c('div',{staticClass:"spring-spinner-part bottom",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})])])}
+var SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=template&id=1ae1dc20&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var SpringSpinnervue_type_script_lang_js_ = ({
+  name: 'SpringSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 3000
+    },
+    size: {
+      type: Number,
+      default: 70
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      animationName: `spring-spinner-animation-${Date.now()}`
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    spinnerPartStyle () {
+      return {
+        height: `${this.size / 2}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    rotatorStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`,
+        borderRightColor: this.color,
+        borderTopColor: this.color,
+        borderWidth: `${this.size / 7}px`,
+        animationDuration: `${this.animationDuration}ms`,
+        animationName: this.animationName
+      }
+    }
+  },
+
+  watch: {
+    size: {
+      handler: 'updateAnimation',
+      immediate: true
+    },
+    color: {
+      handler: 'updateAnimation',
+      immediate: true
+    }
+  },
+
+  mounted () {
+    this.updateAnimation()
+  },
+
+  beforeDestroy () {
+    utils.removeKeyframes(this.animationName)
+  },
+
+  methods: {
+    updateAnimation () {
+      utils.removeKeyframes(this.animationName)
+      utils.appendKeyframes(this.animationName, this.generateKeyframes())
+    },
+
+    generateKeyframes () {
+      return `
+        0% {
+          border-width: ${this.size / 7}px;
+        }
+        25% {
+          border-width: ${this.size / 23.33}px;
+        }
+        50% {
+          transform: rotate(115deg);
+          border-width: ${this.size / 7}px;
+        }
+        75% {
+          border-width: ${this.size / 23.33}px;
+         }
+        100% {
+         border-width: ${this.size / 7}px;
+        }`
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_SpringSpinnervue_type_script_lang_js_ = (SpringSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue?vue&type=style&index=0&id=1ae1dc20&scoped=true&lang=css&
+var SpringSpinnervue_type_style_index_0_id_1ae1dc20_scoped_true_lang_css_ = __webpack_require__("34c9");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/SpringSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var SpringSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_SpringSpinnervue_type_script_lang_js_,
+  SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_render,
+  SpringSpinnervue_type_template_id_1ae1dc20_scoped_true_staticRenderFns,
+  false,
+  null,
+  "1ae1dc20",
+  null
+  
+)
+
+/* harmony default export */ var SpringSpinner = (SpringSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=template&id=49d9ad28&scoped=true&
+var LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"looping-rhombuses-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{staticClass:"rhombus",style:(rs),attrs:{"ikey":index}})}),0)}
+var LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=template&id=49d9ad28&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var LoopingRhombusesSpinnervue_type_script_lang_js_ = ({
+  name: 'LoopingRhombusesSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 2500
+    },
+    rhombusSize: {
+      type: Number,
+      default: 15
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  data () {
+    return {
+      rhombusesNum: 3
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.rhombusSize}px`,
+        width: `${this.rhombusSize * 4}px`
+      }
+    },
+
+    rhombusStyle () {
+      return {
+        height: `${this.rhombusSize}px`,
+        width: `${this.rhombusSize}px`,
+        backgroundColor: this.color,
+        animationDuration: `${this.animationDuration}ms`,
+        left: `${this.rhombusSize * 4}px`
+      }
+    },
+
+    rhombusesStyles () {
+      const rhombusesStyles = []
+      const delay = -this.animationDuration / 1.5
+
+      for (let i = 1; i <= this.rhombusesNum; i++) {
+        const style = Object.assign({
+          animationDelay: `${i * delay}ms`
+        }, this.rhombusStyle)
+
+        rhombusesStyles.push(style)
+      }
+
+      return rhombusesStyles
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_LoopingRhombusesSpinnervue_type_script_lang_js_ = (LoopingRhombusesSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue?vue&type=style&index=0&id=49d9ad28&scoped=true&lang=css&
+var LoopingRhombusesSpinnervue_type_style_index_0_id_49d9ad28_scoped_true_lang_css_ = __webpack_require__("1016");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/LoopingRhombusesSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var LoopingRhombusesSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_LoopingRhombusesSpinnervue_type_script_lang_js_,
+  LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_render,
+  LoopingRhombusesSpinnervue_type_template_id_49d9ad28_scoped_true_staticRenderFns,
+  false,
+  null,
+  "49d9ad28",
+  null
+  
+)
+
+/* harmony default export */ var LoopingRhombusesSpinner = (LoopingRhombusesSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=template&id=669f3b60&scoped=true&
+var HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"half-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle-1",style:(_vm.circle1Style)}),_c('div',{staticClass:"circle circle-2",style:(_vm.circle2Style)})])}
+var HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=template&id=669f3b60&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var HalfCircleSpinnervue_type_script_lang_js_ = ({
+  name: 'HalfCircleSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1000
+    },
+    size: {
+      type: Number,
+      default: 60
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    circleStyle () {
+      return {
+        borderWidth: `${this.size / 10}px`,
+        animationDuration: `${this.animationDuration}ms`
+      }
+    },
+
+    circle1Style () {
+      return Object.assign({
+        borderTopColor: this.color
+      }, this.circleStyle)
+    },
+
+    circle2Style () {
+      return Object.assign({
+        borderBottomColor: this.color
+      }, this.circleStyle)
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_HalfCircleSpinnervue_type_script_lang_js_ = (HalfCircleSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue?vue&type=style&index=0&id=669f3b60&scoped=true&lang=css&
+var HalfCircleSpinnervue_type_style_index_0_id_669f3b60_scoped_true_lang_css_ = __webpack_require__("66d3");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/HalfCircleSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var HalfCircleSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_HalfCircleSpinnervue_type_script_lang_js_,
+  HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_render,
+  HalfCircleSpinnervue_type_template_id_669f3b60_scoped_true_staticRenderFns,
+  false,
+  null,
+  "669f3b60",
+  null
+  
+)
+
+/* harmony default export */ var HalfCircleSpinner = (HalfCircleSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e7f06a62-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=template&id=fb9a33c4&scoped=true&
+var AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"atom-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner"},[_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_c('div',{staticClass:"spinner-circle",style:(_vm.circleStyle)},[_vm._v("\n      ●\n    ")])])])}
+var AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=template&id=fb9a33c4&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var AtomSpinnervue_type_script_lang_js_ = ({
+  name: 'AtomSpinner',
+
+  props: {
+    animationDuration: {
+      type: Number,
+      default: 1000
+    },
+    size: {
+      type: Number,
+      default: 60
+    },
+    color: {
+      type: String,
+      default: '#fff'
+    }
+  },
+
+  computed: {
+    spinnerStyle () {
+      return {
+        height: `${this.size}px`,
+        width: `${this.size}px`
+      }
+    },
+
+    circleStyle () {
+      return {
+        color: this.color,
+        fontSize: `${this.size * 0.24}px`
+      }
+    },
+
+    lineStyle () {
+      return {
+        animationDuration: `${this.animationDuration}ms`,
+        borderLeftWidth: `${this.size / 25}px`,
+        borderTopWidth: `${this.size / 25}px`,
+        borderLeftColor: this.color
+      }
+    }
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=script&lang=js&
+ /* harmony default export */ var lib_AtomSpinnervue_type_script_lang_js_ = (AtomSpinnervue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue?vue&type=style&index=0&id=fb9a33c4&scoped=true&lang=css&
+var AtomSpinnervue_type_style_index_0_id_fb9a33c4_scoped_true_lang_css_ = __webpack_require__("741b");
+
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/components/lib/AtomSpinner.vue
+
+
+
+
+
+
+/* normalize component */
+
+var AtomSpinner_component = Object(componentNormalizer["a" /* default */])(
+  lib_AtomSpinnervue_type_script_lang_js_,
+  AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_render,
+  AtomSpinnervue_type_template_id_fb9a33c4_scoped_true_staticRenderFns,
+  false,
+  null,
+  "fb9a33c4",
+  null
+  
+)
+
+/* harmony default export */ var AtomSpinner = (AtomSpinner_component.exports);
+// CONCATENATED MODULE: ./node_modules/epic-spinners/src/lib.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // EXTERNAL MODULE: ./node_modules/hammerjs/hammer.js
 var hammer = __webpack_require__("c8b5");
 var hammer_default = /*#__PURE__*/__webpack_require__.n(hammer);
-
-// CONCATENATED MODULE: ./node_modules/vue-async-computed/dist/vue-async-computed.esm.js
-function isComputedLazy(item) {
-  return item.hasOwnProperty('lazy') && item.lazy;
-}
-
-function isLazyActive(vm, key) {
-  return vm[lazyActivePrefix + key];
-}
-
-var lazyActivePrefix = 'async_computed$lazy_active$',
-    lazyDataPrefix = 'async_computed$lazy_data$';
-
-function initLazy(data, key) {
-  data[lazyActivePrefix + key] = false;
-  data[lazyDataPrefix + key] = null;
-}
-
-function makeLazyComputed(key) {
-  return {
-    get: function get() {
-      this[lazyActivePrefix + key] = true;
-      return this[lazyDataPrefix + key];
-    },
-    set: function set(value) {
-      this[lazyDataPrefix + key] = value;
-    }
-  };
-}
-
-function silentSetLazy(vm, key, value) {
-  vm[lazyDataPrefix + key] = value;
-}
-function silentGetLazy(vm, key) {
-  return vm[lazyDataPrefix + key];
-}
-
-var getGetterWatchedByArray = function getGetterWatchedByArray(computedAsyncProperty) {
-  return function getter() {
-    var _this = this;
-
-    computedAsyncProperty.watch.forEach(function (key) {
-      // Check if nested key is watched.
-      var splittedByDot = key.split('.');
-      if (splittedByDot.length === 1) {
-        // If not, just access it.
-        // eslint-disable-next-line no-unused-expressions
-        _this[key];
-      } else {
-        // Access the nested propety.
-        try {
-          var start = _this;
-          splittedByDot.forEach(function (part) {
-            start = start[part];
-          });
-        } catch (error) {
-          console.error('AsyncComputed: bad path: ', key);
-          throw error;
-        }
-      }
-    });
-    return computedAsyncProperty.get.call(this);
-  };
-};
-
-var getGetterWatchedByFunction = function getGetterWatchedByFunction(computedAsyncProperty) {
-  return function getter() {
-    computedAsyncProperty.watch.call(this);
-    return computedAsyncProperty.get.call(this);
-  };
-};
-
-function getWatchedGetter(computedAsyncProperty) {
-  if (typeof computedAsyncProperty.watch === 'function') {
-    return getGetterWatchedByFunction(computedAsyncProperty);
-  } else if (Array.isArray(computedAsyncProperty.watch)) {
-    computedAsyncProperty.watch.forEach(function (key) {
-      if (typeof key !== 'string') {
-        throw new Error('AsyncComputed: watch elemnts must be strings');
-      }
-    });
-    return getGetterWatchedByArray(computedAsyncProperty);
-  } else {
-    throw Error('AsyncComputed: watch should be function or an array');
-  }
-}
-
-var DidNotUpdate = typeof Symbol === 'function' ? Symbol('did-not-update') : {};
-
-var getGetterWithShouldUpdate = function getGetterWithShouldUpdate(asyncProprety, currentGetter) {
-  return function getter() {
-    return asyncProprety.shouldUpdate.call(this) ? currentGetter.call(this) : DidNotUpdate;
-  };
-};
-
-var shouldNotUpdate = function shouldNotUpdate(value) {
-  return DidNotUpdate === value;
-};
-
-var prefix = '_async_computed$';
-
-var AsyncComputed = {
-  install: function install(Vue, pluginOptions) {
-    pluginOptions = pluginOptions || {};
-
-    Vue.config.optionMergeStrategies.asyncComputed = Vue.config.optionMergeStrategies.computed;
-
-    Vue.mixin({
-      data: function data() {
-        return {
-          _asyncComputed: {}
-        };
-      },
-
-      computed: {
-        $asyncComputed: function $asyncComputed() {
-          return this.$data._asyncComputed;
-        }
-      },
-      beforeCreate: function beforeCreate() {
-        var asyncComputed = this.$options.asyncComputed || {};
-
-        if (!Object.keys(asyncComputed).length) return;
-
-        for (var key in asyncComputed) {
-          var getter = getterFn(key, asyncComputed[key]);
-          this.$options.computed[prefix + key] = getter;
-        }
-
-        this.$options.data = initDataWithAsyncComputed(this.$options);
-      },
-      created: function created() {
-        for (var key in this.$options.asyncComputed || {}) {
-          var item = this.$options.asyncComputed[key],
-              value = generateDefault.call(this, item, pluginOptions);
-          if (isComputedLazy(item)) {
-            silentSetLazy(this, key, value);
-          } else {
-            this[key] = value;
-          }
-        }
-
-        for (var _key in this.$options.asyncComputed || {}) {
-          handleAsyncComputedPropetyChanges(this, _key, pluginOptions, Vue);
-        }
-      }
-    });
-  }
-};
-function handleAsyncComputedPropetyChanges(vm, key, pluginOptions, Vue) {
-  var promiseId = 0;
-  var watcher = function watcher(newPromise) {
-    var thisPromise = ++promiseId;
-
-    if (shouldNotUpdate(newPromise)) return;
-
-    if (!newPromise || !newPromise.then) {
-      newPromise = Promise.resolve(newPromise);
-    }
-    setAsyncState(vm, key, 'updating');
-
-    newPromise.then(function (value) {
-      if (thisPromise !== promiseId) return;
-      setAsyncState(vm, key, 'success');
-      vm[key] = value;
-    }).catch(function (err) {
-      if (thisPromise !== promiseId) return;
-
-      setAsyncState(vm, key, 'error');
-      Vue.set(vm.$data._asyncComputed[key], 'exception', err);
-      if (pluginOptions.errorHandler === false) return;
-
-      var handler = pluginOptions.errorHandler === undefined ? console.error.bind(console, 'Error evaluating async computed property:') : pluginOptions.errorHandler;
-
-      if (pluginOptions.useRawError) {
-        handler(err, vm, err.stack);
-      } else {
-        handler(err.stack);
-      }
-    });
-  };
-  Vue.set(vm.$data._asyncComputed, key, {
-    exception: null,
-    update: function update() {
-      watcher(getterOnly(vm.$options.asyncComputed[key]).apply(vm));
-    }
-  });
-  setAsyncState(vm, key, 'updating');
-  vm.$watch(prefix + key, watcher, { immediate: true });
-}
-
-function initDataWithAsyncComputed(options) {
-  var optionData = options.data;
-  var asyncComputed = options.asyncComputed || {};
-
-  return function vueAsyncComputedInjectedDataFn(vm) {
-    var data = (typeof optionData === 'function' ? optionData.call(this, vm) : optionData) || {};
-    for (var key in asyncComputed) {
-      var item = this.$options.asyncComputed[key];
-      if (isComputedLazy(item)) {
-        initLazy(data, key);
-        this.$options.computed[key] = makeLazyComputed(key);
-      } else {
-        data[key] = null;
-      }
-    }
-    return data;
-  };
-}
-
-function setAsyncState(vm, stateObject, state) {
-  vm.$set(vm.$data._asyncComputed[stateObject], 'state', state);
-  vm.$set(vm.$data._asyncComputed[stateObject], 'updating', state === 'updating');
-  vm.$set(vm.$data._asyncComputed[stateObject], 'error', state === 'error');
-  vm.$set(vm.$data._asyncComputed[stateObject], 'success', state === 'success');
-}
-
-function getterOnly(fn) {
-  if (typeof fn === 'function') return fn;
-
-  return fn.get;
-}
-
-function getterFn(key, fn) {
-  if (typeof fn === 'function') return fn;
-
-  var getter = fn.get;
-
-  if (fn.hasOwnProperty('watch')) {
-    getter = getWatchedGetter(fn);
-  }
-
-  if (fn.hasOwnProperty('shouldUpdate')) {
-    getter = getGetterWithShouldUpdate(fn, getter);
-  }
-
-  if (isComputedLazy(fn)) {
-    var nonLazy = getter;
-    getter = function lazyGetter() {
-      if (isLazyActive(this, key)) {
-        return nonLazy.call(this);
-      } else {
-        return silentGetLazy(this, key);
-      }
-    };
-  }
-  return getter;
-}
-
-function generateDefault(fn, pluginOptions) {
-  var defaultValue = null;
-
-  if ('default' in fn) {
-    defaultValue = fn.default;
-  } else if ('default' in pluginOptions) {
-    defaultValue = pluginOptions.default;
-  }
-
-  if (typeof defaultValue === 'function') {
-    return defaultValue.call(this);
-  } else {
-    return defaultValue;
-  }
-}
-
-/* istanbul ignore if */
-if (typeof window !== 'undefined' && window.Vue) {
-  // Auto install in dist mode
-  window.Vue.use(AsyncComputed);
-}
-
-/* harmony default export */ var vue_async_computed_esm = (AsyncComputed);
 
 // CONCATENATED MODULE: ./src/components/addons/index.js
 
@@ -7071,16 +6760,11 @@ if (typeof window !== 'undefined' && window.Vue) {
 //
 //
 //
-//
-//
 
 
 
 
 
-
-
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_esm)
 
 /* harmony default export */ var Lingalleryvue_type_script_lang_js_ = ({
   name: 'Lingallery',
@@ -7099,6 +6783,8 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
   data() {
     return {
       currentImage: null,
+      currentImageWidth: 0,
+      currentImageHeight: 0,
       currentIndex: 0,
       currentId: null,
       currentCaption: '',
@@ -7175,7 +6861,7 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
     }
   },
   components: {
-    HalfCircleSpinner: lib["a" /* HalfCircleSpinner */]
+    HalfCircleSpinner: HalfCircleSpinner
   },
   computed: {
     lingalleryStyle() {
@@ -7189,11 +6875,11 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
     mainImageStyle() {
       let isLoading =
         this.$refs.mainImage &&
-        !this.enablePictureElement &&
+        !this.addons.enablePictureElement &&
         this.$refs.mainImage.hasOwnProperty('classList') &&
         this.$refs.mainImage.classList.contains('loading')
           ? true
-          : this.$refs.mainImage && this.enablePictureElement
+          : this.$refs.mainImage && this.addons.enablePictureElement
           ? this.$refs.mainImage.$el.children[
               this.$refs.mainImage.$el.children.length - 1
             ].classList.contains('loading')
@@ -7214,29 +6900,24 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
       }
 
       return mainImageStyle
-    }
-  },
-  asyncComputed: {
+    },
     figureStyle() {
-      if (this.currentImage) {
-        return this.getImageSize(this.currentImage)
-          .then(result => {
-            let heightValue = 'height:auto'
+      if (
+        this.currentImage &&
+        this.currentImageWidth &&
+        this.currentImageHeight
+      ) {
+        let heightValue = 'height:auto'
 
-            // Hide Loader
-            this.handleLoader(false)
-
-            if (
-              result.widthValue < result.heightValue &&
-              this.mobileHeight === 0
-            ) {
-              heightValue = 'height:' + this.height + 'px'
-            }
-            return this.windowWidth > this.width && !this.responsive
-              ? 'width:' + this.width + 'px;height:' + this.height + 'px'
-              : 'width:100%;' + heightValue
-          })
-          .catch()
+        if (
+          this.currentImageWidth < this.currentImageHeight &&
+          this.mobileHeight === 0
+        ) {
+          heightValue = 'height:' + this.height + 'px'
+        }
+        return this.windowWidth > this.width && !this.responsive
+          ? 'width:' + this.width + 'px;height:' + this.height + 'px'
+          : 'width:100%;' + heightValue
       } else
         return this.windowWidth > this.width && !this.responsive
           ? 'width:' + this.width + 'px;height:' + this.height + 'px'
@@ -7251,6 +6932,17 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
       this.sendId()
+    },
+    handleImageLoaded() {
+      this.isLoading = false
+      this.updateCurrentImageSizes()
+    },
+    updateCurrentImageSizes() {
+      let img = this.$refs.mainImage.hasOwnProperty('src')
+        ? this.$refs.mainImage
+        : this.$refs.mainImage.$el.getElementsByTagName('img')[0]
+      this.currentImageWidth = img.naturalWidth
+      this.currentImageHeight = img.naturalHeight
     },
     handleImageSwipe(event) {
       if (event.direction === 4) {
@@ -7269,21 +6961,6 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
       } else if (!this.disableImageClick) {
         this.showNextImage()
       }
-    },
-    async getImageSize(src) {
-      let image = await this.getImage(src)
-      return {
-        widthValue: image.naturalWidth,
-        heightValue: image.naturalHeight
-      }
-    },
-    async getImage(src) {
-      return new Promise((resolve, reject) => {
-        let img = new Image()
-        img.onload = () => resolve(img)
-        img.onerror = reject
-        img.src = src
-      }).catch()
     },
     handleLoader(isLoading) {
       this.isLoading = isLoading
@@ -7353,11 +7030,8 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_async_computed_es
 
 // CONCATENATED MODULE: ./src/components/Lingallery.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Lingalleryvue_type_script_lang_js_ = (Lingalleryvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Lingallery.vue?vue&type=style&index=0&id=4c4e2ff0&lang=scss&scoped=true&
-var Lingalleryvue_type_style_index_0_id_4c4e2ff0_lang_scss_scoped_true_ = __webpack_require__("3408");
-
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__("2877");
+// EXTERNAL MODULE: ./src/components/Lingallery.vue?vue&type=style&index=0&id=7b46a908&lang=scss&scoped=true&
+var Lingalleryvue_type_style_index_0_id_7b46a908_lang_scss_scoped_true_ = __webpack_require__("7691");
 
 // CONCATENATED MODULE: ./src/components/Lingallery.vue
 
@@ -7368,18 +7042,18 @@ var componentNormalizer = __webpack_require__("2877");
 
 /* normalize component */
 
-var component = Object(componentNormalizer["a" /* default */])(
+var Lingallery_component = Object(componentNormalizer["a" /* default */])(
   components_Lingalleryvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
   null,
-  "4c4e2ff0",
+  "7b46a908",
   null
   
 )
 
-/* harmony default export */ var Lingallery = (component.exports);
+/* harmony default export */ var Lingallery = (Lingallery_component.exports);
 // CONCATENATED MODULE: ./src/components/index.js
 
 
