@@ -114,14 +114,12 @@ Here is a list of currently existing addons:
 #### Large View
 By passing the prop `enableLargeView` you can enable the large view feature. When clicking on the large main image a modal will open up with the image displaying in full size.
 
-**Example**
 ```
 <lingallery :addons="{ enableLargeView: true }" ... />
 ``` 
 
 If you want to show a different image (maybe a larger version) in the modal you can add the property `largeViewSrc` into the `items` prop.
 
-**Example**
 ```
 <lingallery :addons="{ enableLargeView: true }" :items="[{ src: 'image1.jpg', largeViewSrc: 'image1_large.jpg' }]" ... />
 ```
@@ -129,7 +127,6 @@ If you want to show a different image (maybe a larger version) in the modal you 
 ### Picture Element
 Sometimes you might want to display different images depending on the user's screen size. Responsive images in Lingallery are possible with this addon. You can specify both a `type` and a `media` attribute.
 
-**Example**
 ```
 <lingallery
   :addons="{ enablePictureElement: true }"
