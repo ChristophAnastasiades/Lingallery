@@ -13,6 +13,7 @@
       :style="mainImageStyle"
       :class="{ loading: isLoading }"
       @click="handleLargeImageClick"
+      @load="handleImageLoaded"
       v-swipe="handleImageSwipe"
     />
   </picture>
@@ -64,6 +65,9 @@ export default {
     },
     handleImageSwipe(event) {
       this.$emit('handle-image-swipe', event)
+    },
+    handleImageLoaded() {
+      this.$emit('handle-image-loaded')
     }
   }
 }

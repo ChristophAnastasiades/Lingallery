@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <lingallery
-      :mobileHeight="200"
+      :mobile-height="300"
+      :mobile-height-breakpoint="600"
       :addons="{ enableLargeView: true, enablePictureElement: true }"
       :width="600"
       :height="400"

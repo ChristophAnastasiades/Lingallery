@@ -1,35 +1,34 @@
 <template>
   <div>
-    <div class="lingallery_spinner">
-      <half-circle-spinner
-        :animation-duration="1000"
-        :color="accentColor"
-        :size="60"
-        v-if="isLoading"
-      />
-    </div>
     <div
       id="largeViewContainer"
       :class="{ fadeIn: runAnimation, fadeOut: !runAnimation }"
     >
-      <img :src="currentImage" />
+      <picture v-if="item.hasOwnProperty('pictureElement')">
+        <source
+          v-for="(source, index) in item.pictureElement"
+          :key="index"
+          :srcset="source.srcset"
+          :media="source.media ? source.media : false"
+          :type="source.type ? source.type : false"
+        />
+        <img :src="item.src" :alt="item.alt" />
+      </picture>
+      <img v-else :src="currentImage" />
       <a @click="handleCloseClick"></a>
     </div>
   </div>
 </template>
 
 <script>
-import { HalfCircleSpinner } from 'epic-spinners'
-
 export default {
   name: 'LargeView',
-  components: {
-    HalfCircleSpinner
-  },
   props: {
-    currentImage: {
-      type: String,
-      default: ''
+    item: {
+      type: Object,
+      default() {
+        return {}
+      }
     },
     settings: {
       type: Object,
@@ -50,15 +49,14 @@ export default {
       isLoading: true
     }
   },
+  computed: {
+    currentImage() {
+      return this.item.hasOwnProperty('largeViewSrc')
+        ? this.item.largeViewSrc
+        : this.item.src
+    }
+  },
   methods: {
-    async getImage(src) {
-      return new Promise((resolve, reject) => {
-        let img = new Image()
-        img.onload = () => resolve(img)
-        img.onerror = reject
-        img.src = src
-      }).catch()
-    },
     handleCloseClick() {
       this.runAnimation = false
       window.setTimeout(() => {
@@ -66,11 +64,6 @@ export default {
         this.$emit('close-large-view')
       }, 500)
     }
-  },
-  mounted() {
-    this.getImage(this.currentImage).then(() => {
-      this.isLoading = false
-    })
   }
 }
 </script>

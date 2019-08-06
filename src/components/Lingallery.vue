@@ -4,11 +4,7 @@
       <large-view
         id="largeView"
         :accent-color="accentColor"
-        :current-image="
-          items[currentIndex].hasOwnProperty('largeViewSrc')
-            ? items[currentIndex].largeViewSrc
-            : currentImage
-        "
+        :item="items[currentIndex]"
         v-if="addons.enableLargeView && showLargeView"
         @close-large-view="showLargeView = false"
       />
@@ -30,12 +26,13 @@
           v-if="addons.enablePictureElement"
           :alt="currentAlt"
           :is-loading="isLoading"
-          :style="mainImageStyle"
+          :main-image-style="mainImageStyle"
           :items="items"
           :current-index="currentIndex"
           ref="mainImage"
           @handle-large-image-click="handleLargeImageClick"
           @handle-image-swipe="handleImageSwipe"
+          @handle-image-loaded="handleImageLoaded"
         />
         <img
           v-else
@@ -44,6 +41,7 @@
           :src="currentImage"
           :style="mainImageStyle"
           @click="handleLargeImageClick"
+          @load="handleImageLoaded"
           ref="mainImage"
           v-swipe="handleImageSwipe"
         />
@@ -132,6 +130,8 @@ export default {
   data() {
     return {
       currentImage: null,
+      currentImageWidth: 0,
+      currentImageHeight: 0,
       currentIndex: 0,
       currentId: null,
       currentCaption: '',
@@ -222,11 +222,11 @@ export default {
     mainImageStyle() {
       let isLoading =
         this.$refs.mainImage &&
-        !this.enablePictureElement &&
+        !this.addons.enablePictureElement &&
         this.$refs.mainImage.hasOwnProperty('classList') &&
         this.$refs.mainImage.classList.contains('loading')
           ? true
-          : this.$refs.mainImage && this.enablePictureElement
+          : this.$refs.mainImage && this.addons.enablePictureElement
           ? this.$refs.mainImage.$el.children[
               this.$refs.mainImage.$el.children.length - 1
             ].classList.contains('loading')
@@ -247,29 +247,24 @@ export default {
       }
 
       return mainImageStyle
-    }
-  },
-  asyncComputed: {
+    },
     figureStyle() {
-      if (this.currentImage) {
-        return this.getImageSize(this.currentImage)
-          .then(result => {
-            let heightValue = 'height:auto'
+      if (
+        this.currentImage &&
+        this.currentImageWidth &&
+        this.currentImageHeight
+      ) {
+        let heightValue = 'height:auto'
 
-            // Hide Loader
-            this.handleLoader(false)
-
-            if (
-              result.widthValue < result.heightValue &&
-              this.mobileHeight === 0
-            ) {
-              heightValue = 'height:' + this.height + 'px'
-            }
-            return this.windowWidth > this.width && !this.responsive
-              ? 'width:' + this.width + 'px;height:' + this.height + 'px'
-              : 'width:100%;' + heightValue
-          })
-          .catch()
+        if (
+          this.currentImageWidth < this.currentImageHeight &&
+          this.mobileHeight === 0
+        ) {
+          heightValue = 'height:' + this.height + 'px'
+        }
+        return this.windowWidth > this.width && !this.responsive
+          ? 'width:' + this.width + 'px;height:' + this.height + 'px'
+          : 'width:100%;' + heightValue
       } else
         return this.windowWidth > this.width && !this.responsive
           ? 'width:' + this.width + 'px;height:' + this.height + 'px'
@@ -284,6 +279,17 @@ export default {
       this.currentIndex = this.startImage
       this.windowWidth = window.innerWidth
       this.sendId()
+    },
+    handleImageLoaded() {
+      this.isLoading = false
+      this.updateCurrentImageSizes()
+    },
+    updateCurrentImageSizes() {
+      let img = this.$refs.mainImage.hasOwnProperty('src')
+        ? this.$refs.mainImage
+        : this.$refs.mainImage.$el.getElementsByTagName('img')[0]
+      this.currentImageWidth = img.naturalWidth
+      this.currentImageHeight = img.naturalHeight
     },
     handleImageSwipe(event) {
       if (event.direction === 4) {
@@ -302,21 +308,6 @@ export default {
       } else if (!this.disableImageClick) {
         this.showNextImage()
       }
-    },
-    async getImageSize(src) {
-      let image = await this.getImage(src)
-      return {
-        widthValue: image.naturalWidth,
-        heightValue: image.naturalHeight
-      }
-    },
-    async getImage(src) {
-      return new Promise((resolve, reject) => {
-        let img = new Image()
-        img.onload = () => resolve(img)
-        img.onerror = reject
-        img.src = src
-      }).catch()
     },
     handleLoader(isLoading) {
       this.isLoading = isLoading
