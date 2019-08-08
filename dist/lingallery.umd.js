@@ -5374,29 +5374,33 @@ var PixelSpinnervue_type_template_id_c76fc818_scoped_true_staticRenderFns = []
    * @param name string
    * @param frames string
    */
-  appendKeyframes: function (name, frames) {
-    const sheet = document.createElement('style')
+  appendKeyframes: function appendKeyframes(name, frames) {
+    var sheet = document.createElement('style');
+
     if (!sheet) {
-      return
+      return;
     }
-    sheet.setAttribute('id', name)
-    sheet.innerHTML = `@keyframes ${name} {${frames}}`
-    document.body.appendChild(sheet)
+
+    sheet.setAttribute('id', name);
+    sheet.innerHTML = "@keyframes ".concat(name, " {").concat(frames, "}");
+    document.body.appendChild(sheet);
   },
+
   /**
    * Remove reyframes from body
    * @param name string
    */
-  removeKeyframes: function (name) {
-    const sheet = document.getElementById(name)
+  removeKeyframes: function removeKeyframes(name) {
+    var sheet = document.getElementById(name);
+
     if (!sheet) {
-      return
+      return;
     }
-    const sheetParent = sheet.parentNode
-    sheetParent.removeChild(sheet)
+
+    var sheetParent = sheet.parentNode;
+    sheetParent.removeChild(sheet);
   }
 });
-
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/epic-spinners/src/components/lib/PixelSpinner.vue?vue&type=script&lang=js&
 
 //
@@ -7284,8 +7288,6 @@ var AtomSpinner_component = Object(componentNormalizer["a" /* default */])(
 
 /* harmony default export */ var AtomSpinner = (AtomSpinner_component.exports);
 // CONCATENATED MODULE: ./node_modules/epic-spinners/src/lib.js
-
-
 
 
 

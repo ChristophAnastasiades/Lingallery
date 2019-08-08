@@ -1,4 +1,5 @@
 module.exports = {
   css: { extract: false },
-  runtimeCompiler: false
+  runtimeCompiler: false,
+  transpileDependencies: ['epic-spinners']
 };
