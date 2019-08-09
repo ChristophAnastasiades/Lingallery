@@ -1,3 +1,9 @@
+<p>
+    <a href="https://npmjs.com/package/lingallery"><img src="https://img.shields.io/npm/v/lingallery.svg?style=flat-square" alt="NPM version"></a>
+    <a href="https://www.npmjs.com/package/lingallery"><img src="https://img.shields.io/npm/dm/lingallery.svg?style=flat-square" alt="NPM downloads"></a>
+    <a href="https://www.npmjs.com/package/lingallery"><img src="https://img.shields.io/npm/l/lingallery.svg?style=flat-square" alt="License"></a>
+</p>
+
 # Lingallery
 Lingallery is a simple image gallery component for Vue.js. It displays a large image with thumbnails below as you can see in the demo. You can define several settings to adapt the gallery to your needs.
 
@@ -111,7 +117,7 @@ I am planning on creating several additional features. Since I try to keep the b
 
 Here is a list of currently existing addons:
 
-#### Large View
+### Large View
 By passing the prop `enableLargeView` you can enable the large view feature. When clicking on the large main image a modal will open up with the image displaying in full size.
 
 ```
@@ -125,7 +131,7 @@ If you want to show a different image (maybe a larger version) in the modal you 
 ```
 
 ### Picture Element
-Sometimes you might want to display different images depending on the user's screen size. Responsive images in Lingallery are possible with this addon. You can specify both a `type` and a `media` attribute.
+Sometimes you might want to display different images depending on the user's screen size. Responsive images in Lingallery are possible with this addon. You can specify both a `type` and a `media` attribute. Be sure to enable the addon by setting `enablePictureElement: true` in the `addons` object.
 
 ```
 <lingallery
