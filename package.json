@@ -1,15 +1,61 @@
 {
   "name": "lingallery",
-  "version": "1.2.1",
+  "version": "1.3.0",
+  "private": false,
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
-  "private": false,
-  "license": "MIT",
-  "main": "./dist/lingallery.common.js",
-  "module": "./dist/lingallery.umd.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name lingallery ./src/components/index.js"
+  },
+  "dependencies": {
+    "epic-spinners": "^1.1.0",
+    "hammerjs": "^2.0.8",
+    "vue": "^2.6.10",
+    "vue-async-computed": "^3.7.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "quotes": [2, "single", { "avoidEscape": true }]
+  },
   "browser": {
     "./sfc": "./src/components/Lingallery.vue"
   },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "keywords": [
     "vue",
     "lingallery",
@@ -19,37 +65,11 @@
     "photo",
     "vuejs"
   ],
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ],
+  "license": "MIT",
+  "main": "./dist/lingallery.common.js",
+  "module": "./dist/lingallery.umd.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChristophAnastasiades/Lingallery.git"
-  },
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name lingallery ./src/components/index.js",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "epic-spinners": "^1.1.0",
-    "hammerjs": "^2.0.8",
-    "vue": "^2.6.10",
-    "vue-async-computed": "^3.7.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.2",
-    "@vue/cli-plugin-eslint": "^3.9.2",
-    "@vue/cli-service": "^3.9.3",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
   }
 }

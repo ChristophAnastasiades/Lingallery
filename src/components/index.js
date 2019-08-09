@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import Lingallery from './Lingallery.vue'
+import Vue from "vue";
+import Lingallery from "./Lingallery.vue";
 
-Vue.component('lingallery', Lingallery)
+Vue.component("lingallery", Lingallery);
 
-export default Lingallery
+export default Lingallery;
