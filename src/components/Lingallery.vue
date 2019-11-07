@@ -52,7 +52,7 @@
         >
           {{ currentCaption }}
         </div>
-        <template v-if="showControls">
+        <template v-if="showControls && items.length > 1">
           <a
             @click="showPreviousImage"
             class="control left"
@@ -312,7 +312,7 @@ export default {
     handleLargeImageClick() {
       if (this.addons.enableLargeView) {
         this.showLargeView = true
-      } else if (!this.disableImageClick) {
+      } else if (!this.disableImageClick && this.items.length > 1) {
         this.showNextImage()
       }
     },
