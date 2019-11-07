@@ -52,32 +52,34 @@
         >
           {{ currentCaption }}
         </div>
-        <a
-          @click="showPreviousImage"
-          class="control left"
-          v-if="!leftControlClass"
-          ><span style="position:relative;top:calc(50% - 12px)"
-            >&#9664;</span
-          ></a
-        >
-        <a
-          @click="showNextImage"
-          class="control right"
-          v-if="!rightControlClass"
-          ><span style="position:relative;top:calc(50% - 12px)"
-            >&#9654;</span
-          ></a
-        >
-        <a
-          :class="'control left ' + leftControlClass"
-          @click="showPreviousImage"
-          v-if="leftControlClass"
-        ></a>
-        <a
-          :class="'control right ' + rightControlClass"
-          @click="showNextImage"
-          v-if="rightControlClass"
-        ></a>
+        <template v-if="showControls">
+          <a
+            @click="showPreviousImage"
+            class="control left"
+            v-if="!leftControlClass"
+            ><span style="position:relative;top:calc(50% - 12px)"
+              >&#9664;</span
+            ></a
+          >
+          <a
+            @click="showNextImage"
+            class="control right"
+            v-if="!rightControlClass"
+            ><span style="position:relative;top:calc(50% - 12px)"
+              >&#9654;</span
+            ></a
+          >
+          <a
+            :class="'control left ' + leftControlClass"
+            @click="showPreviousImage"
+            v-if="leftControlClass"
+          ></a>
+          <a
+            :class="'control right ' + rightControlClass"
+            @click="showNextImage"
+            v-if="rightControlClass"
+          ></a>
+        </template>
       </figure>
       <div class="lingallery_thumbnails" v-if="showThumbnails">
         <div class="lingallery_thumbnails_content">
@@ -195,6 +197,10 @@ export default {
     disableImageClick: {
       type: Boolean,
       default: false
+    },
+    showControls: {
+      type: Boolean,
+      default: true
     },
     addons: {
       type: Object,
