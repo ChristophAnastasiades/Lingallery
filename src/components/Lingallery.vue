@@ -52,32 +52,34 @@
         >
           {{ currentCaption }}
         </div>
-        <a
-          @click="showPreviousImage"
-          class="control left"
-          v-if="!leftControlClass"
-          ><span style="position:relative;top:calc(50% - 12px)"
-            >&#9664;</span
-          ></a
-        >
-        <a
-          @click="showNextImage"
-          class="control right"
-          v-if="!rightControlClass"
-          ><span style="position:relative;top:calc(50% - 12px)"
-            >&#9654;</span
-          ></a
-        >
-        <a
-          :class="'control left ' + leftControlClass"
-          @click="showPreviousImage"
-          v-if="leftControlClass"
-        ></a>
-        <a
-          :class="'control right ' + rightControlClass"
-          @click="showNextImage"
-          v-if="rightControlClass"
-        ></a>
+        <template v-if="showControls && items.length > 1">
+          <a
+            @click="showPreviousImage"
+            class="control left"
+            v-if="!leftControlClass"
+            ><span style="position:relative;top:calc(50% - 12px)"
+              >&#9664;</span
+            ></a
+          >
+          <a
+            @click="showNextImage"
+            class="control right"
+            v-if="!rightControlClass"
+            ><span style="position:relative;top:calc(50% - 12px)"
+              >&#9654;</span
+            ></a
+          >
+          <a
+            :class="'control left ' + leftControlClass"
+            @click="showPreviousImage"
+            v-if="leftControlClass"
+          ></a>
+          <a
+            :class="'control right ' + rightControlClass"
+            @click="showNextImage"
+            v-if="rightControlClass"
+          ></a>
+        </template>
       </figure>
       <div class="lingallery_thumbnails" v-if="showThumbnails">
         <div class="lingallery_thumbnails_content">
@@ -87,7 +89,7 @@
             v-for="(item, index) in items"
           >
             <img
-              :alt="item.hasOwnProperty('alt') ? item.alt : ''"
+              :alt="Object.prototype.hasOwnProperty.call(item, 'alt') ? item.alt : ''"
               :src="item.thumbnail"
               :style="thumbnailStyle(index)"
               height="64"
@@ -105,7 +107,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import { HalfCircleSpinner } from 'epic-spinners'
 import Hammer from 'hammerjs'
 import Addons from './addons/index.js'
@@ -118,7 +119,7 @@ export default {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
           const hammerjs = new Hammer(el)
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL })
+          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
           hammerjs.on('swipe', binding.value)
         }
       }
@@ -197,6 +198,10 @@ export default {
       type: Boolean,
       default: false
     },
+    showControls: {
+      type: Boolean,
+      default: true
+    },
     addons: {
       type: Object,
       default() {
@@ -220,7 +225,7 @@ export default {
       let isLoading =
         this.$refs.mainImage &&
         !this.addons.enablePictureElement &&
-        this.$refs.mainImage.hasOwnProperty('classList') &&
+        Object.prototype.hasOwnProperty.call(this.$refs.mainImage, 'classList') &&
         this.$refs.mainImage.classList.contains('loading')
           ? true
           : this.$refs.mainImage && this.addons.enablePictureElement
@@ -283,7 +288,7 @@ export default {
     },
     updateCurrentImageSizes() {
       let img =
-        this.$refs.mainImage && this.$refs.mainImage.hasOwnProperty('src')
+        this.$refs.mainImage && Object.prototype.hasOwnProperty.call(this.$refs.mainImage, 'src')
           ? this.$refs.mainImage
           : this.$refs.mainImage.$el
           ? this.$refs.mainImage.$el.getElementsByTagName('img')[0]
@@ -307,7 +312,7 @@ export default {
     handleLargeImageClick() {
       if (this.addons.enableLargeView) {
         this.showLargeView = true
-      } else if (!this.disableImageClick) {
+      } else if (!this.disableImageClick && this.items.length > 1) {
         this.showNextImage()
       }
     },
@@ -319,15 +324,15 @@ export default {
       this.handleLoader(true)
 
       this.currentImage = this.items[index].src
-      this.currentCaption = this.items[index].hasOwnProperty('caption')
+      this.currentCaption = Object.prototype.hasOwnProperty.call(this.items[index], 'caption')
         ? this.items[index].caption
         : ''
-      this.currentAlt = this.items[index].hasOwnProperty('alt')
+      this.currentAlt = Object.prototype.hasOwnProperty.call(this.items[index], 'alt')
         ? this.items[index].alt
         : ''
-      this.currentId = this.items[index].hasOwnProperty('id')
+      this.currentId = Object.prototype.hasOwnProperty.call(this.items[index], 'id')
         ? this.items[index].id
-        : ''
+        : null
 
       this.sendId()
     },
@@ -337,7 +342,8 @@ export default {
       return 'border-color:' + color
     },
     sendId() {
-      this.$emit('update:iid', this.currentId)
+      // This throws an uncomprehensible error so I commented it out for now
+      // this.$emit('update:iid', this.currentId)
     },
     showNextImage() {
       // Show Loader
