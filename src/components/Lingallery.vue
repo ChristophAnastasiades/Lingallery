@@ -198,6 +198,10 @@ export default {
       type: Boolean,
       default: false
     },
+    squareMode: {
+      type: Boolean,
+      default: false
+    },
     showControls: {
       type: Boolean,
       default: true
@@ -248,6 +252,13 @@ export default {
         } else mainImageStyle += 'min-height:200px;'
       }
 
+      if (this.squareMode && this.windowWidth && this.windowWidth > this.width) {
+        if (this.currentImageWidth >= this.currentImageHeight) {
+          mainImageStyle += 'height:' + this.width + 'px;width: ' + this.width + 'px;'
+        } else mainImageStyle += 'width:' + this.height + 'px;height:' + this.height + 'px;'
+        mainImageStyle += 'object-fit: cover;'
+      }
+
       return mainImageStyle
     },
     figureStyle() {
@@ -260,13 +271,13 @@ export default {
 
         if (
           this.currentImageWidth < this.currentImageHeight &&
-          this.mobileHeight === 0
+          this.mobileHeight === 0 && !this.responsive
         ) {
           heightValue = 'height:' + this.height + 'px'
         }
         return this.windowWidth > this.width && !this.responsive
-          ? 'width:' + this.width + 'px;height:' + this.height + 'px'
-          : 'width:100%;' + heightValue
+                ? 'width:' + this.width + 'px;height:' + this.height + 'px'
+                : 'width:100%;' + heightValue
       } else
         return this.windowWidth > this.width && !this.responsive
           ? 'width:' + this.width + 'px;height:' + this.height + 'px'

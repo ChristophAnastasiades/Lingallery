@@ -4,7 +4,7 @@
       id="largeViewContainer"
       :class="{ fadeIn: runAnimation, fadeOut: !runAnimation }"
     >
-      <picture v-if="item.hasOwnProperty('pictureElement')">
+      <picture v-if="Object.prototype.hasOwnProperty.call(item, 'pictureElement')">
         <source
           v-for="(source, index) in item.pictureElement"
           :key="index"
@@ -51,7 +51,7 @@ export default {
   },
   computed: {
     currentImage() {
-      return this.item.hasOwnProperty('largeViewSrc')
+      return Object.prototype.hasOwnProperty.call(this.item, 'largeViewSrc')
         ? this.item.largeViewSrc
         : this.item.src
     }
