@@ -28,8 +28,8 @@ export default {
     swipe: {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
-          const hammerjs = new Hammer(el)
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL })
+          const hammerjs = new Hammer(el, { inputClass: Hammer.TouchMouseInput })
+          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
           hammerjs.on('swipe', binding.value)
         }
       }
