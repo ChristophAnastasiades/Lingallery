@@ -2,8 +2,6 @@
   <div id="app">
     <lingallery
       :addons="{ enableLargeView: true, enablePictureElement: true }"
-      :width="600"
-      :height="600"
       :square-mode="true"
       :responsive="true"
       :items="[
@@ -70,7 +68,7 @@
           thumbnail: 'https://picsum.photos/64/64/?image=90'
         },
         {
-          src: 'https://picsum.photos/600/400/?image=100',
+          src: 'https://picsum.photos/2000/1500/?image=100',
           thumbnail: 'https://picsum.photos/64/64/?image=100'
         }
       ]"

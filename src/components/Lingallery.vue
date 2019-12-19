@@ -419,8 +419,8 @@ export default {
       a.control {
         position: absolute;
         top: 0;
-        padding-left: 5px;
-        padding-right: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
         height: 100%;
         display: none;
         font-size: 20px;
