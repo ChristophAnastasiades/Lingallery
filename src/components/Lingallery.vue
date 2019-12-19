@@ -198,7 +198,7 @@ export default {
       type: Boolean,
       default: false
     },
-    squareMode: {
+    squareModeDesktop: {
       type: Boolean,
       default: false
     },
@@ -252,7 +252,7 @@ export default {
         } else mainImageStyle += 'min-height:200px;'
       }
 
-      if (this.squareMode && this.windowWidth && this.windowWidth > this.width) {
+      if (this.squareModeDesktop && this.windowWidth && this.windowWidth > this.width) {
         if (this.currentImageWidth >= this.currentImageHeight) {
           mainImageStyle += 'height:' + this.width + 'px;width: ' + this.width + 'px;'
         } else mainImageStyle += 'width:' + this.height + 'px;height:' + this.height + 'px;'

@@ -111,6 +111,7 @@ You can pass some props to adapt the behavior and looks of Lingallery.
 | `leftControlClass` | If defined adds a class to the left control button to enable custom icons | '' | String |
 | `rightControlClass` | If defined adds a class to the right control button to enable custom icons | '' | String |
 | `disableImageClick` | If set to true a click on the large image will not show the next image | false | Boolean |
+| `squareModeDektop` | If set to true the large image will always be displayed in square format on desktop devices | false | Boolean |
 
 ## Lingallery addons
 

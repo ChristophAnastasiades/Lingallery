@@ -2,7 +2,7 @@
   <div id="app">
     <lingallery
       :addons="{ enableLargeView: true, enablePictureElement: true }"
-      :square-mode="true"
+      :square-mode-desktop="true"
       :responsive="true"
       :items="[
         {
