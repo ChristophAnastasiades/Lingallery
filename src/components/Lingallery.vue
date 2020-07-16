@@ -321,7 +321,11 @@ export default {
     },
     pickImage(index) {
       // Show Loader
-      this.handleLoader(true)
+      if (index === 0 && this.items.length === 1) {
+        this.handleLoader(false)
+      } else {
+        this.handleLoader(true)
+      }
 
       this.currentImage = this.items[index].src
       this.currentCaption = Object.prototype.hasOwnProperty.call(this.items[index], 'caption')
