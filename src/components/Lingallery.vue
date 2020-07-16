@@ -7,6 +7,8 @@
         :item="items[currentIndex]"
         v-if="addons.enableLargeView && showLargeView"
         @close-large-view="showLargeView = false"
+        @go-to-next="showNextImage()"
+        @go-to-previous="showPreviousImage()"
       />
       <figure
         :style="figureStyle"
