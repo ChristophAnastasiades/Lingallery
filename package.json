@@ -40,7 +40,13 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ]
   },
   "browser": {
     "./sfc": "./src/components/Lingallery.vue"
