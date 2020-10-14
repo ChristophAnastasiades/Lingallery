@@ -92,6 +92,7 @@
               :alt="Object.prototype.hasOwnProperty.call(item, 'alt') ? item.alt : ''"
               :src="item.thumbnail"
               :style="thumbnailStyle(index)"
+              width="64"
               height="64"
               v-on="
                 currentIndex !== index
@@ -118,9 +119,14 @@ export default {
     swipe: {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
-          const hammerjs = new Hammer(el, { inputClass: Hammer.TouchMouseInput })
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
-          hammerjs.on('swipe', binding.value)
+          binding.hammer = new Hammer(el)
+          binding.hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
+          binding.hammer.on('swipe', binding.value)
+        }
+      },
+      unbind: function(el, binding) {
+        if (binding.hammer) {
+          binding.hammer.destroy()
         }
       }
     }
