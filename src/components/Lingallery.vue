@@ -118,9 +118,14 @@ export default {
     swipe: {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
-          const hammerjs = new Hammer(el, { inputClass: Hammer.TouchMouseInput })
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
-          hammerjs.on('swipe', binding.value)
+          binding.hammer = new Hammer(el)
+          binding.hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
+          binding.hammer.on('swipe', binding.value)
+        }
+      },
+      unbind: function(el, binding) {
+        if (binding.hammer) {
+          binding.hammer.destroy()
         }
       }
     }
@@ -136,7 +141,8 @@ export default {
       currentAlt: '',
       windowWidth: 0,
       isLoading: true,
-      showLargeView: false
+      showLargeView: false,
+      scrollTimeout: null
     }
   },
   props: {
@@ -293,6 +299,12 @@ export default {
       this.windowWidth = window.innerWidth
       this.sendId()
     },
+    scrollToFirstItem() {
+      this.scrollTimeout = window.setTimeout(function() {
+        let item = document.getElementsByClassName('lingallery_thumbnails_content_elem')[0]
+        item.scrollIntoView()
+      },400)
+    },
     handleImageLoaded() {
       this.isLoading = false
       this.updateCurrentImageSizes()
@@ -381,11 +393,16 @@ export default {
       this.pickImage(this.currentIndex)
     }
   },
+  beforeDestroy() {
+    window.clearTimeout(this.scrollTimeout)
+    this.scrollTimeout = null
+  },
   created() {
     this.initAddons()
   },
   mounted() {
     this.initLingallery()
+    this.scrollToFirstItem()
   },
   watch: {
     items() {
