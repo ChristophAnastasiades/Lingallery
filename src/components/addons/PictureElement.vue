@@ -28,9 +28,14 @@ export default {
     swipe: {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
-          const hammerjs = new Hammer(el)
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL })
-          hammerjs.on('swipe', binding.value)
+          binding.hammer = new Hammer(el)
+          binding.hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
+          binding.hammer.on('swipe', binding.value)
+        }
+      },
+      unbind: function(el, binding) {
+        if (binding.hammer) {
+          binding.hammer.destroy()
         }
       }
     }

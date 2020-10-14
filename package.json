@@ -1,6 +1,6 @@
 {
   "name": "lingallery",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "private": false,
   "description": "A simple image gallery component for Vue.js",
   "author": "Christoph Anastasiades <info@lingulo.com>",
@@ -13,19 +13,19 @@
   "dependencies": {
     "epic-spinners": "^1.1.0",
     "hammerjs": "^2.0.8",
-    "vue": "^2.6.10",
-    "vue-async-computed": "^3.7.0"
+    "vue-async-computed": "^3.9.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.10.0",
-    "@vue/cli-plugin-eslint": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.1.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue": "^2.6.12",
+    "@vue/cli-plugin-babel": "^4.5.7",
+    "@vue/cli-plugin-eslint": "^4.5.7",
+    "@vue/cli-service": "^4.5.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-vue": "^7.0.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
@@ -40,7 +40,13 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ]
   },
   "browser": {
     "./sfc": "./src/components/Lingallery.vue"

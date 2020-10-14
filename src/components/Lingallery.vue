@@ -92,6 +92,7 @@
               :alt="Object.prototype.hasOwnProperty.call(item, 'alt') ? item.alt : ''"
               :src="item.thumbnail"
               :style="thumbnailStyle(index)"
+              width="64"
               height="64"
               v-on="
                 currentIndex !== index
@@ -118,9 +119,14 @@ export default {
     swipe: {
       bind: function(el, binding) {
         if (typeof binding.value === 'function') {
-          const hammerjs = new Hammer(el)
-          hammerjs.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
-          hammerjs.on('swipe', binding.value)
+          binding.hammer = new Hammer(el)
+          binding.hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 5 })
+          binding.hammer.on('swipe', binding.value)
+        }
+      },
+      unbind: function(el, binding) {
+        if (binding.hammer) {
+          binding.hammer.destroy()
         }
       }
     }
@@ -198,6 +204,10 @@ export default {
       type: Boolean,
       default: false
     },
+    squareModeDesktop: {
+      type: Boolean,
+      default: false
+    },
     showControls: {
       type: Boolean,
       default: true
@@ -248,6 +258,13 @@ export default {
         } else mainImageStyle += 'min-height:200px;'
       }
 
+      if (this.squareModeDesktop && this.windowWidth && this.windowWidth > this.width) {
+        if (this.currentImageWidth >= this.currentImageHeight) {
+          mainImageStyle += 'height:' + this.width + 'px;width: ' + this.width + 'px;'
+        } else mainImageStyle += 'width:' + this.height + 'px;height:' + this.height + 'px;'
+        mainImageStyle += 'object-fit: cover;'
+      }
+
       return mainImageStyle
     },
     figureStyle() {
@@ -260,13 +277,13 @@ export default {
 
         if (
           this.currentImageWidth < this.currentImageHeight &&
-          this.mobileHeight === 0
+          this.mobileHeight === 0 && !this.responsive
         ) {
           heightValue = 'height:' + this.height + 'px'
         }
         return this.windowWidth > this.width && !this.responsive
-          ? 'width:' + this.width + 'px;height:' + this.height + 'px'
-          : 'width:100%;' + heightValue
+                ? 'width:' + this.width + 'px;height:' + this.height + 'px'
+                : 'width:100%;' + heightValue
       } else
         return this.windowWidth > this.width && !this.responsive
           ? 'width:' + this.width + 'px;height:' + this.height + 'px'
@@ -408,8 +425,8 @@ export default {
       a.control {
         position: absolute;
         top: 0;
-        padding-left: 5px;
-        padding-right: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
         height: 100%;
         display: none;
         font-size: 20px;

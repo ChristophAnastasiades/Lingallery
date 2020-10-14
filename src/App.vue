@@ -1,11 +1,9 @@
 <template>
   <div id="app">
     <lingallery
-      :mobile-height="300"
-      :mobile-height-breakpoint="600"
       :addons="{ enableLargeView: true, enablePictureElement: true }"
-      :width="600"
-      :height="400"
+      :square-mode-desktop="true"
+      :responsive="true"
       :items="[
         {
           src: 'https://picsum.photos/600/600/?image=0',
@@ -66,11 +64,11 @@
           thumbnail: 'https://picsum.photos/64/64/?image=80'
         },
         {
-          src: 'https://picsum.photos/600/400/?image=90',
+          src: 'https://picsum.photos/400/700/?image=90',
           thumbnail: 'https://picsum.photos/64/64/?image=90'
         },
         {
-          src: 'https://picsum.photos/600/400/?image=100',
+          src: 'https://picsum.photos/2000/1500/?image=100',
           thumbnail: 'https://picsum.photos/64/64/?image=100'
         }
       ]"
