@@ -92,6 +92,7 @@
               :alt="Object.prototype.hasOwnProperty.call(item, 'alt') ? item.alt : ''"
               :src="item.thumbnail"
               :style="thumbnailStyle(index)"
+              width="64"
               height="64"
               v-on="
                 currentIndex !== index
@@ -141,8 +142,7 @@ export default {
       currentAlt: '',
       windowWidth: 0,
       isLoading: true,
-      showLargeView: false,
-      scrollTimeout: null
+      showLargeView: false
     }
   },
   props: {
@@ -299,12 +299,6 @@ export default {
       this.windowWidth = window.innerWidth
       this.sendId()
     },
-    scrollToFirstItem() {
-      this.scrollTimeout = window.setTimeout(function() {
-        let item = document.getElementsByClassName('lingallery_thumbnails_content_elem')[0]
-        item.scrollIntoView()
-      },400)
-    },
     handleImageLoaded() {
       this.isLoading = false
       this.updateCurrentImageSizes()
@@ -393,16 +387,11 @@ export default {
       this.pickImage(this.currentIndex)
     }
   },
-  beforeDestroy() {
-    window.clearTimeout(this.scrollTimeout)
-    this.scrollTimeout = null
-  },
   created() {
     this.initAddons()
   },
   mounted() {
     this.initLingallery()
-    this.scrollToFirstItem()
   },
   watch: {
     items() {

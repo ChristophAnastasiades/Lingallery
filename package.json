@@ -13,10 +13,10 @@
   "dependencies": {
     "epic-spinners": "^1.1.0",
     "hammerjs": "^2.0.8",
-    "vue": "^2.6.12",
     "vue-async-computed": "^3.9.0"
   },
   "devDependencies": {
+    "vue": "^2.6.12",
     "@vue/cli-plugin-babel": "^4.5.7",
     "@vue/cli-plugin-eslint": "^4.5.7",
     "@vue/cli-service": "^4.5.7",
