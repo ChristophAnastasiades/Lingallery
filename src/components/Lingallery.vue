@@ -438,9 +438,11 @@ export default {
           top: calc(50% - 12px);
         }
         &.left {
+          text-align: left;
           left: 0;
         }
         &.right {
+          text-align: right;
           right: 0;
         }
       }
