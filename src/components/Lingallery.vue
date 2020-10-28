@@ -370,17 +370,25 @@ export default {
       // Show Loader
       this.handleLoader(true)
 
+      const currentIndex = this.currentIndex
+
       if (this.items.length > this.currentIndex + 1) {
         this.currentIndex = this.currentIndex + 1
       } else {
         this.currentIndex = 0
       }
 
-      this.pickImage(this.currentIndex)
+      if (currentIndex !== this.currentIndex) {
+        this.pickImage(this.currentIndex)
+      } else {
+        this.handleLoader(false)
+      }
     },
     showPreviousImage() {
       // Show Loader
       this.handleLoader(true)
+
+      const currentIndex = this.currentIndex
 
       if (this.currentIndex !== 0) {
         this.currentIndex = this.currentIndex - 1
@@ -388,7 +396,11 @@ export default {
         this.currentIndex = this.items.length - 1
       }
 
-      this.pickImage(this.currentIndex)
+      if (currentIndex !== this.currentIndex) {
+        this.pickImage(this.currentIndex)
+      } else {
+        this.handleLoader(false)
+      }
     }
   },
   created() {
