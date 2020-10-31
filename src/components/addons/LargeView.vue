@@ -15,7 +15,13 @@
         <img :src="item.src" :alt="item.alt" />
       </picture>
       <img v-else :src="currentImage" />
-      <a @click="handleCloseClick"></a>
+      <a @click="handlePrevious" class="control right">
+        <span style="position:relative;top:calc(50% - 12px)">&#9654;</span>
+      </a>
+      <a @click="handleNext" class="control left">
+        <span style="position:relative;top:calc(50% - 12px)">&#9664;</span>
+      </a>
+      <a class="close" @click="handleCloseClick"></a>
     </div>
   </div>
 </template>
@@ -63,6 +69,12 @@ export default {
         this.runAnimation = true
         this.$emit('close-large-view')
       }, 500)
+    },
+    handlePrevious() {
+      this.$emit('go-to-previous')
+    },
+    handleNext() {
+      this.$emit('go-to-next')
     }
   }
 }
@@ -106,13 +118,14 @@ export default {
       animation-name: fadeOut;
     }
   }
-  a {
+  a.close {
     position: fixed;
     top: 10px;
     right: 10px;
     display: block;
     width: 32px;
     height: 32px;
+    z-index: 1001;
     opacity: 0.5;
     cursor: pointer;
     &:hover,
@@ -133,6 +146,29 @@ export default {
     }
     &:after {
       transform: rotate(-45deg);
+    }
+  }
+  a.control {
+    position: absolute;
+    top: 0;
+    padding-left: 5px;
+    padding-right: 15px;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+    z-index: 1000;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    &:before {
+      position: relative;
+      top: calc(50% - 12px);
+    }
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
     }
   }
 }
